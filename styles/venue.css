@@ -1,0 +1,118 @@
+.venue-section {
+  /* margin-top: 2rem; */
+  padding: 1rem 2rem;
+  display: block;
+}
+.venue-section-container {
+  position: relative;
+}
+.aconst6 {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.aconst6 img {
+  height: 150px;
+  width: 150px;
+  opacity: 0.8;
+}
+.venue-section .venue-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.venue-section h2 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: var(--primary-blue);
+}
+
+.venue-section p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.venue-section img {
+  width: 100px;
+  height: 100px;
+}
+
+.venue-section .divider {
+  height: 5px;
+  margin: 2rem 0;
+  background-color: var(--secondary-blue);
+}
+
+.venue-section .map-wrapper {
+  /* max-width: 400px; */
+  margin: 0 auto 2rem;
+}
+
+.venue-section .map-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .venue-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .venue-section .venue-wrapper {
+    width: 40%;
+    align-items: flex-end;
+  }
+
+  .venue-section .venue-wrapper .extra-info {
+    width: 75%;
+  }
+
+  .venue-section h2 {
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.08em;
+    color: var(--primary-blue);
+  }
+
+  .venue-section p {
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.08em;
+    color: var(--white);
+  }
+
+  .venue-section .divider {
+    width: 5px;
+    height: 380px;
+  }
+
+  .venue-section .map-wrapper {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .venue-section .venue-wrapper .extra-info {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .aconst6 img {
+    display: none;
+  }
+}

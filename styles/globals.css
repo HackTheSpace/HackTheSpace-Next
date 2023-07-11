@@ -1,38 +1,48 @@
-html,
-body {
+@import "./index.css";
+@import "./preloader.css";
+@import "./particle.css";
+@import "./navbar.css";
+@import "./home.css";
+@import "./about.css";
+@import "./wihts.css";
+@import "./venue.css";
+@import "./schedule.css";
+@import "./sponsor.css";
+@import "./organiser.css";
+@import "./why_sponsor.css";
+@import "./sponsor-prizes.css";
+@import "./footer.css";
+@import "./faqs.css";
+@import "./built.css";
+@import "./animated.css";
+* {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* overflow-x:clip; */
+}
+
+:root {
+  --transparent-gray: rgba(128, 128, 128, 0.25);
+  --primary-blue: rgb(167 139 250 / 1);
+  --secondary-blue: rgb(167 139 250 / 0.7);
+  --primary-black: rgba(0, 0, 0, 0.7);
+  --secondary-black: rgba(0, 0, 0, 0.3);
+  --primary-pink: #9b5bf5;
+  --white: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  z-index: 1;
+  background-color: #141414;
 }
 
 a {
+  text-decoration: none !important;
   color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
 }

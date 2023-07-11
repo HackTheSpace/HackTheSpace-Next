@@ -1,0 +1,41 @@
+.sponsor-prizes {
+  margin: 0;
+}
+
+.sponsor-prizes .card {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.sponsor-prizes .card .pic {
+  width: auto;
+  height: 70px;
+}
+
+.sponsor-prizes .card .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor-prizes .card h2 {
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+.sponsor-prizes .card .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  gap: 0.5rem;
+}
+
+.sponsor-prizes .card .text .icon {
+  padding: 0;
+}
+
+.sponsor-prizes .card .text p {
+  align-self: flex-end;
+  margin: 0;
+}

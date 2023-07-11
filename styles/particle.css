@@ -1,0 +1,34 @@
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 0.6;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #141414;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -100;
+}
+
+#particles-js::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 46, 115, 0.2) 100%
+  );
+}

@@ -1,0 +1,142 @@
+/* Whatishackthespace */
+.wihts {
+  background-color: var(--transparent-gray);
+  border-radius: 50px;
+  border-color: transparent;
+  text-align: justify;
+  padding: 3rem 2rem;
+  width: 72.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.aconst1{
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst1 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
+.aconst3{
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst3 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
+
+.pattern2 {
+  position: absolute;
+  bottom: -2%;
+  left: 5%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.pattern2 img{
+  height: 80px;
+  width: 80px;
+  /* opacity: 0.8; */
+}
+.frm {
+  position: absolute;
+  bottom: -5%;
+  right: -16%;
+}
+.frm img {
+  width: 70%;
+  animation: rotate 7s infinite;
+}
+
+
+
+@keyframes rotatefull {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.asrt {
+  position: absolute;
+  top: -10%;
+  left: -6%;
+  animation: floaty 3s linear infinite;
+}
+.asrt img {
+  width: 75%;
+}
+@media only screen and (max-width: 768px) {
+  .frm {
+    bottom: -3%;
+    right: -60%;
+  }
+
+  .frm img {
+    width: 50%;
+  }
+ 
+  .asrt {
+    top: -3%;
+    left: -2%;
+  }
+  .asrt img {
+    width: 40%;
+  }
+  .pattern2 {
+    position: absolute;
+    bottom: -12%;
+    right: 1%;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+    /* height: 10%; */
+  }
+  .pattern2 img{
+    height: 60px;
+    width: 60px;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .abbox {
+    width: 60%;
+  }
+}

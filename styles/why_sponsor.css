@@ -1,0 +1,213 @@
+.why-sponsor-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem 2rem 5rem; */
+  padding: 0 2rem;
+  /* margin: 3rem 0; */
+  position: relative;
+}
+
+.aconst3 {
+  position: absolute;
+  bottom: 20%;
+  left: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.aconst3 img {
+  height: 120px;
+  /* opacity: 0.8; */
+}
+.aconst4 {
+  position: absolute;
+  top: 40%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.aconst4 img {
+  height: 150px;
+  width: 150px;
+  /* opacity: 0.5; */
+}
+.aconst5 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.aconst5 img {
+  height: 140px;
+  width: 140px;
+  /* opacity: 0.5; */
+}
+
+.why-sponsor-section .container {
+  margin: 0rem 0 2rem;
+}
+
+.why-sponsor-section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.18);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2rem 2rem 3rem;
+  margin: 2rem 0;
+  border-radius: 37px;
+  transition: all 0.3s linear;
+}
+
+.why-sponsor-section .card:hover {
+  box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 36px 0px,
+    rgba(255, 255, 255, 0.07) 0px 0px 0px 1px;
+}
+
+.why-sponsor-section .card .card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--primary-blue);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.why-sponsor-section .card h2 {
+  font-size: 1.43rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--primary-blue);
+}
+
+.why-sponsor-section .card .icon {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 1rem;
+  color: var(--primary-blue);
+}
+
+.why-sponsor-section .card p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.why-sponsor-section .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 500px) {
+  .why-sponsor-section .btn-container {
+    width: 50%;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .why-sponsor-section .container {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .why-sponsor-section .card {
+    width: 37%;
+    height: 320px;
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+
+  .why-sponsor-section .btn-container {
+    width: 40%;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .why-sponsor-section .container {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .why-sponsor-section .container {
+    margin: 1rem 0 2rem;
+  }
+
+  .why-sponsor-section .card {
+    height: 300px;
+    width: 35%;
+    margin: 1rem;
+  }
+  .why-sponsor-section .btn-container {
+    width: 60%;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .why-sponsor-section .card {
+    width: 30%;
+  }
+
+  .why-sponsor-section .btn-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .why-sponsor-section .container {
+    width: 60%;
+  }
+
+  .why-sponsor-section .card {
+    width: 38%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .why-sponsor-section .container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aconst3 img {
+    height: 100px;
+    opacity: 0.7;
+  }
+  .aconst4 img {
+    height: 100px;
+    opacity: 0.7;
+  }
+  .aconst5 img {
+    height: 80px;
+    opacity: 0.7;
+  }
+
+  .aconst5 {
+    left: 1%;
+  }
+  .aconst3 {
+    bottom: 10%;
+  }
+}

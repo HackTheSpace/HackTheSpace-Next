@@ -1,0 +1,195 @@
+/********************* About **********************/
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: clip;
+  /* min-height: 100vh; */
+  color: var(--white);
+  margin: 5rem 0 15rem;
+}
+
+.abdiv#wihts {
+  margin: 10rem 0;
+  /* height: 180vh; */
+}
+
+.rstar {
+  position: absolute;
+  top: -25%;
+  left: -12%;
+}
+
+.topstar {
+  animation: pulse 2s linear infinite;
+  width: 70%;
+  rotate: -6deg;
+}
+
+.lstar {
+  position: absolute;
+  bottom: -12%;
+  left: -8%;
+  animation: pulse 3s linear infinite;
+}
+
+.botstar {
+  width: 60%;
+}
+
+.abbox {
+  background-color: var(--transparent-gray);
+  border-radius: 86px;
+  border-color: transparent;
+  text-align: justify;
+  padding: 2rem 2rem 4rem;
+  width: 72.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.abbox p {
+  padding: 0 3rem 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  text-align: center;
+}
+
+.aconst1 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  animation: floatx 3s linear infinite;
+}
+
+.aconst2 {
+  position: absolute;
+  top: 2%;
+  left: 20%;
+  animation: floaty 4s linear infinite;
+}
+
+.aconst3 {
+  position: absolute;
+  bottom: 30%;
+  left: 7%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+.pattern7 {
+  position: absolute;
+  bottom: -30%;
+  left: 40%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+.pattern7 img {
+  height: 60px;
+  width: 60px;
+  /* opacity: 0.8; */
+}
+
+.frm.about-frm {
+  bottom: -12%;
+  right: -20%;
+}
+
+.frm.about-frm img {
+  width: 50%;
+  transform: rotate(25deg);
+  animation: rotatefull 20s linear infinite;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .about-section {
+    margin: 4rem 0;
+    height: 130vh;
+  } */
+
+  /* .about-section#wihts {
+    margin: 4rem 0;
+    height: 180vh;
+  } */
+
+  .abdiv#wihts {
+    margin: 10rem 0 5rem;
+  }
+
+  .abbox {
+    border-radius: 21px;
+  }
+
+  .abbox h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .abbox p {
+    font-size: 1.1rem;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .aconst1 {
+    display: none;
+  }
+  .aconst1 img {
+    width: 50px;
+    height: 50px;
+  }
+  .aconst3 {
+    display: none;
+  }
+  .aconst3 img {
+    width: 50px;
+    height: 50px;
+  }
+  .aconst2 {
+    display: none;
+  }
+
+  .rstar {
+    top: -7%;
+    left: -14%;
+    max-width: 80%;
+  }
+
+  .topstar {
+    width: 55%;
+  }
+
+  .lstar {
+    left: -15%;
+    bottom: -8%;
+  }
+
+  .frm.about-frm {
+    right: -60%;
+    bottom: -7%;
+  }
+  .frm.about-frm img {
+    width: 44%;
+  }
+  .pattern7 {
+    position: absolute;
+    bottom: -10%;
+    left: 40%;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .frm.about-frm,
+  .frm {
+    right: -15%;
+  }
+}

@@ -1,0 +1,212 @@
+.sponsor-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  /* padding: 2rem; */
+  /* margin: 3rem 0; */
+  position: relative;
+}
+
+
+.aconst7{
+  position: absolute;
+  display: none;
+  /* display: none; */
+  top: 10%;
+  right: 5%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst-sponsor img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
+.sponsor-section .sponsor-container {
+  /* margin: 0 0 2rem; */
+  text-align: center;
+}
+
+.sponsor-section .sponsor {
+  margin: 3rem 0;
+}
+
+.sponsor-section .sponsor h2 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.sponsor-section .sponsor .wrapper .card {
+  /* background: rgba(217, 217, 217, 0.18); */
+  background: transparent;
+  padding: 2rem;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  position: relative;
+}
+.sponsor-section .sponsor.diamond .wrapper .card::after,
+.sponsor-section .sponsor.gold .wrapper .card::after,
+.sponsor-section .sponsor.inkind .wrapper .card::after,
+.sponsor-section .sponsor.silver .wrapper .card::after,
+.sponsor-section .sponsor.bronze .wrapper .card::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 105%;
+  height: 110%;
+  border-radius: 11px;
+  z-index: -1;
+}
+
+.sponsor-section .sponsor.diamond .wrapper .card::after {
+  background: linear-gradient(60deg, rgba(183, 241, 253,0.7), rgba(208, 248, 255,0.7), rgba(183, 241, 253,0.7), rgba(223, 252, 255,0.7));
+  box-shadow: 0 0 5px #b7f1fd;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponsor-section .sponsor.gold .wrapper .card::after {
+  background: linear-gradient(60deg, rgba(235, 209, 151,0.4), rgba(180, 136, 17,0.4), rgba(162, 121, 13,0.4), rgba(187, 155, 73,0.4));
+  box-shadow: 0 0 10px #bb9b49;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponsor-section .sponsor.silver .wrapper .card::after {
+  background: linear-gradient(
+    60deg,
+    rgba(112, 112, 111, 0.4),
+    rgba(125, 125, 122, 0.4),
+    rgba(142, 141, 141, 0.4),
+    rgba(161, 162, 163, 0.4),
+    rgba(179, 182, 181, 0.4),
+    rgba(190, 192, 194, 0.4)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponsor-section .sponsor.bronze .wrapper .card::after {
+  background: linear-gradient(
+    60deg,
+    rgba(128, 74, 0, 0.3),
+    rgba(137, 94, 26, 0.3),
+    rgba(156, 122, 60, 0.3),
+    rgba(176, 141, 87, 0.3)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponsor-section .sponsor.inkind .wrapper .card::after {
+  background: linear-gradient(
+    60deg,
+    rgba(112, 112, 111, 0.1),
+    rgba(125, 125, 122, 0.1),
+    rgba(142, 141, 141, 0.1),
+    rgba(161, 162, 163, 0.1),
+    rgba(179, 182, 181, 0.1),
+    rgba(190, 192, 194, 0.1)
+  );
+
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sponsor-section .sponsor .pic {
+  width: 150px;
+  height: 40px; /*237*/
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+.sponsor-section .sponsor .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sponsor-section .sponsor .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-name{
+  position: absolute;
+  top: 37%;
+  right: 45%;
+}
+.Sponsor-name-container{
+  position: relative;
+  text-align: center;
+}
+.Sponsor-name-container img{
+width: 140px;
+}
+.name-inkind{
+  right: 43.5%;
+}
+.name-star{
+  right:46.5%;
+}
+
+
+.left-hr{
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 21%;
+  opacity: 0.4;
+}
+.right-hr{
+  width: 20%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 21%;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 768px){
+  .sponsor-name{
+    right: 32%;
+  }
+  .name-inkind{
+    right: 23.5%;
+  }
+  .name-star{
+    right:36.5% ;
+  }
+  .left-hr{
+    left: 3%;
+  }
+  .right-hr{
+    right: 3%;
+  }
+}
