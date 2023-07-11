@@ -1,17 +1,17 @@
+import SectionLayout from "../SectionLayout";
 import Day from "./Day";
 import TimeCont from "./TimeCont";
 import { scheduleConfig } from "../../config/schedule";
 import Canvas from "./Canvas";
 
 const Schedule = () => {
-  const { day } = scheduleConfig;
+  const { data } = scheduleConfig;
 
   return (
-    <div className="section schedule-section">
-      <h2 className="section-title">SCHEDULE</h2>
+    <SectionLayout Classname={"schedule-section"} Title={"Schedule"}>
       <div className="container">
         <Canvas />
-        {day.map((d) => (
+        {data.map((d) => (
           <Day Day={d.Day} date={d.Date} key={d.Day}>
             {d.TimeCont.map((c) => (
               <TimeCont
@@ -19,13 +19,13 @@ const Schedule = () => {
                 Img={c.Img}
                 Time={c.Time}
                 Description={c.Description}
-                key={c.Time}
+                key={c.id}
               />
             ))}
           </Day>
         ))}
       </div>
-    </div>
+    </SectionLayout>
   );
 };
 

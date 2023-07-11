@@ -2,7 +2,7 @@
   padding: 0 2rem;
   position: relative;
   /* overflow-y: hidden; */
-  overflow-x:clip;
+  overflow-x: clip;
 }
 .planet1 {
   position: absolute;
@@ -12,7 +12,7 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.planet1 img{
+.planet1 img {
   height: 120px;
   width: 90px;
   /* opacity: 0.5; */
@@ -26,7 +26,7 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.planet2 img{
+.planet2 img {
   height: 120px;
   width: 60px;
   /* opacity: 0.5; */
@@ -90,7 +90,7 @@
   display: block;
   width: 2rem;
   height: 2rem;
-  background-image: url(/assets/faqs/down.svg);
+  background-image: url("../public/images/faqs/down.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,15 +137,15 @@
   .faqs-section .container .question-box .question {
     height: auto;
   }
-  .planet1 img{
+  .planet1 img {
     height: 60px;
     width: 40px;
     /* opacity: 0.5; */
   }
-  .planet2{
+  .planet2 {
     right: -5%;
   }
-  .planet2 img{
+  .planet2 img {
     height: 60px;
     width: 40px;
     /* opacity: 0.5; */
