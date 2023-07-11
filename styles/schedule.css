@@ -128,8 +128,11 @@
   font-size: 0.9rem;
 }
 
-#Day2 h5 {
-  margin-bottom: 110px;
+#Day-2 {
+  margin-top: 100px;
+}
+#Day-2 h5 {
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 800px) {
@@ -176,8 +179,11 @@
     opacity: 1;
   }
 
-  #Day2 h5 {
-    margin-bottom: 65px;
+  #Day-2 {
+    margin-top: 50px;
+  }
+  #Day-2 h5 {
+    margin-bottom: 50px;
   }
 }
 
@@ -222,11 +228,15 @@
     text-align: right;
   }
 
-  #Day1 h5 {
+  #Day-1 h5 {
     margin-bottom: 53px;
   }
 
-  #Day2 h5 {
-    margin-bottom: 60px;
+  #Day-2 {
+    margin-top: 40px;
+  }
+
+  #Day-2 h5 {
+    margin-bottom: 40px;
   }
 }
