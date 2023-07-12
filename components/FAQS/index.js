@@ -1,6 +1,6 @@
 import SectionLayout from "../SectionLayout";
 import QuestionComp from "./QuestionComp";
-import { questionConfig } from "../../config/Questions";
+import { questionConfig } from "../../config/questions";
 import { useState } from "react";
 
 const ColComponent = ({ children }) => {
