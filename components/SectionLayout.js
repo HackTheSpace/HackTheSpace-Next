@@ -1,9 +1,9 @@
 const SectionLayout = ({ Classname, Title, children }) => {
   return (
-    <div className={`section ${Classname}`}>
+    <section className={`section ${Classname}`}>
       <h2 className="section-title">{Title}</h2>
       {children}
-    </div>
+    </section>
   );
 };
 
