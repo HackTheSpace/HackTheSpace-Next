@@ -23,7 +23,7 @@ const MainStage = () => {
 
       // WebGL Renderer
       renderer = new THREE.WebGLRenderer({
-        canvas: document.getElementById("particles-js"), // canvas
+        canvas: document.getElementById("3D-particle-effect-canvas"), // canvas
         alpha: true,
         antialias: true,
       });
@@ -49,7 +49,6 @@ const MainStage = () => {
       const geometryPR = new THREE.TetrahedronGeometry(2, 0);
       const materialPR = new THREE.MeshPhongMaterial({
         color: 0xffffff,
-        flatShading: THREE.FlatShading,
       });
 
       for (let i = 0; i < 300; i++) {
@@ -175,7 +174,11 @@ const MainStage = () => {
     render();
   }, []);
 
-  return <canvas id="particles-js" />;
+  return (
+    <div id="particles-js">
+      <canvas id="3D-particle-effect-canvas" />
+    </div>
+  );
 };
 
 export default MainStage;
