@@ -31,7 +31,7 @@
   stroke-width: 2;
   stroke-dasharray: 100%;
   stroke-dashoffset: 100%;
-  animation: textStrokeAnim 4000ms linear both;
+  animation: textStrokeAnim 5500ms linear both;
   animation-iteration-count: 1;
 }
 
