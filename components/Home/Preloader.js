@@ -1,26 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Preloader = () => {
+    const [Timer, setTimer] = useState("");
     useEffect(() => {
-        const load = document.getElementById("preloader");
-        const body = document.getElementById("body");
+        const timeout = setTimeout(() => {
+            setTimer("none");
+        }, 6000);
 
-        const loadComplete = () => {
-            load.style.opacity = 0;
-            body.style.overflow = "auto";
+        return () => {
+            clearTimeout(timeout);
         };
 
-        const hideLoader = () => {
-            load.style.display = "none";
-        };
-
-        setTimeout(loadComplete, 6000);
-        setTimeout(hideLoader, 6200);
     }, []);
 
     return (
         <>
-            <div id="preloader">
+            <div id="preloader" className={Timer}>
                 <div class="text-container">
                     <svg
                         class="text-stroke"
@@ -31,10 +26,6 @@ const Preloader = () => {
                         <text class="text" x="20" y="75">HACK THE SPACE</text>
                     </svg>
                 </div>
-            </div>
-
-            <div id="particles-js">
-                <canvas id="3D-particle-effect-canvas"></canvas>
             </div>
         </>
     );
