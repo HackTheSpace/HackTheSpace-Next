@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-  height: 2454px;
+  height: 2478px;
   width: 100%;
 }
 
@@ -137,7 +137,7 @@
 
 @media screen and (max-width: 800px) {
   #myCanvas {
-    height: 1640px;
+    height: 1648px;
     width: 100%;
   }
 
