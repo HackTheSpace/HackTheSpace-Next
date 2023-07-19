@@ -7,7 +7,7 @@ export const sponsorConfig = {
       {
         id: "1",
         Name: "Github",
-        Img: "/images/sponsor/GitHub_Logo.svg",
+        Img: "/images/sponsor/Github_Logo.svg",
       },
     ],
   },
