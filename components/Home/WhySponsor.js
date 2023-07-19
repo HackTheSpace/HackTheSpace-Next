@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const WhySponsor = () => {
   return (
-    <SectionLayout Title="" Classname={"why-sponsor-section" }>
-      <h2 className="section-title">Why Sponsor Us?</h2>
+    <SectionLayout Title="Why Sponsor Us?" Classname={"why-sponsor-section" }>
+
 
       <div className="container">
         <div className="card">
