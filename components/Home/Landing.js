@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Landing = () => {
   return (
@@ -15,13 +16,17 @@ const Landing = () => {
       </div>
       <div className="logo-div">
         <div className="logo-home">
-          <img
+          <Image
             src="/images/logo-main.webp"
             alt="Hack the space Hackathon Constellation"
+            priority={true}
+            sizes="100%"
+            width={100}
+            height={100}
           />
         </div>
         <p className="title" id="title">
-          Think. Build. Launch.
+          THINK. BUILD. LAUNCH.
         </p>
         <p style={{ marginTop: "0" }}>8 - 9 SEPTEMBER, 2023</p>
         <p className="venue-text">
