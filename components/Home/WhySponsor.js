@@ -216,7 +216,7 @@ const WhySponsor = () => {
 
       <div className="aconst3">
         <Image
-          src="/assets/aconst3.svg"
+          src="/images/aconst3.svg"
           alt="hack the space const"
           className="opaque8"
           width={300}
@@ -225,7 +225,7 @@ const WhySponsor = () => {
       </div>
       <div className="aconst4">
         <Image
-          src="/assets/aconst4.svg"
+          src="/images/aconst4.svg"
           alt="hack the space const"
           className="opaque8"
           width={300}
@@ -234,7 +234,7 @@ const WhySponsor = () => {
       </div>
       <div className="aconst5">
         <Image
-          src="/assets/aconst5.svg"
+          src="/images/aconst5.svg"
           alt="hack the space const"
           className="opaque8"
           width={300}
