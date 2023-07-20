@@ -9,6 +9,7 @@ import Journey from "../components/Home/Journey";
 import Preloader from "../components/Home/Preloader";
 import Venue from "../components/Home/Venue";
 import Sponsor from "../components/Sponsor";
+import WhySponsor from "../components/Home/WhySponsor";
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
       <Venue />
       <Schedule />
       <Sponsor />
+      <WhySponsor/>
       <FAQS />
     </Layout>
   );
