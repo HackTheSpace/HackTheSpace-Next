@@ -4,7 +4,7 @@ const TimeCont = ({ Direction, Img, Time, Description }) => {
   return (
     <div className={`time-container-${Direction}`}>
       <div className="planet">
-        <Image src={Img} alt="planet" width={100} height={100} />
+        <Image src={Img} alt="planet" width={100} height={100} loading="lazy" />
       </div>
       <div className="time">
         <p className="time-text">{Time}</p>
