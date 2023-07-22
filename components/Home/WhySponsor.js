@@ -4,15 +4,13 @@ import Image from "next/image";
 
 const WhySponsor = () => {
   return (
-    <SectionLayout Title="Why Sponsor Us?" Classname={"why-sponsor-section" }>
-
-
+    <SectionLayout Title="Why Sponsor Us?" Classname={"why-sponsor-section"}>
       <div className="container">
         <div className="card">
           <div className="card-title">
             <svg
               className="ionicon icon zinc-bg"
-              style={{ transform: 'rotate(-25deg)' }}
+              style={{ transform: "rotate(-25deg)" }}
               name="megaphone-outline"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -38,7 +36,9 @@ const WhySponsor = () => {
             <h2>Promotion</h2>
           </div>
           <p>
-            Sponsoring events promotes your brand. Higher sponsorship packages offer more exposure. This creates a positive perception of your company.
+            Sponsoring events promotes your brand. Higher sponsorship packages
+            offer more exposure. This creates a positive perception of your
+            company.
           </p>
         </div>
 
@@ -86,7 +86,9 @@ const WhySponsor = () => {
             <h2>Recruitment</h2>
           </div>
           <p>
-            Sponsor HackTheSpace, connect with potential employees. Meet bright minds from the region, interview potential candidates. Build your team with HackTheSpace sponsorship.
+            Sponsor HackTheSpace, connect with potential employees. Meet bright
+            minds from the region, interview potential candidates. Build your
+            team with HackTheSpace sponsorship.
           </p>
         </div>
 
@@ -123,7 +125,9 @@ const WhySponsor = () => {
             <h2>New Technology</h2>
           </div>
           <p>
-            Use hackathons to test new technologies and incentivize students. Create challenges aligned with your technology to promote it to a wider audience. Drive future industries with HackTheSpace.
+            Use hackathons to test new technologies and incentivize students.
+            Create challenges aligned with your technology to promote it to a
+            wider audience. Drive future industries with HackTheSpace.
           </p>
         </div>
 
@@ -147,14 +151,16 @@ const WhySponsor = () => {
             <h2>Inspiration</h2>
           </div>
           <p>
-            Hackathons bring fresh ideas to challenging problems. Inspire both participants and your team by tackling problems in your field. Exchange of ideas can lead to innovative solutions at HackTheSpace.
+            Hackathons bring fresh ideas to challenging problems. Inspire both
+            participants and your team by tackling problems in your field.
+            Exchange of ideas can lead to innovative solutions at HackTheSpace.
           </p>
         </div>
       </div>
 
       <div className="btn-container">
         <button type="button" className="Btn zinc-bg">
-          <a href="mailto:sponser@hackthespace.co">
+          <a href="mailto:sponsor@hackthespace.co">
             <div className="gradient-mask black-bg"></div>
             <svg
               name="planet-outline"
@@ -241,7 +247,6 @@ const WhySponsor = () => {
           height={300}
         />
       </div>
-
     </SectionLayout>
   );
 };

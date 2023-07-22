@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ThreeScene from "./ThreeScene";
+import BackToTop from "./Home/BackToTop";
 
 const Layout = ({ children }) => {
   return (
@@ -73,7 +74,7 @@ const Layout = ({ children }) => {
 
       <Navbar />
       <ThreeScene />
-
+      <BackToTop />
       <main>{children}</main>
 
       <Footer />
