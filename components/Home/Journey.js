@@ -4,7 +4,7 @@ import SectionLayout from "../SectionLayout";
 const Journey = () => {
   return (
     <SectionLayout
-      Title={"Journey of HTF"}
+      Title={"Journey of HTS"}
       Classname={"venue-section-container built-section"}
     >
       <div className="super-outer-circle">
@@ -34,8 +34,8 @@ const Journey = () => {
               <div className="center-circle">
                 <div className="planet">
                   <Image
-                    src={"/images/built/planet.png"}
-                    alt=""
+                    src={"/images/built/planet.svg"}
+                    alt="Hack the space"
                     width={100}
                     height={100}
                   />
@@ -45,6 +45,20 @@ const Journey = () => {
           </div>
         </div>
       </div>
+      <Image
+        className="cloud cloudOne"
+        src={"/images/built/cloudOne.svg"}
+        alt="Hack the space"
+        width={80}
+        height={50}
+      />
+      <Image
+        className="cloud cloudTwo"
+        src={"/images/built/cloudTwo.svg"}
+        alt="Hack the space"
+        width={50}
+        height={40}
+      />
     </SectionLayout>
   );
 };

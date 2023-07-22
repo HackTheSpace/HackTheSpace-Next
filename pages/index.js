@@ -15,7 +15,7 @@ import Organiser from "../components/Home/Organiser";
 const index = () => {
   return (
     <Layout>
-      <Preloader />
+      {/* <Preloader /> */}
       <Landing />
       <About />
       <Wihts />

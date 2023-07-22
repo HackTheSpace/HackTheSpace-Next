@@ -15,12 +15,12 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.pattern1 img{
+.pattern1 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
-.aconst7{
+.aconst7 {
   position: absolute;
   top: 75%;
   right: 12%;
@@ -28,12 +28,11 @@
   animation: floatx 3.2s linear infinite;
 }
 
-.aconst7 img{
+.aconst7 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
-
 
 .organiser-section .card {
   display: flex;
@@ -137,33 +136,32 @@
     animation: floatx 3.2s linear infinite;
     /* height: 10%; */
   }
-  .pattern1 img{
+  .pattern1 img {
     height: 120px;
     width: 120px;
     opacity: 0.8;
   }
-  .aconst7{
+  .aconst7 {
     position: absolute;
     top: 70%;
     right: 6%;
     z-index: -1;
     animation: floatx 3.2s linear infinite;
   }
-  
-  .aconst7 img{
+
+  .aconst7 img {
     height: 120px;
     width: 120px;
     opacity: 0.8;
   }
-  
 }
 
 /*------------------ Core-Team-------------------------------- */
 .marquee {
   width: 70%;
   margin: 0;
-  --duration: 15s;
-  --gap: 5px;
+  --duration: 25s;
+  --gap: 2rem;
 
   display: flex;
   overflow: hidden;
@@ -201,6 +199,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
+  min-height: 100px;
   animation: scroll var(--duration) linear infinite;
 }
 
@@ -237,11 +236,17 @@ a {
   }
 }
 
+.marquee .marquee__group .links {
+  transition: all 0.1s ease-in;
+  border: 3px solid transparent;
+}
+
 .marquee .marquee__group .links:hover {
   transform: scale(1.1) !important;
   -webkit-transform: scale(1.1) !important;
   opacity: 0.9;
   cursor: pointer;
+  border: 3px solid var(--primary-pink);
 }
 
 .marquee:hover .marquee__group {
@@ -266,7 +271,7 @@ a {
   width: 300px;
 }
 
-.team-akash {
+.team-core {
   z-index: 999;
 }
 
@@ -277,6 +282,11 @@ a {
   margin: 1rem 0 0 0;
   display: none;
 }
+
+.Text-area-core .team-para {
+  color: var(--primary-pink);
+}
+
 @media only screen and (max-width: 768px) {
   .Core_Team {
     flex-direction: column;
