@@ -22,6 +22,7 @@
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
   /* overflow-x:clip; */
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -49,4 +50,3 @@ a {
   text-decoration: none !important;
   color: inherit;
 }
-
