@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import Landing from "../components/Home/Landing";
 import Schedule from "../components/Schedule";
@@ -11,8 +11,21 @@ import Venue from "../components/Home/Venue";
 import Sponsor from "../components/Sponsor";
 import WhySponsor from "../components/Home/WhySponsor";
 import Organiser from "../components/Home/Organiser";
+//import WOW from 'wow.js';
+import 'animate.css';
 
 const index = () => {
+
+  // useEffect(() => {
+  //   new WOW().init();
+  // }, []);
+  useEffect(() => {
+    import('wow.js').then((WOW) => {
+      new WOW.default().init();
+    });
+  }, []);
+
+
   return (
     <Layout>
       {/* <Preloader /> */}

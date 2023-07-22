@@ -18,7 +18,7 @@ const Sponsor = () => {
 
   return (
     <SectionLayout Classname={"sponsor-section"} Title={"Sponsors & partners"}>
-      <div className="sponsor-container">
+      <div id="sponsors" className="sponsor-container">
         <SponsorContainer Name={gold.Name} Img={gold.Img} Type={gold.Type}>
           {gold.Sponsor.map((sponsor) => (
             <SponsorWrapper

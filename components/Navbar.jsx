@@ -1,7 +1,23 @@
-import React, { useState } from "react";
+import Link from "next/link";
+import React, {useState } from "react";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+
+    const handleScroll = (e) => {
+        // first prevent the default behavior
+        e.preventDefault();
+        // get the href and remove everything before the hash (#)
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*\#/, "");
+        // get the element by id and use scrollIntoView
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+          behavior: "smooth",
+        });
+      };
+      
+
     return (
         <nav>
             <div className="mobile-nav">
@@ -14,16 +30,16 @@ const Navbar = () => {
                             : `translate(100%, 0)`,
                     }}
                 >
-                    <a href="#home" className="active">
+                    <Link href="#home" className="active">
                         Home
-                    </a>
-                    <a href="#about">About</a>
-                    {/* <!-- <a href="#" >Tracks</a> --> */}
-                    <a href="#schedule">Schedule</a>
-                    <a href="#sponsors">Sponsors</a>
-                    <a href="#organiser">Team</a>
-                    <a href="#faqs">FAQs</a>
-                    <a href="#contact">Contact</a>
+                    </Link >
+                    <Link href="#about" onClick={handleScroll}>About</Link >
+                    {/* <!-- <Link href="#" >Tracks</Link > --> */}
+                    <Link href="#schedule">Schedule</Link >
+                    <Link href="#sponsors">Sponsors</Link >
+                    <Link href="#organiser">Team</Link >
+                    <Link href="#faqs">FAQs</Link >
+                    <Link href="#contact">Contact</Link >
                 </div>
 
                 <div
@@ -35,12 +51,12 @@ const Navbar = () => {
                     }}
                 >
                     <div className="logo shrink">
-                        <a href="#home">
+                        <Link href="#home">
                             <img
                                 src="/images/navbar/nav_logo.png"
                                 alt="hack the space"
                             />
-                        </a>
+                        </Link >
                     </div>
                     <div className="burgMlh">
                         <svg
@@ -99,23 +115,23 @@ const Navbar = () => {
 
             <div className="desktop-nav">
                 <div className="logo shrink">
-                    <a href="#home">
+                    <Link href="#home">
                         <img
                             src="/images/navbar/nav_logo.png"
                             alt="hack the space"
                         />
-                    </a>
+                    </Link >
                 </div>
                 <div className="links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    {/* <!-- <a href="#">Tracks</a> --> */}
-                    {/* <!-- <a href="#">Prizes</a> --> */}
-                    <a href="#schedule">Schedule</a>
-                    <a href="#sponsors">Sponsors</a>
-                    <a href="#organiser">Team</a>
-                    <a href="#faqs">FAQs</a>
-                    <a href="#contact">Contact</a>
+                    <Link href="#home">Home</Link >
+                    <Link href="#about">About</Link >
+                    {/* <!-- <Link href="#">Tracks</Link > --> */}
+                    {/* <!-- <Link href="#">Prizes</Link > --> */}
+                    <Link href="#schedule">Schedule</Link >
+                    <Link href="#sponsors">Sponsors</Link >
+                    <Link href="#organiser">Team</Link >
+                    <Link href="#faqs">FAQs</Link >
+                    <Link href="#contact">Contact</Link >
                 </div>
                 <div className="mlh-flag" style={{ opacity: "0" }}>
                     <img
