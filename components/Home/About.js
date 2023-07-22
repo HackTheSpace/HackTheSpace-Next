@@ -4,8 +4,8 @@ import React from "react";
 const About = () => {
   const { about } = infoConfig;
   return (
-    <section className="section about-section">
-      <div className="abbox">
+    <section id="about" className="section about-section">
+      <div className="wow animate__fadeInUp abbox">
         <h2 className="section-title">About Us</h2>
         {about.map((d) => (
           <React.Fragment key={d.id}>

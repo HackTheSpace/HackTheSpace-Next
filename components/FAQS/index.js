@@ -13,7 +13,7 @@ const FAQS = () => {
 
   return (
     <SectionLayout Classname={"faqs-section"} Title={"Faqs"}>
-      <div className="container">
+      <div id="faqs" className="container">
         {data.map((q) => (
           <ColComponent key={q.id}>
             {q.Questions.map((quest) => (

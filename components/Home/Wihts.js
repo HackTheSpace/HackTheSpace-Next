@@ -6,7 +6,7 @@ const Wihts = () => {
   const { wihts } = infoConfig;
   return (
     <section className="section about-section">
-      <div className="abbox">
+      <div className="abbox wow animate__fadeInUp">
         <h2 className="section-title">What is HackTheSpace?</h2>
         {wihts.map((d, index) => (
           <React.Fragment key={d.id}>

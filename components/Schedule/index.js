@@ -9,7 +9,7 @@ const Schedule = () => {
 
   return (
     <SectionLayout Classname={"schedule-section"} Title={"Schedule"}>
-      <div className="container">
+      <div id="schedule" className="container">
         <Canvas />
         {data.map((d) => (
           <Day Day={d.Day} date={d.Date} key={d.Day}>
