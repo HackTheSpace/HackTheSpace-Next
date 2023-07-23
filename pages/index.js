@@ -24,7 +24,7 @@ const index = () => {
 
   return (
     <Layout>
-      {/* <Preloader /> */}
+      <Preloader />
       <Landing />
       <About />
       <Wihts />
