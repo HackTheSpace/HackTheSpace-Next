@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 const SponsorContainer = ({ Name, Img, Type, children }) => {
   return (
     <div className={`sponsor ${Name}`}>
       <div className="Sponsor-name-container">
         <hr className="left-hr" />
-        <img
+        <Image
           src={Img}
           alt={Name}
           style={Name === "inkind" ? { opacity: "0" } : {}}
+          width={100}
+          height={Name === "gold" ? 130 : 100}
         />
         <h2
           className={`sponsor-name name-${Type} ${

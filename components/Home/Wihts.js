@@ -6,8 +6,11 @@ import Image from "next/image";
 const Wihts = () => {
   const { wihts } = infoConfig;
   return (
-    <section className="section about-section">
-      <div className="abbox wow animate__fadeInUp">
+    <section
+      className="section about-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="1s"
+    >
+      <div className="abbox">
         <h2 className="section-title">What is HackTheSpace?</h2>
         {wihts.map((d, index) => (
           <React.Fragment key={d.id}>
