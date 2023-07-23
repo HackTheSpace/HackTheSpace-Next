@@ -2,6 +2,7 @@ import SectionLayout from "../SectionLayout";
 import QuestionComp from "./QuestionComp";
 import { questionConfig } from "../../config/questions";
 import { useState } from "react";
+import Image from "next/image";
 
 const ColComponent = ({ children }) => {
   return <div className="col">{children}</div>;
@@ -29,6 +30,25 @@ const FAQS = () => {
             ))}
           </ColComponent>
         ))}
+      </div>
+      <div className="planet1">
+        <Image
+          src="/images/planet1.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
+      </div>
+
+      <div className="planet2">
+        <Image
+          src="/images/planet2.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
       </div>
     </SectionLayout>
   );

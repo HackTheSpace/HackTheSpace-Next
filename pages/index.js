@@ -17,11 +17,10 @@ const index = () => {
 
 
   useEffect(() => {
-    import('wow.js').then((WOW) => {
+    import("wow.js").then((WOW) => {
       new WOW.default().init();
     });
   }, []);
-
 
   return (
     <Layout>
@@ -34,8 +33,8 @@ const index = () => {
       <Schedule />
       <Sponsor />
       <WhySponsor />
-      <FAQS />
       <Organiser />
+      <FAQS />
     </Layout>
   );
 };

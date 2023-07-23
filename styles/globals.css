@@ -33,7 +33,7 @@
   --secondary-black: rgba(0, 0, 0, 0.3);
   --primary-pink: #9b5bf5;
   --white: #fff;
-  --animate-duration: 10000ms  !important;
+  --animate-duration: 1000ms  !important;
   --animate-delay: 0.9s !important;
 }
 

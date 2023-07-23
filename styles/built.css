@@ -69,7 +69,7 @@
   align-items: center;
   position: relative;
 
-  animation: rotateCircle 15s infinite linear;
+  animation: rotateCircle 18s infinite linear;
   scale: 0.9;
   /* margin-top: -1rem; */
 }
@@ -130,7 +130,23 @@
 .built-section .planet img {
   width: 100%;
   height: 100%;
-  /* animation: rotateCircle 6s infinite linear; */
+  animation: rotateCircle 16s infinite linear;
+}
+
+.built-section .cloud {
+  position: absolute;
+  transform: translate(-100%, -55%);
+  animation: floatCloudOne 8s linear infinite;
+}
+
+.built-section .cloudOne {
+  top: 53%;
+  left: 50%;
+}
+
+.built-section .cloudTwo {
+  top: 58%;
+  left: 54%;
 }
 
 @keyframes rotateCircle {
@@ -139,6 +155,16 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes floatCloudOne {
+  0%,
+  100% {
+    transform: translate(-90%, -55%);
+  }
+  50% {
+    transform: translate(-110%, -55%);
   }
 }
 
@@ -158,7 +184,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  animation: rotateText 15s infinite linear;
+  animation: rotateText 18s infinite linear;
 }
 
 @keyframes rotateText {
@@ -247,6 +273,20 @@
   .super-outer-circle {
     scale: 0.6;
     margin-top: -7rem;
+  }
+
+  .built-section .cloud {
+    scale: 0.7;
+  }
+
+  .built-section .cloudOne {
+    top: 38%;
+    left: 50%;
+  }
+
+  .built-section .cloudTwo {
+    top: 44%;
+    left: 59%;
   }
 }
 
