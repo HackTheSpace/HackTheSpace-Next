@@ -8,8 +8,6 @@ const BackToTop = () => {
   const [show, setShow] = useState(false);
   const [showFire, setShowFire] = useState(false);
 
-  // console.log(show);
-
   useEffect(() => {
     window.onscroll = () => {
       if (window.scrollY > 300) {

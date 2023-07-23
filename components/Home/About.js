@@ -5,8 +5,12 @@ import Image from "next/image";
 const About = () => {
   const { about } = infoConfig;
   return (
-    <section id="about" className="section about-section">
-      <div className="wow animate__fadeInUp abbox">
+    <section
+      id="about"
+      className="section about-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="1s"
+    >
+      <div className="abbox">
         <h2 className="section-title">About Us</h2>
         {about.map((d) => (
           <React.Fragment key={d.id}>
