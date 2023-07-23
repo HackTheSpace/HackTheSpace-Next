@@ -61,6 +61,33 @@ const Journey = () => {
         width={50}
         height={40}
       />
+            <div className="stars">
+        <Image
+          src="/images/stars.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
+      </div>
+      <div className="pattern3">
+        <Image
+          src="/images/pattern3.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
+      </div>
+      <div className="pattern4">
+        <Image
+          src="/images/pattern4.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
+      </div>
     </SectionLayout>
   );
 };

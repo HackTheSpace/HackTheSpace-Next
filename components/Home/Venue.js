@@ -1,4 +1,5 @@
 import SectionLayout from "../SectionLayout";
+import Image from "next/image";
 
 const Venue = () => {
   return (
@@ -44,6 +45,15 @@ const Venue = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+      </div>
+      <div className="aconst6">
+        <Image
+          src="/images/aconst6.svg"
+          alt="hack the space const"
+          className="opaque8"
+          width={300}
+          height={300}
+        />
       </div>
     </SectionLayout>
   );
