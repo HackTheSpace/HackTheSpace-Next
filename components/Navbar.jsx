@@ -4,18 +4,18 @@ import React, {useState } from "react";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
-    const handleScroll = (e) => {
+     const handleScroll = (e) => {
         // first prevent the default behavior
-        e.preventDefault();
-        // get the href and remove everything before the hash (#)
-        const href = e.currentTarget.href;
-        const targetId = href.replace(/.*\#/, "");
-        // get the element by id and use scrollIntoView
-        const elem = document.getElementById(targetId);
-        elem?.scrollIntoView({
-          behavior: "smooth",
-        });
-      };
+         e.preventDefault();
+         // get the href and remove everything before the hash (#)
+         const href = e.currentTarget.href;
+         const targetId = href.replace(/.*\#/, "");
+         // get the element by id and use scrollIntoView
+         const elem = document.getElementById(targetId);
+         elem?.scrollIntoView({
+           behavior: "smooth",
+         });
+       };
       
 
     return (
@@ -30,16 +30,16 @@ const Navbar = () => {
                             : `translate(100%, 0)`,
                     }}
                 >
-                    <Link href="#home" className="active">
+                    <Link href="#home" className="active" onClick={handleScroll}>
                         Home
                     </Link >
                     <Link href="#about" onClick={handleScroll}>About</Link >
                     {/* <!-- <Link href="#" >Tracks</Link > --> */}
-                    <Link href="#schedule">Schedule</Link >
-                    <Link href="#sponsors">Sponsors</Link >
-                    <Link href="#organiser">Team</Link >
-                    <Link href="#faqs">FAQs</Link >
-                    <Link href="#contact">Contact</Link >
+                    <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
+                    <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
+                    <Link href="#organiser" onClick={handleScroll}>Team</Link >
+                    <Link href="#faqs" onClick={handleScroll}>FAQs</Link >
+                    <Link href="#contact" onClick={handleScroll}>Contact</Link >
                 </div>
 
                 <div
@@ -123,15 +123,15 @@ const Navbar = () => {
                     </Link >
                 </div>
                 <div className="links">
-                    <Link href="#home">Home</Link >
-                    <Link href="#about">About</Link >
+                    <Link href="#home" onClick={handleScroll}>Home</Link >
+                    <Link href="#about" onClick={handleScroll}>About</Link >
                     {/* <!-- <Link href="#">Tracks</Link > --> */}
                     {/* <!-- <Link href="#">Prizes</Link > --> */}
-                    <Link href="#schedule">Schedule</Link >
-                    <Link href="#sponsors">Sponsors</Link >
-                    <Link href="#organiser">Team</Link >
-                    <Link href="#faqs">FAQs</Link >
-                    <Link href="#contact">Contact</Link >
+                    <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
+                    <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
+                    <Link href="#organiser" onClick={handleScroll}>Team</Link >
+                    <Link href="#faqs" onClick={handleScroll}>FAQs</Link >
+                    <Link href="#contact" onClick={handleScroll}>Contact</Link >
                 </div>
                 <div className="mlh-flag" style={{ opacity: "0" }}>
                     <img
