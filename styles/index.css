@@ -11,6 +11,7 @@
   height: 100%;
   margin: 9rem 0;
   color: var(--white);
+  scroll-margin-top: 5rem;
 }
 
 .section-title {
@@ -155,6 +156,6 @@
   opacity: 1;
 }
 
-.none{
+.none {
   display: none !important;
 }
