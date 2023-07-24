@@ -34,7 +34,7 @@ const Journey = () => {
               <div className="center-circle">
                 <div className="planet">
                   <Image
-                    src={"/images/built/planet.png"}
+                    src={"/images/built/planet.svg"}
                     alt=""
                     width={100}
                     height={100}
@@ -60,7 +60,7 @@ const Journey = () => {
         width={50}
         height={40}
       />
-            <div className="stars">
+      <div className="stars">
         <Image
           src="/images/stars.svg"
           alt="hack the space const"

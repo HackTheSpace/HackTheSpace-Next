@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Script from "next/script";
 
 const Landing = () => {
   const [title, setTitle] = useState("THINK. BUILD. LAUNCH.");
@@ -98,6 +99,7 @@ const Landing = () => {
           alt="Hack the space Hackathon Constellation"
         />
       </div>
+      <Script src="https://apply.devfolio.co/v2/sdk.js" async defer />
     </section>
   );
 };
