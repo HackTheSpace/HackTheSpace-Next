@@ -69,8 +69,8 @@ const Landing = () => {
         <div className="butHolder">
           <div
             className="apply-button"
-            dataHackathonSlug="hackthespace-1"
-            dataButtonTheme="light"
+            data-hackathon-slug="hackthespace-1"
+            data-button-theme="light"
             style={{ height: "56px", width: "305px" }}
           ></div>
 
