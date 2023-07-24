@@ -19,6 +19,20 @@ const About = () => {
               <br />
             </React.Fragment>
           ))}
+          <div class="rstar">
+            <img
+              class="topstar"
+              src="/images/images/spaceship.png"
+              alt="Hack the space Hackathon Star"
+            />
+          </div>
+          <div class="frm about-frm">
+            <img
+              class="botstar"
+              src="/images/About/planet.webp"
+              alt="Hack the space Hackathon Planet"
+            />
+          </div>
         </div>
       </div>
       <div className="aconst1">

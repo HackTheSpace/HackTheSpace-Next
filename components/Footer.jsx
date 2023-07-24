@@ -21,11 +21,6 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
-                MLH Code of Conduct
-              </Link>
-            </li>
-            <li>
               <Link href="https://devfolio.co/code-of-conduct">
                 Devfolio Code of Conduct
               </Link>
@@ -98,7 +93,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="footer-ke-neeche">
-        <p>Made with ❤️ by the HackTheSpace Tech Team</p>
+        <p>Made with ❤️ by the Team HackTheSpace</p>
       </div>
     </>
   );
