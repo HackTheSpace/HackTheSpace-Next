@@ -8,6 +8,7 @@
   /* min-height: 100vh; */
   color: var(--white);
   margin: 5rem 0 15rem;
+  height: 25rem;
 }
 
 .abdiv#wihts {
@@ -50,9 +51,21 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  height: 100%;
 }
 
-.abbox p {
+.paraDiv {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.paraDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.paraDiv p {
   padding: 0 3rem 0.5rem;
   font-size: 1.1rem;
   line-height: 1.9rem;
@@ -132,7 +145,7 @@
     margin: 0;
   }
 
-  .abbox p {
+  .paraDiv p {
     font-size: 1rem;
     padding: 0;
     padding-top: 1rem;
@@ -185,6 +198,13 @@
     z-index: -1;
     animation: floatx 3.2s linear infinite;
   }
+}
+
+@media screen and (max-width: 500px) {
+  /* .paraDiv p {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  } */
 }
 
 @media screen and (min-width: 2000px) {

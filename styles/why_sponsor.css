@@ -95,7 +95,7 @@
 }
 
 .why-sponsor-section .card p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 0.08em;
   color: var(--white);
@@ -117,6 +117,10 @@
   .why-sponsor-section .btn-container {
     width: 50%;
     gap: 1rem;
+  }
+
+  .why-sponsor-section .card p {
+    font-size: 1.1rem;
   }
 }
 
