@@ -13,7 +13,7 @@ export const organiserConfig = {
     {
       id: 2,
       name: "Ayush Kumar Sahu",
-      title: "Operation & PR Lead",
+      title: "Operations & PR Lead",
       image: "/images/organisers/Ayush-min.jpg",
       imagePosition: "center",
       alt: "Hack the space Hackathon Organisers",

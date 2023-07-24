@@ -178,7 +178,8 @@
   text-align: center;
 }
 .Sponsor-name-container img {
-  width: 140px;
+  /* width: 140px; */
+  width: fit-content;
 }
 /* .name-inkind {
     right: 43.5%;
