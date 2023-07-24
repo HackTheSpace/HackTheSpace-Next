@@ -8,8 +8,12 @@ const Schedule = () => {
   const { data } = scheduleConfig;
 
   return (
-    <SectionLayout Classname={"schedule-section"} Title={"Schedule"}>
-      <div id="schedule" className="container">
+    <SectionLayout
+      Classname={"schedule-section"}
+      Title={"Schedule"}
+      id="schedule"
+    >
+      <div className="container">
         <Canvas />
         {data.map((d) => (
           <Day Day={d.Day} date={d.Date} key={d.Day}>

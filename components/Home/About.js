@@ -12,12 +12,14 @@ const About = () => {
     >
       <div className="abbox">
         <h2 className="section-title">About Us</h2>
-        {about.map((d) => (
-          <React.Fragment key={d.id}>
-            <p>{d.data}</p>
-            <br />
-          </React.Fragment>
-        ))}
+        <div className="paraDiv">
+          {about.map((d) => (
+            <React.Fragment key={d.id}>
+              <p>{d.data}</p>
+              <br />
+            </React.Fragment>
+          ))}
+        </div>
       </div>
       <div className="aconst1">
         <Image

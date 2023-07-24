@@ -12,12 +12,14 @@ const Wihts = () => {
     >
       <div className="abbox">
         <h2 className="section-title">What is HackTheSpace?</h2>
-        {wihts.map((d, index) => (
-          <React.Fragment key={d.id}>
-            <br key={index} />
-            <p key={d.id}>{d.data}</p>
-          </React.Fragment>
-        ))}
+        <div className="paraDiv">
+          {wihts.map((d, index) => (
+            <React.Fragment key={d.id}>
+              <br key={index} />
+              <p key={d.id}>{d.data}</p>
+            </React.Fragment>
+          ))}
+        </div>
       </div>
       <div className="aconst1">
         <Image

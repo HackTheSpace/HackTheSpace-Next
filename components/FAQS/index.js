@@ -13,8 +13,8 @@ const FAQS = () => {
   const [toggle, setToggle] = useState(null);
 
   return (
-    <SectionLayout Classname={"faqs-section"} Title={"Faqs"}>
-      <div id="faqs" className="container">
+    <SectionLayout Classname={"faqs-section"} Title={"Faqs"} id="faqs">
+      <div className="container">
         {data.map((q) => (
           <ColComponent key={q.id}>
             {q.Questions.map((quest) => (

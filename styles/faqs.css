@@ -131,12 +131,13 @@
 @media screen and (max-width: 600px) {
   .faqs-section .container .question-box .question {
     height: auto;
+    font-size: medium;
   }
-}
-@media screen and (max-width: 600px) {
-  .faqs-section .container .question-box .question {
-    height: auto;
+
+  .faqs-section .container .question-box .answer {
+    font-size: small;
   }
+
   .planet1 img {
     height: 60px;
     width: 40px;
