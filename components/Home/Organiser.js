@@ -108,6 +108,8 @@ const Organiser = () => {
                 href={item.href}
                 data-head={item.name}
                 data-para={item.title}
+                onMouseEnter={() => handleMouseEnter(item.name, item.title)}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
                   className="links team-core2"

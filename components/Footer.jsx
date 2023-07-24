@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="footer-ke-neeche">
-        <p>Made with ❤️ by Team HackTheSpace</p>
+        <p>Made with ❤️ by the HackTheSpace Tech Team</p>
       </div>
     </>
   );

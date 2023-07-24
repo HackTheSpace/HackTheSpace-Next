@@ -38,7 +38,7 @@ export const organiserConfig = {
       imagePosition: "top",
       alt: "Hack the space Hackathon Organisers",
       twitter: "https://twitter.com/vinitpal_arora",
-      linkedin: "www.linkedin.com/in/vinitpal-singh",
+      linkedin: "https://www.linkedin.com/in/vinitpal-singh",
     },
     {
       id: 5,
@@ -105,7 +105,7 @@ export const organiserConfig = {
       image: "/images/CoreTeam/Lomesh Patil.jpg",
     },
     {
-      href: "https://www.linkedin.com/in/ mohit-makda-608849221",
+      href: "https://www.linkedin.com/in/mohit-makda-608849221",
       name: "Mohit Makda",
       title: "Tech Team",
       image: "/images/CoreTeam/Mohit Makda.jpeg",
