@@ -11,11 +11,10 @@ import Venue from "../components/Home/Venue";
 import Sponsor from "../components/Sponsor";
 import WhySponsor from "../components/Home/WhySponsor";
 import Organiser from "../components/Home/Organiser";
-import 'animate.css';
+import "animate.css";
+import Tracks from "../components/Home/Tracks";
 
 const index = () => {
-
-
   useEffect(() => {
     import("wow.js").then((WOW) => {
       new WOW.default().init();
@@ -24,13 +23,14 @@ const index = () => {
 
   return (
     <Layout>
-      <Preloader />
+      {/* <Preloader /> */}
       <Landing />
       <About />
       <Wihts />
       <Journey />
       <Venue />
       <Schedule />
+      <Tracks />
       <Sponsor />
       <WhySponsor />
       <Organiser />
