@@ -19,4 +19,11 @@ export const infoConfig = {
       data: "During the event, participants will work in teams to develop innovative ideas that can solve real-world problems. They will be encouraged to use their creativity, technical skills, and critical thinking abilities to develop solutions that are both practical and effective.",
     },
   ],
+  Hackathon:
+  {
+    data: "Still Confused What a Hackathon is, know more about Hackathon ",
+    link: "https://help.mlh.io/content/what-is-a-hackathon",
+  }
+
+
 };

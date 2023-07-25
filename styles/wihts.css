@@ -11,6 +11,13 @@
   justify-content: space-between;
   position: relative;
 }
+.paraDiv a{
+  color: blueviolet ;
+  font-weight: bold ;
+}
+.paraDiv a:hover{
+  text-decoration: underline;
+}
 
 .aconst1{
   position: absolute;

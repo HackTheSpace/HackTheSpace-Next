@@ -2,9 +2,11 @@
 import { infoConfig } from "../../config/info";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Wihts = () => {
   const { wihts } = infoConfig;
+  const { Hackathon } = infoConfig;
   return (
     <section
       className="section about-section wow animate__animated animate__fadeInUp"
@@ -19,6 +21,8 @@ const Wihts = () => {
               <p key={d.id}>{d.data}</p>
             </React.Fragment>
           ))}
+          <p>{Hackathon.data}<Link target="_blank" href={Hackathon.link}>here..</Link></p>
+
           <div className="frm">
             <img
               src="/images/images/greenplanet.png"

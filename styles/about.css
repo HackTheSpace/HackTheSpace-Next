@@ -7,8 +7,8 @@
   overflow-x: clip;
   /* min-height: 100vh; */
   color: var(--white);
-  height: 25rem;
-  margin: 15rem 0;
+  /* height: 25rem; */
+  margin: 10rem 0;
   scroll-margin-top: 8rem;
 }
 
@@ -45,22 +45,22 @@
   border-radius: 86px;
   border-color: transparent;
   text-align: justify;
-  padding: 2rem 2rem 4rem;
+  padding: 2rem 2rem 2rem;
   width: 72.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  height: 100%;
+  height: fit-content;
 }
 
-.paraDiv {
+/* .paraDiv {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-}
+} */
 
 .paraDiv::-webkit-scrollbar {
   display: none;
