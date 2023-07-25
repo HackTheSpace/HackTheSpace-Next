@@ -12,10 +12,11 @@
 @import "./why_sponsor.css";
 @import "./sponsor-prizes.css";
 @import "./footer.css";
+@import "./tracks.css";
 @import "./faqs.css";
 @import "./built.css";
 @import "./animated.css";
-@import 'animate.css';
+@import "animate.css";
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +34,7 @@
   --secondary-black: rgba(0, 0, 0, 0.3);
   --primary-pink: #9b5bf5;
   --white: #fff;
-  --animate-duration: 1000ms  !important;
+  --animate-duration: 1000ms !important;
   --animate-delay: 0.9s !important;
 }
 

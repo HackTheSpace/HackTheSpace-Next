@@ -19,13 +19,13 @@ const Wihts = () => {
               <p key={d.id}>{d.data}</p>
             </React.Fragment>
           ))}
-          <div class="frm">
+          <div className="frm">
             <img
               src="/images/images/greenplanet.png"
               alt="Hack the space Hackathon planet"
             />
           </div>
-          <div class="asrt">
+          <div className="asrt">
             <img
               src="/images/images/astronaut.png"
               alt="Hack the space Hackathon planet"

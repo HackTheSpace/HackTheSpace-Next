@@ -35,8 +35,8 @@ const Navbar = () => {
                         Home
                     </Link >
                     <Link href="#about" onClick={handleScroll}>About</Link >
-                    {/* <!-- <Link href="#" >Tracks</Link > --> */}
                     <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
+                    <Link href="#tracks" onClick={handleScroll}>Tracks</Link >
                     <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
                     <Link href="#organiser" onClick={handleScroll}>Team</Link >
                     <Link href="#faqs" onClick={handleScroll}>FAQs</Link >
@@ -126,9 +126,9 @@ const Navbar = () => {
                 <div className="links">
                     <Link href="#home" onClick={handleScroll}>Home</Link >
                     <Link href="#about" onClick={handleScroll}>About</Link >
-                    {/* <!-- <Link href="#">Tracks</Link > --> */}
                     {/* <!-- <Link href="#">Prizes</Link > --> */}
                     <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
+                    <Link href="#tracks" onClick={handleScroll}>Tracks</Link >
                     <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
                     <Link href="#organiser" onClick={handleScroll}>Team</Link >
                     <Link href="#faqs" onClick={handleScroll}>FAQs</Link >

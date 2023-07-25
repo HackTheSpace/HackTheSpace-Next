@@ -7,8 +7,9 @@
   overflow-x: clip;
   /* min-height: 100vh; */
   color: var(--white);
-  margin: 5rem 0 15rem;
   height: 25rem;
+  margin: 15rem 0;
+  scroll-margin-top: 8rem;
 }
 
 .abdiv#wihts {
