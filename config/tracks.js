@@ -38,4 +38,14 @@ export const trackConfig = [
     ],
     link: "https://replit.com/@devfolio/IPFSFilecoin-Template?v=1#README.md",
   },
+  {
+    id: "5",
+    logo: "./images/sponsor/Polygon_Logo-Colored@2x.png",
+    data: [
+      "Swag Kit for best use of public APIs",
+      "Swag Kit for best postman public workspace",
+      "Swag kit will contain 5 items",
+    ],
+    link: "https://docs.google.com/document/d/1ySL4YVkxLa_SB-04W-zducxrbW-VQ9YWh6uqMPZ9etM/edit#heading=h.478t5udaj3se",
+  },
 ];
