@@ -25,7 +25,7 @@ const Wihts = () => {
 
           <div className="frm">
             <img
-              src="/images/images/greenplanet.png"
+              src="/images/images/rocketlaunch.svg"
               alt="Hack the space Hackathon planet"
             />
           </div>

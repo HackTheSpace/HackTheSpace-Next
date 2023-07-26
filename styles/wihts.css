@@ -63,11 +63,12 @@
 }
 .frm {
   position: absolute;
-  bottom: -5%;
-  right: -16%;
+  bottom:-12%;
+  right: -14%;
 }
 .frm img {
   width: 70%;
+  max-width: 280px;
   animation: rotate 7s infinite;
 }
 
@@ -112,12 +113,12 @@
 }
 @media only screen and (max-width: 768px) {
   .frm {
-    bottom: -3%;
-    right: -60%;
+    bottom: -5%;
+    right: -50%;
   }
 
   .frm img {
-    width: 50%;
+    width: 40%;
   }
  
   .asrt {
