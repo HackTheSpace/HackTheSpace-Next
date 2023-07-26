@@ -57,7 +57,7 @@ const About = () => {
 
       <div className="pattern7">
         <Image
-          src="/images/pattern4.svg"
+          src="/images\Constillations\Moon.svg"
           alt="hack the space const"
           className="opaque8"
           width={300}
