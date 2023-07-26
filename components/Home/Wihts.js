@@ -13,8 +13,8 @@ const Wihts = () => {
       data-wow-duration="1s"
     >
       <div className="abbox">
-        <h2 className="section-title">What is HackTheSpace?</h2>
-        <div className="paraDiv">
+        <h2 className="section-title">WHAT IS HACKTHESPACE?</h2>
+        <div className="paraDiv" style={{ zIndex: 100 }}>
           {wihts.map((d, index) => (
             <React.Fragment key={d.id}>
               <br key={index} />

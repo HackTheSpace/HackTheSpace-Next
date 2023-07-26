@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WhySponsor = () => {
   return (
-    <SectionLayout Title="Why Sponsor Us?" Classname={"why-sponsor-section"}>
+    <SectionLayout Title="WHY SPONSOR US?" Classname={"why-sponsor-section"}>
       <div className="container">
         <div className="card">
           <div className="card-title">

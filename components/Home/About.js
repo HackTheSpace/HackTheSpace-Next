@@ -11,7 +11,7 @@ const About = () => {
       data-wow-duration="1s"
     >
       <div className="abbox">
-        <h2 className="section-title">About Us</h2>
+        <h2 className="section-title">ABOUT US</h2>
         <div className="paraDiv">
           {about.map((d) => (
             <React.Fragment key={d.id}>

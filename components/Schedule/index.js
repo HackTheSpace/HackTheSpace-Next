@@ -10,7 +10,7 @@ const Schedule = () => {
   return (
     <SectionLayout
       Classname={"schedule-section"}
-      Title={"Schedule"}
+      Title={"SCHEDULE"}
       id="schedule"
     >
       <div className="container">

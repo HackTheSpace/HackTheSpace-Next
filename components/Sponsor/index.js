@@ -24,7 +24,7 @@ const Sponsor = () => {
   return (
     <SectionLayout
       Classname={"sponsor-section"}
-      Title={"Sponsors & partners"}
+      Title={"SPONSORS & PARTNERS"}
       id="sponsors"
     >
       <div className="sponsor-container">

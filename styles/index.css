@@ -29,7 +29,7 @@
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .go-to-top-btn {

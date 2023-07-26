@@ -23,7 +23,7 @@ const Organiser = () => {
   return (
     <SectionLayout
       id="organiser"
-      Title={"Organisers"}
+      Title={"ORGANISERS"}
       Classname={"organiser-section"}
     >
       <div className="container wow animate__animated animate__fadeInUp">
