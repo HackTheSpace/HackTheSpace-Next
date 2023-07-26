@@ -40,7 +40,7 @@ export const trackConfig = [
   },
   {
     id: "5",
-    logo: "./images/sponsor\Postman-logo.png",
+    logo: "./images/sponsor/Postman-logo.png",
     data: [
       "Swag Kit for best use of public APIs",
       "Swag Kit for best postman public workspace",
