@@ -69,12 +69,6 @@ export const organiserConfig = {
       image: "/images/CoreTeam/Abhinav Goyal.jpg",
     },
     {
-      href: "https://www.linkedin.com/in/aditi-sharma-622393238",
-      name: "Aditi Sharma",
-      title: "Content Team",
-      image: "/images/CoreTeam/ADITI SHARMA.jpg",
-    },
-    {
       href: "#",
       name: "Akshat Sahu",
       title: "Graphics Team",
