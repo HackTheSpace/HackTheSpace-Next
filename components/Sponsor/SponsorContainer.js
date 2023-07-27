@@ -8,7 +8,11 @@ const SponsorContainer = ({ Name, Img, Type, children }) => {
         <Image
           src={Img}
           alt={Name}
-          style={Name === "inkind" ? { opacity: "0" } : {}}
+          style={
+            Name === "inkind" || Name === "hiringPartner"
+              ? { opacity: "0" }
+              : {}
+          }
           width={100}
           height={Name === "gold" ? 130 : 100}
         />

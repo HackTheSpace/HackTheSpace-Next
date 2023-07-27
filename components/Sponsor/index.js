@@ -19,7 +19,7 @@ const SponsorWrapper = ({ Img, Name }) => {
 };
 
 const Sponsor = () => {
-  const { gold, silver, bronze, inkind } = sponsorConfig;
+  const { gold, silver, bronze, inkind, hiringPartner } = sponsorConfig;
 
   return (
     <SectionLayout
@@ -73,6 +73,19 @@ const Sponsor = () => {
               key={sponsor.id}
               Name={sponsor.Name}
               Img={sponsor.Img}
+            />
+          ))}
+        </SponsorContainer>
+        <SponsorContainer
+          Name={hiringPartner.Name}
+          Img={hiringPartner.Img}
+          Type={hiringPartner.Type}
+        >
+          {hiringPartner.Partner.map((partner) => (
+            <SponsorWrapper
+              key={partner.id}
+              Name={partner.Name}
+              Img={partner.Img}
             />
           ))}
         </SponsorContainer>

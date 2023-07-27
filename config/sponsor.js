@@ -91,6 +91,24 @@ export const sponsorConfig = {
         Name: "Rosenfeld",
         Img: "/images/sponsor/Rosenfeld-logo.png",
       },
+      {
+        id: "6",
+        Name: "Keploy",
+        Img: "/images/sponsor/keploy-logo.png",
+      },
+    ],
+  },
+  hiringPartner: {
+    id: "5",
+    Name: "hiringPartner",
+    Img: "/images/sponsor/Comet logo.png",
+    Type: "HIRING PARTNERS",
+    Partner: [
+      {
+        id: "1",
+        Name: "Bluelearn",
+        Img: "/images/sponsor/Bluelearn.svg",
+      },
     ],
   },
 };
