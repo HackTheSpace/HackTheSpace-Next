@@ -103,11 +103,26 @@ export const sponsorConfig = {
     Name: "hiringPartner",
     Img: "/images/sponsor/Comet logo.png",
     Type: "HIRING PARTNERS",
+    wid: "w-15",
     Partner: [
       {
         id: "1",
         Name: "Bluelearn",
         Img: "/images/sponsor/Bluelearn.svg",
+      },
+    ],
+  },
+  mediaPartner: {
+    id: "6",
+    Name: "mediaPartner",
+    Img: "/images/sponsor/Comet logo.png",
+    Type: "MEDIA PARTNERS",
+    wid: "w-16",
+    Partner: [
+      {
+        id: "1",
+        Name: "Shutter-Stories",
+        Img: "/images/sponsor/shutter_stories.png",
       },
     ],
   },

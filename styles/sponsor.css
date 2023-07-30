@@ -56,7 +56,8 @@
 .sponsor-section .sponsor.inkind .wrapper .card::after,
 .sponsor-section .sponsor.silver .wrapper .card::after,
 .sponsor-section .sponsor.bronze .wrapper .card::after,
-.sponsor-section .sponsor.hiringPartner .wrapper .card::after {
+.sponsor-section .sponsor.hiringPartner .wrapper .card::after,
+.sponsor-section .sponsor.mediaPartner .wrapper .card::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -123,7 +124,8 @@
 }
 
 .sponsor-section .sponsor.inkind .wrapper .card::after,
-.sponsor-section .sponsor.hiringPartner .wrapper .card::after {
+.sponsor-section .sponsor.hiringPartner .wrapper .card::after,
+.sponsor-section .sponsor.mediaPartner .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(112, 112, 111, 0.1),
@@ -207,7 +209,12 @@
   right: 21%;
   opacity: 0.4;
 }
-
+.w-16{
+  width: 16%;
+}
+.w-15{
+  width: 15%;
+}
 @media only screen and (max-width: 768px) {
   /* .sponsor-name {
     right: 32%;
