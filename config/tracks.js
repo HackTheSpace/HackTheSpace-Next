@@ -46,6 +46,5 @@ export const trackConfig = [
       "Swag Kit for best postman public workspace",
       "Swag kit will contain 5 items",
     ],
-    link: "#",
   },
 ];

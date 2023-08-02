@@ -27,7 +27,7 @@ export const organiserConfig = {
       image: "/images/organisers/Fani-min.jpg",
       imagePosition: "top",
       alt: "Hack the space Hackathon Organisers",
-      twitter: "https://www.behance.net/FaniSahu",
+      twitter: "https://twitter.com/fani_sahu",
       linkedin: "https://www.linkedin.com/in/fanibhushan-sahu-347697234",
     },
     {

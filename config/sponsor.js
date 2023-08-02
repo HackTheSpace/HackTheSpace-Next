@@ -9,6 +9,11 @@ export const sponsorConfig = {
         Name: "Github",
         Img: "/images/sponsor/Github_Logo.svg",
       },
+      {
+        id: "2",
+        Name: "Quine",
+        Img: "/images/sponsor/QuineDark_Logo.svg",
+      },
     ],
   },
 

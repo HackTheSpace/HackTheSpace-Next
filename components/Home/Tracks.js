@@ -16,9 +16,13 @@ const TrackCard = ({ logo, data, link }) => {
           ))}
         </ul>
       </div>
-      <Link target="_blank" href={link}>
-        View more
-      </Link>
+      {link ? (
+        <Link target="_blank" href={link}>
+          View more
+        </Link>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
