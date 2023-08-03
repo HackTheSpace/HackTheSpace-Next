@@ -46,7 +46,7 @@ export const questionConfig = {
         {
           id: "8",
           Q: "Number of hours hackathon is going to last?",
-          A: "The hackathon will last for 24 hours from 11:00 AM on 8th September to 11:00 AM on 9th September till 11:00 AM.",
+          A: "The hackathon will last for 24 hours from 11:00 AM on 8th September to 11:00 AM on 9th September",
         },
         {
           id: "9",
