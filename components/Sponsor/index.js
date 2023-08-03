@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const SponsorWrapper = ({ Img, Name, Link }) => {
   return (
-    <a href={Link || "#"} target="_blank">
-      <div className="card">
-        <div className="pic">
-          <Image
-            src={Img}
-            alt={`${Name.toUpperCase()} LOGO`}
-            width={100}
-            height={100}
-          />
-        </div>
+    // <a href={Link || "#"} target="_blank">
+    <div className="card">
+      <div className="pic">
+        <Image
+          src={Img}
+          alt={`${Name.toUpperCase()} LOGO`}
+          width={100}
+          height={100}
+        />
       </div>
-    </a>
+    </div>
+    // </a>
   );
 };
 

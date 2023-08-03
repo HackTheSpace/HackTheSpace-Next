@@ -1,7 +1,7 @@
 export const trackConfig = [
   {
     id: "1",
-    logo: "/images/sponsor/Polygon_Logo-Colored@2x.png",
+    logo: "/images/sponsor/Polygon_Logo-White@2x.png",
     data: [
       "₹10,000 for the best hack built on Ethereum, or",
       "₹15,000 for the best hack built on Ethereum + Polygon",
