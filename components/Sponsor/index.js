@@ -3,23 +3,26 @@ import { sponsorConfig } from "../../config/sponsor";
 import SponsorContainer from "./SponsorContainer";
 import Image from "next/image";
 
-const SponsorWrapper = ({ Img, Name }) => {
+const SponsorWrapper = ({ Img, Name, Link }) => {
   return (
-    <div className="card">
-      <div className="pic">
-        <Image
-          src={Img}
-          alt={`${Name.toUpperCase()} LOGO`}
-          width={100}
-          height={100}
-        />
+    <a href={Link || "#"} target="_blank">
+      <div className="card">
+        <div className="pic">
+          <Image
+            src={Img}
+            alt={`${Name.toUpperCase()} LOGO`}
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
 const Sponsor = () => {
-  const { gold, silver, bronze, inkind, hiringPartner, mediaPartner } = sponsorConfig;
+  const { gold, silver, bronze, inkind, hiringPartner, mediaPartner } =
+    sponsorConfig;
 
   return (
     <SectionLayout
@@ -76,35 +79,37 @@ const Sponsor = () => {
             />
           ))}
         </SponsorContainer>
-        <SponsorContainer
-          Name={hiringPartner.Name}
-          Img={hiringPartner.Img}
-          Type={hiringPartner.Type}
-          wid={hiringPartner.wid}
-        >
-          {hiringPartner.Partner.map((partner) => (
-            <SponsorWrapper
-              key={partner.id}
-              Name={partner.Name}
-              Img={partner.Img}
 
-            />
-          ))}
-        </SponsorContainer>
-        <SponsorContainer
-          Name={mediaPartner.Name}
-          Img={mediaPartner.Img}
-          Type={mediaPartner.Type}
-          wid={mediaPartner.wid}
-        >
-          {mediaPartner.Partner.map((partner) => (
-            <SponsorWrapper
-              key={partner.id}
-              Name={partner.Name}
-              Img={partner.Img}
-            />
-          ))}
-        </SponsorContainer>
+        <div className="hiring-and-media">
+          <SponsorContainer
+            Name={hiringPartner.Name}
+            Img={hiringPartner.Img}
+            Type={hiringPartner.Type}
+            wid={hiringPartner.wid}
+          >
+            {hiringPartner.Partner.map((partner) => (
+              <SponsorWrapper
+                key={partner.id}
+                Name={partner.Name}
+                Img={partner.Img}
+              />
+            ))}
+          </SponsorContainer>
+          <SponsorContainer
+            Name={mediaPartner.Name}
+            Img={mediaPartner.Img}
+            Type={mediaPartner.Type}
+            wid={mediaPartner.wid}
+          >
+            {mediaPartner.Partner.map((partner) => (
+              <SponsorWrapper
+                key={partner.id}
+                Name={partner.Name}
+                Img={partner.Img}
+              />
+            ))}
+          </SponsorContainer>
+        </div>
       </div>
     </SectionLayout>
   );

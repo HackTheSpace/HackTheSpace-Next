@@ -1,47 +1,56 @@
-.track-section{
+.track-section {
   width: 80%;
   margin: auto;
 }
-.track-container{
+.track-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 4rem 0;
-  
+  gap: 2rem;
 }
 
-.Track-Card{
+.Track-Card {
   width: 240px;
   height: 340px;
-  border-radius:10px;
-  background: linear-gradient(180deg, #9A0FC6 0%, rgba(138, 10, 179, 0) 100%),linear-gradient(180deg, rgba(103, 18, 183, 0.78) 0%, rgba(138, 10, 179, 0.22) 100%);
-  background: linear-gradient(180deg, rgba(125, 0, 242,0.5) 0%, rgba(183, 65, 221,0.5) 100%);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9a0fc6 0%, rgba(138, 10, 179, 0) 100%),
+    linear-gradient(
+      180deg,
+      rgba(103, 18, 183, 0.78) 0%,
+      rgba(138, 10, 179, 0.22) 100%
+    );
+  background: linear-gradient(
+    180deg,
+    rgba(125, 0, 242, 0.5) 0%,
+    rgba(183, 65, 221, 0.5) 100%
+  );
   display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-  align-items:center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
   margin-top: 2rem;
 }
-.Track-Card ul{
+.Track-Card ul {
   padding: 0 1.2rem;
 }
 
 /* .Track-Card{ */
-  /* rgba(154, 15, 198, 1), rgba(138, 10, 178, 0) */
-.Track-Card .logo{
+/* rgba(154, 15, 198, 1), rgba(138, 10, 178, 0) */
+.Track-Card .logo {
   display: flex;
   align-items: center;
   width: 100%;
   min-height: 70px;
 }
-.Track-Card .logo img{
-  margin: 0 auto ;
+.Track-Card .logo img {
+  margin: 0 auto;
   width: 160px;
 }
 
-.Track-Card a:hover{
+.Track-Card a:hover {
   /* text-decoration: underline !important; */
   border-bottom: 1px solid var(--primary-blue);
   color: var(--primary-blue);

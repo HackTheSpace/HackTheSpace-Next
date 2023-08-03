@@ -12,7 +12,7 @@ export const sponsorConfig = {
       {
         id: "2",
         Name: "Quine",
-        Img: "/images/sponsor/QuineDark_Logo.svg",
+        Img: "/images/sponsor/Quine_whiteLogo.svg",
       },
     ],
   },
@@ -31,7 +31,7 @@ export const sponsorConfig = {
       {
         id: "2",
         Name: "Polygon",
-        Img: "/images/sponsor/Polygon_Logo-Colored@2x.png",
+        Img: "/images/sponsor/Polygon_Logo-White@2x.png",
       },
       {
         id: "3",
