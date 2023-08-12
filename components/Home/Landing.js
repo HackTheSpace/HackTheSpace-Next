@@ -60,12 +60,6 @@ const Landing = () => {
         <p className="title" id="title">
           {title}
         </p>
-        {/* <p style={{ marginTop: "0" }}>8 - 9 SEPTEMBER, 2023</p>
-        <p className="venue-text">
-          Shri Shankaracharya Technical Campus
-          <br />
-          Bhilai, Chhattisgarh
-        </p> */}
         <Countdown />
 
         <div className="butHolder">

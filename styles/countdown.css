@@ -126,6 +126,10 @@
   .countdown > h1 {
     font-size: 1.5rem;
   }
+
+  .venue-heading {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -149,11 +153,16 @@
   .rocket {
     width: 150px;
     height: 150px;
-    top: 40%;
+    top: 35%;
     right: 0%;
+    display: none;
   }
 
   .countdown > h1 {
     font-size: 1.2rem;
+  }
+
+  .venue-heading {
+    font-size: 0.8rem;
   }
 }

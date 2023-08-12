@@ -63,12 +63,6 @@ export const organiserConfig = {
   ],
   coreTeam: [
     {
-      href: "https://www.linkedin.com/in/abhinav-goyal2303",
-      name: "Abhinav Goyal",
-      title: "PR & Social Media",
-      image: "/images/CoreTeam/Abhinav Goyal.jpg",
-    },
-    {
       href: "#",
       name: "Akshat Sahu",
       title: "Graphics Team",
