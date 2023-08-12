@@ -98,8 +98,10 @@ const Countdown = () => {
   return (
     <>
       <div className="countdown">
-        <h3 className="venue-heading">Shri Shankaracharya Technical Campus</h3>
-        <h3 className="venue-heading">Bhilai, Chhattisgarh</h3>
+        <h3 className="venue-heading">
+          8th-9th September | Bhilai, Chhattisgarh
+        </h3>
+
         <Lottie play loop animationData={rocket} className="rocket" speed={1} />
         <div className="timerDiv">
           <div className="countdown__item">

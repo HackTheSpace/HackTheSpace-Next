@@ -4,20 +4,17 @@
   align-items: center;
 }
 
-.countdown > h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
+.venue-heading {
+  font-size: 1.2rem;
   z-index: 1;
+  text-align: center;
 }
 
 .rocket {
   position: absolute;
   top: 40%;
   right: 20%;
-  z-index: 0;
+  z-index: -1;
   opacity: 0.5;
   animation: rocket ease-in-out 0.5s infinite alternate;
   width: 300px;
@@ -123,12 +120,8 @@
     right: 0%;
   }
 
-  .countdown > h1 {
-    font-size: 1.5rem;
-  }
-
   .venue-heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -158,11 +151,7 @@
     display: none;
   }
 
-  .countdown > h1 {
-    font-size: 1.2rem;
-  }
-
   .venue-heading {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
