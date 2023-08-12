@@ -85,7 +85,7 @@ export const scheduleConfig = {
           Direction: "right",
           Img: "./images/schedule/venus.svg",
           Time: "11:30 AM - 12:30 PM",
-          Description: "Closing ceremony with Lunch & Networking",
+          Description: "Closing ceremony & Networking",
         },
       ],
     },
