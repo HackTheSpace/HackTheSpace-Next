@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Script from "next/script";
+import Countdown from "./Countdown";
 
 const Landing = () => {
   const [title, setTitle] = useState("THINK. BUILD. LAUNCH.");
@@ -59,12 +60,13 @@ const Landing = () => {
         <p className="title" id="title">
           {title}
         </p>
-        <p style={{ marginTop: "0" }}>8 - 9 SEPTEMBER, 2023</p>
+        {/* <p style={{ marginTop: "0" }}>8 - 9 SEPTEMBER, 2023</p>
         <p className="venue-text">
           Shri Shankaracharya Technical Campus
           <br />
           Bhilai, Chhattisgarh
-        </p>
+        </p> */}
+        <Countdown />
 
         <div className="butHolder">
           <div
