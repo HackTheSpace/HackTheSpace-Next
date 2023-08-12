@@ -1,0 +1,168 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.rocket {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  z-index: 0;
+  opacity: 0.5;
+  animation: rocket ease-in-out 0.5s infinite alternate;
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.timerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.countdown__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.countdown__item--number {
+  width: 50px;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  background: -webkit-linear-gradient(180deg, #b741dd 40%, #7d00f2 100%);
+  background: linear-gradient(180deg, #b741dd 47.2%, #7d00f2 90.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+
+.flip {
+  animation: flipnum ease-in-out 0.5s;
+}
+
+@keyframes flipnum {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  51% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.countdown__item--text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .countdown__item--number {
+    font-size: 2rem;
+  }
+
+  .countdown__item--text {
+    font-size: 1rem;
+  }
+
+  .countdown__item {
+    padding: 10px 15px;
+    width: 40px;
+  }
+
+  .timerDiv {
+    margin-bottom: 20px;
+  }
+
+  .rocket {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    right: 0%;
+  }
+
+  .countdown > h1 {
+    font-size: 1.5rem;
+  }
+
+  .venue-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown__item--number {
+    font-size: 1.5rem;
+  }
+
+  .countdown__item--text {
+    font-size: 0.8rem;
+  }
+
+  .countdown__item {
+    padding: 10px 10px;
+    width: 30px;
+  }
+
+  .timerDiv {
+    margin-bottom: 20px;
+  }
+
+  .rocket {
+    width: 150px;
+    height: 150px;
+    top: 35%;
+    right: 0%;
+    display: none;
+  }
+
+  .countdown > h1 {
+    font-size: 1.2rem;
+  }
+
+  .venue-heading {
+    font-size: 0.8rem;
+  }
+}
