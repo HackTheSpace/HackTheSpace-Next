@@ -34,6 +34,9 @@ const Navbar = () => {
           <Link href="#about" onClick={handleScroll}>
             About
           </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link>
@@ -43,9 +46,7 @@ const Navbar = () => {
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link>
-          <Link href="#organiser" onClick={handleScroll}>
-            Team
-          </Link>
+          {/* <Link href="#organiser" onClick={handleScroll}>Team</Link > */}
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link>
@@ -140,6 +141,9 @@ const Navbar = () => {
           <Link href="#about" onClick={handleScroll}>
             About
           </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
           {/* <!-- <Link href="#">Prizes</Link > --> */}
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
@@ -150,9 +154,9 @@ const Navbar = () => {
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link>
-          <Link href="#organiser" onClick={handleScroll}>
+          {/* <Link href="#organiser" onClick={handleScroll}>
             Team
-          </Link>
+          </Link> */}
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link>
