@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import rocket from "../../utils/Rocket/rocket.json";
 import Lottie from "react-lottie-player";
 
@@ -8,10 +8,12 @@ const Countdown = () => {
   const [mins, setMins] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
-  useEffect(() => {
-    const countdown = document.querySelector(".countdown");
-    const launchDate = new Date("Sept 8, 2023 11:00:00").getTime();
+  const launchDate = useMemo(
+    () => new Date("Sept 8, 2023 11:00:00").getTime(),
+    []
+  );
 
+  useEffect(() => {
     const intvl = setInterval(() => {
       const now = new Date().getTime();
       const distance = launchDate - now;
@@ -25,7 +27,6 @@ const Countdown = () => {
 
       if (distance < 0) {
         clearInterval(intvl);
-        countdown.style.display = "none";
       } else {
         setDays(days);
         setHours(hours);
@@ -39,60 +40,29 @@ const Countdown = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const secondsTop = document.querySelector(".seconds");
+  const animateFlip = (className) => {
+    const element = document.querySelector(className);
+    element.classList.add("flip");
 
-    secondsTop.classList.add("flip");
-
-    const flipTime = setTimeout(() => {
-      secondsTop.classList.remove("flip");
+    setTimeout(() => {
+      element.classList.remove("flip");
     }, 550);
+  };
 
-    return () => {
-      clearTimeout(flipTime);
-    };
+  useEffect(() => {
+    animateFlip(".seconds");
   }, [seconds]);
 
   useEffect(() => {
-    const minsTop = document.querySelector(".mins");
-
-    minsTop.classList.add("flip");
-
-    const flipTime = setTimeout(() => {
-      minsTop.classList.remove("flip");
-    }, 550);
-
-    return () => {
-      clearTimeout(flipTime);
-    };
+    animateFlip(".mins");
   }, [mins]);
 
   useEffect(() => {
-    const hoursTop = document.querySelector(".hours");
-
-    hoursTop.classList.add("flip");
-
-    const flipTime = setTimeout(() => {
-      hoursTop.classList.remove("flip");
-    }, 550);
-
-    return () => {
-      clearTimeout(flipTime);
-    };
+    animateFlip(".hours");
   }, [hours]);
 
   useEffect(() => {
-    const daysTop = document.querySelector(".days");
-
-    daysTop.classList.add("flip");
-
-    const flipTime = setTimeout(() => {
-      daysTop.classList.remove("flip");
-    }, 550);
-
-    return () => {
-      clearTimeout(flipTime);
-    };
+    animateFlip(".days");
   }, [days]);
 
   return (

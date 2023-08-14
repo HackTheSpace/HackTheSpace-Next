@@ -5,7 +5,6 @@ import Countdown from "./Countdown";
 import Typewriter from "./Typewriter";
 
 const Landing = () => {
-  console.log(1);
   return (
     <section
       id="home"
