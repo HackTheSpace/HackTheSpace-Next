@@ -2,38 +2,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Script from "next/script";
 import Countdown from "./Countdown";
+import Typewriter from "./Typewriter";
 
 const Landing = () => {
-  const [title, setTitle] = useState("THINK. BUILD. LAUNCH.");
-  let idx = 0;
-  let direction = 1;
-  let animationDelay = 100; // milliseconds
-  let pauseDelay = 2000; // milliseconds
-  function writeText() {
-    if (direction === 1) {
-      setTitle(title.slice(0, idx));
-      idx++;
-      if (idx > title.length) {
-        direction = -1;
-        idx = title.length;
-        setTimeout(writeText, pauseDelay);
-        return;
-      }
-    } else if (direction === -1) {
-      setTitle(title.slice(0, idx));
-      idx--;
-      if (idx < 0) {
-        direction = 1;
-        idx = 0;
-        setTimeout(writeText, pauseDelay);
-        return;
-      }
-    }
-
-    setTimeout(writeText, animationDelay);
-  }
-  useEffect(() => writeText(), []);
-
+  console.log(1);
   return (
     <section
       id="home"
@@ -57,9 +29,7 @@ const Landing = () => {
             height={100}
           />
         </div>
-        <p className="title" id="title">
-          {title}
-        </p>
+        <Typewriter />
         <Countdown />
 
         <div className="butHolder">
