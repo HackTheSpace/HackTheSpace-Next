@@ -21,11 +21,16 @@ const Wihts = () => {
               <p key={d.id}>{d.data}</p>
             </React.Fragment>
           ))}
-          <p>{Hackathon.data}<Link target="_blank" href={Hackathon.link}>here..</Link></p>
+          <p>
+            {Hackathon.data}
+            <Link target="_blank" href={Hackathon.link}>
+              here..
+            </Link>
+          </p>
 
           <div className="frm">
             <img
-              src="/images/images/greenplanet.png"
+              src="/images/images/pinkPlanet.png"
               alt="Hack the space Hackathon planet"
             />
           </div>

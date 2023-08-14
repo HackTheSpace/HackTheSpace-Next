@@ -11,15 +11,15 @@
   justify-content: space-between;
   position: relative;
 }
-.paraDiv a{
-  color: blueviolet ;
-  font-weight: bold ;
+.paraDiv a {
+  color: blueviolet;
+  font-weight: bold;
 }
-.paraDiv a:hover{
+.paraDiv a:hover {
   text-decoration: underline;
 }
 
-.aconst1{
+.aconst1 {
   position: absolute;
   bottom: 5%;
   right: 12%;
@@ -27,13 +27,13 @@
   animation: floatx 3.2s linear infinite;
 }
 
-.aconst1 img{
+.aconst1 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
 
-.aconst3{
+.aconst3 {
   position: absolute;
   bottom: 5%;
   right: 12%;
@@ -41,12 +41,11 @@
   animation: floatx 3.2s linear infinite;
 }
 
-.aconst3 img{
+.aconst3 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
-
 
 .pattern2 {
   position: absolute;
@@ -56,22 +55,20 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.pattern2 img{
+.pattern2 img {
   height: 80px;
   width: 80px;
   /* opacity: 0.8; */
 }
 .frm {
   position: absolute;
-  bottom: -5%;
+  bottom: -16%;
   right: -16%;
 }
 .frm img {
-  width: 70%;
+  width: 73%;
   animation: rotate 7s infinite;
 }
-
-
 
 @keyframes rotatefull {
   0% {
@@ -112,14 +109,14 @@
 }
 @media only screen and (max-width: 768px) {
   .frm {
-    bottom: -3%;
+    bottom: -8%;
     right: -60%;
   }
 
   .frm img {
     width: 50%;
   }
- 
+
   .asrt {
     top: -3%;
     left: -2%;
@@ -135,7 +132,7 @@
     animation: floatx 3.2s linear infinite;
     /* height: 10%; */
   }
-  .pattern2 img{
+  .pattern2 img {
     height: 60px;
     width: 60px;
     opacity: 0.8;

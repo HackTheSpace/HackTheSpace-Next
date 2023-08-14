@@ -26,7 +26,7 @@ export const questionConfig = {
         {
           id: "5",
           Q: "Can I participate alone or do I need a team?",
-          A: "You can participate in Hack the Space either as an individual or as a team. If you don't have a team, don't worry! We have dedicated discord channels to help you find teammates with similar interests. The team size can be of 2 to 4 members.",
+          A: "You are free to participate as an individual or as a team. We have a separate Discord Channel, where you can find teammates with similar interests. The team size can vary from 2 to 4 members.",
         },
       ],
     },
