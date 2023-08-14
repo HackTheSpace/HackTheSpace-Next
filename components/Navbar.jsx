@@ -112,15 +112,17 @@ const Navbar = () => {
 
             <div
               className="mlh-flag2 show"
-              style={{ display: "none" }}
+              // style={{ display: "none" }}
               name="menu-outline"
             >
-              <Image
-                src="/images/navbar/mlh_flag.png"
-                alt="mlh hack the space"
-                width={100}
-                height={100}
-              />
+              <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+                <Image
+                  src="/images/navbar/hts_flag.png"
+                  alt="mlh hack the space"
+                  width={100}
+                  height={100}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -162,8 +164,13 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div className="mlh-flag" style={{ opacity: "0" }}>
-          <img src="/images/navbar/mlh_flag.png" alt="mlh hack the space" />
+        <div
+          className="mlh-flag"
+          // style={{ opacity: "0" }}
+        >
+          <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+            <img src="/images/navbar/hts_flag.png" alt="mlh hack the space" />
+          </a>
         </div>
       </div>
     </nav>
