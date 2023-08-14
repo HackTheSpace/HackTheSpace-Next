@@ -198,11 +198,13 @@ nav .mobile-nav {
 
 .mlh-flag2 {
   width: fit-content;
-  top: 0%;
+  position: relative;
+  top: -6%;
 }
 
 .mlh-flag2 img {
-  width: 70px;
+  width: 55px;
+  height: 100%;
   z-index: 500;
 }
 
