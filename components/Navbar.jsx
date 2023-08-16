@@ -164,10 +164,7 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div
-          className="mlh-flag"
-          // style={{ opacity: "0" }}
-        >
+        <div className="mlh-flag">
           <a href="https://hackthespace-1.devfolio.co/" target="_blank">
             <img src="/images/navbar/hts_flag.png" alt="mlh hack the space" />
           </a>
