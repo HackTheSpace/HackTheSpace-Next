@@ -1,11 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Script from "next/script";
 import Countdown from "./Countdown";
 import Typewriter from "./Typewriter";
 
 const Landing = () => {
-  console.log(1);
+  const devfolioRef = useRef(null);
+  const [retryCount, setRetryCount] = useState(0);
+  const [maxRetries, setMaxRetries] = useState(3);
+
+  // const [showPlaceholder, setShowPlaceholder] = useState(false);
+
+  const scriptUrl = "https://apply.devfolio.co/v2/sdk.js";
+
+  function loadExternalScript(scriptUrl, callback) {
+    const script = document.createElement("script");
+    script.src = scriptUrl;
+    script.async = true;
+    script.defer = true;
+    script.onerror = callback;
+    document.head.appendChild(script);
+  }
+
+  useEffect(() => {
+    function handleScriptError() {
+      if (
+        devfolioRef.current.children[0].children.length === 0 &&
+        retryCount < maxRetries
+      ) {
+        let count = retryCount + 1;
+        setRetryCount(count);
+
+        const retryInterval = Math.pow(3, retryCount) * 1000; // Exponential backoff in milliseconds
+
+        console.log(`Retrying in ${retryInterval}ms, attempt ${retryCount}`);
+
+        setTimeout(() => {
+          loadExternalScript(scriptUrl, handleScriptError);
+        }, retryInterval);
+      } else {
+        console.log(
+          "Max retry attempts reached. Unable to load external script."
+        );
+      }
+    }
+
+    // window.onload = handleScriptError();
+    handleScriptError();
+
+    console.log(devfolioRef.current.children[0].children.length);
+    console.log(devfolioRef.current.children[0]);
+  }, [devfolioRef, retryCount]);
+
   return (
     <section
       id="home"
@@ -32,7 +78,7 @@ const Landing = () => {
         <Typewriter />
         <Countdown />
 
-        <div className="butHolder">
+        <div className="butHolder" ref={devfolioRef}>
           <div
             className="apply-button"
             data-hackathon-slug="hackthespace-1"
@@ -65,7 +111,12 @@ const Landing = () => {
           alt="Hack the space Hackathon Constellation"
         />
       </div>
-      <Script src="https://apply.devfolio.co/v2/sdk.js" async defer />
+      {/* <Script
+        type="module"
+        src="https://apply.devfolio.co/v2/sdk.js"
+        async
+        defer
+      /> */}
     </section>
   );
 };
