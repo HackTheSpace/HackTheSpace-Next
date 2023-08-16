@@ -3,7 +3,11 @@ import Image from "next/image";
 
 const Venue = () => {
   return (
-    <SectionLayout Title="DESTINATION" Classname={"venue-section-container"}>
+    <SectionLayout
+      id="venue"
+      Title="DESTINATION"
+      Classname={"venue-section-container"}
+    >
       <div className="venue-section">
         <div className="venue-wrapper">
           <div className="venue">

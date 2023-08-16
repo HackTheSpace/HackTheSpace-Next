@@ -34,6 +34,9 @@ const Navbar = () => {
           <Link href="#about" onClick={handleScroll}>
             About
           </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link>
@@ -43,9 +46,7 @@ const Navbar = () => {
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link>
-          <Link href="#organiser" onClick={handleScroll}>
-            Team
-          </Link>
+          {/* <Link href="#organiser" onClick={handleScroll}>Team</Link > */}
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link>
@@ -73,6 +74,21 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="burgMlh">
+            <div
+              className="mlh-flag2 show"
+              // style={{ display: "none" }}
+              name="menu-outline"
+            >
+              <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+                <Image
+                  src="/images/navbar/hts_flag.png"
+                  alt="mlh hack the space"
+                  width={100}
+                  height={100}
+                />
+              </a>
+            </div>
+
             <svg
               name="menu-outline"
               id="open-mobile-nav"
@@ -108,21 +124,6 @@ const Navbar = () => {
                 d="M368 368L144 144M368 144L144 368"
               />
             </svg>
-
-            <div
-              className="mlh-flag2 show"
-              // style={{ display: "none" }}
-              name="menu-outline"
-            >
-              <a href="https://hackthespace-1.devfolio.co/" target="_blank">
-                <Image
-                  src="/images/navbar/hts_flag.png"
-                  alt="mlh hack the space"
-                  width={100}
-                  height={100}
-                />
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -140,6 +141,9 @@ const Navbar = () => {
           <Link href="#about" onClick={handleScroll}>
             About
           </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
           {/* <!-- <Link href="#">Prizes</Link > --> */}
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
@@ -150,9 +154,9 @@ const Navbar = () => {
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link>
-          <Link href="#organiser" onClick={handleScroll}>
+          {/* <Link href="#organiser" onClick={handleScroll}>
             Team
-          </Link>
+          </Link> */}
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link>
