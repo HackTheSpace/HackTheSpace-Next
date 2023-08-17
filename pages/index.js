@@ -13,6 +13,7 @@ import WhySponsor from "../components/Home/WhySponsor";
 import Organiser from "../components/Home/Organiser";
 import "animate.css";
 import Tracks from "../components/Home/Tracks";
+import Prize from "../components/Prize";
 
 const index = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const index = () => {
       <Journey />
       <Venue />
       <Schedule />
+      <Prize />
       <Tracks />
       <Sponsor />
       <WhySponsor />

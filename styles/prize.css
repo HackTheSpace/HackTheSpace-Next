@@ -1,0 +1,50 @@
+.prize-section{
+    width: 80%;
+    margin: auto;
+}
+
+.prize-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 3rem 0 5rem  0;
+}
+.prize-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.prize-card h1{
+    /* border: 1px solid rgb(179, 177, 177); */
+    border-radius: 9px;
+    width: 60%;
+    text-align: center;
+    font-size: 3rem;
+    /* background-color: rgba(190, 192, 192,0.1); */
+    text-shadow: 0px 0px 9px blueviolet;
+}
+
+.second-prize{
+    height: 70%;
+    width: 80%;
+  
+}
+
+.first-prize{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+.prize-container{
+    padding: 2rem 0 3rem 0;
+}
+.prize-section{
+    width: 100%;
+}
+.prize-card h1{
+    font-size: 1.2rem;
+}
+}
