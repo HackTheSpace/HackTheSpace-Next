@@ -74,8 +74,21 @@ nav .desktop-nav .links a:hover::after {
 nav .mlh-flag {
   position: relative;
   top: 3.5rem;
-  right: 2rem;
+  right: 4rem;
   width: 100px;
+  animation: fadeTopToBottom 1.5s ease-in-out;
+  animation-delay: 6s;
+}
+
+@keyframes fadeTopToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 nav .mlh-flag img {
@@ -198,11 +211,26 @@ nav .mobile-nav {
 
 .mlh-flag2 {
   width: fit-content;
-  top: 0%;
+  position: relative;
+  top: -6%;
+  animation: fadeTopToBottom 1.5s ease-in-out;
+  animation-delay: 6s;
+}
+
+@keyframes fadeTopToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mlh-flag2 img {
-  width: 70px;
+  width: 55px;
+  height: 100%;
   z-index: 500;
 }
 

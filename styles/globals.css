@@ -17,6 +17,8 @@
 @import "./built.css";
 @import "./animated.css";
 @import "animate.css";
+@import "./countdown.css";
+
 @import "./prize.css";
 * {
   padding: 0;

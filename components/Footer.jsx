@@ -16,7 +16,7 @@ const Footer = () => {
 
           <ul>
             <li>
-              <Link href="./assets/footer/Code of Conduct - HTS.pdf">
+              <Link href="./images/footer/Code of Conduct - HTS.pdf">
                 HTS - Rule Book / Code of Conduct
               </Link>
             </li>

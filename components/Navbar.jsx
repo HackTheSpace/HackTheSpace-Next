@@ -5,43 +5,55 @@ import Image from "next/image";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-     const handleScroll = (e) => {
-        // first prevent the default behavior
-         e.preventDefault();
-         // get the href and remove everything before the hash (#)
-         const href = e.currentTarget.href;
-         const targetId = href.replace(/.*\#/, "");
-         // get the element by id and use scrollIntoView
-         const elem = document.getElementById(targetId);
-         elem?.scrollIntoView({
-           behavior: "smooth",
-         });
-       };
-      
+  const handleScroll = (e) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
-    return (
-        <nav>
-            <div className="mobile-nav">
-                <div
-                    className="mobile-nav-links"
-                    id="mobile-nav-links"
-                    style={{
-                        transform: open
-                            ? `translate(0%, 0)`
-                            : `translate(100%, 0)`,
-                    }}
-                >
-                    <Link href="#home" className="active" onClick={handleScroll}>
-                        Home
-                    </Link >
-                    <Link href="#about" onClick={handleScroll}>About</Link >
-                    <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
-                    <Link href="#tracks" onClick={handleScroll}>Tracks</Link >
-                    <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
-                    <Link href="#organiser" onClick={handleScroll}>Team</Link >
-                    <Link href="#faqs" onClick={handleScroll}>FAQs</Link >
-                    <Link href="#contact" onClick={handleScroll}>Contact</Link >
-                </div>
+  return (
+    <nav>
+      <div className="mobile-nav">
+        <div
+          className="mobile-nav-links"
+          id="mobile-nav-links"
+          style={{
+            transform: open ? `translate(0%, 0)` : `translate(100%, 0)`,
+          }}
+        >
+          <Link href="#home" className="active" onClick={handleScroll}>
+            Home
+          </Link>
+          <Link href="#about" onClick={handleScroll}>
+            About
+          </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
+          <Link href="#schedule" onClick={handleScroll}>
+            Schedule
+          </Link>
+          <Link href="#tracks" onClick={handleScroll}>
+            Tracks
+          </Link>
+          <Link href="#sponsors" onClick={handleScroll}>
+            Sponsors
+          </Link>
+          {/* <Link href="#organiser" onClick={handleScroll}>Team</Link > */}
+          <Link href="#faqs" onClick={handleScroll}>
+            FAQs
+          </Link>
+          <Link href="#contact" onClick={handleScroll}>
+            Contact
+          </Link>
+        </div>
 
         <div
           className="mobile-nav-icons"
@@ -62,6 +74,21 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="burgMlh">
+            <div
+              className="mlh-flag2 show"
+              // style={{ display: "none" }}
+              name="menu-outline"
+            >
+              <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+                <Image
+                  src="/images/navbar/hts_flag.png"
+                  alt="mlh hack the space"
+                  width={100}
+                  height={100}
+                />
+              </a>
+            </div>
+
             <svg
               name="menu-outline"
               id="open-mobile-nav"
@@ -97,52 +124,54 @@ const Navbar = () => {
                 d="M368 368L144 144M368 144L144 368"
               />
             </svg>
-
-            <div
-              className="mlh-flag2 show"
-              style={{ display: "none" }}
-              name="menu-outline"
-            >
-              <Image
-                src="/images/navbar/mlh_flag.png"
-                alt="mlh hack the space"
-                width={100}
-                height={100}
-              />
-            </div>
           </div>
         </div>
       </div>
 
-            <div className="desktop-nav">
-                <div className="logo shrink">
-                    <Link href="#home" onClick={handleScroll}>
-                        <img
-                            src="/images/navbar/nav_logo.png"
-                            alt="hack the space"
-                        />
-                    </Link >
-                </div>
-                <div className="links">
-                    <Link href="#home" onClick={handleScroll}>Home</Link >
-                    <Link href="#about" onClick={handleScroll}>About</Link >
-                    {/* <!-- <Link href="#">Prizes</Link > --> */}
-                    <Link href="#schedule" onClick={handleScroll}>Schedule</Link >
-                    <Link href="#tracks" onClick={handleScroll}>Tracks</Link >
-                    <Link href="#sponsors" onClick={handleScroll}>Sponsors</Link >
-                    <Link href="#organiser" onClick={handleScroll}>Team</Link >
-                    <Link href="#faqs" onClick={handleScroll}>FAQs</Link >
-                    <Link href="#contact" onClick={handleScroll}>Contact</Link >
-                </div>
-                <div className="mlh-flag" style={{ opacity: "0" }}>
-                    <img
-                        src="/images/navbar/mlh_flag.png"
-                        alt="mlh hack the space"
-                    />
-                </div>
-            </div>
-        </nav>
-    );
+      <div className="desktop-nav">
+        <div className="logo shrink">
+          <Link href="#home" onClick={handleScroll}>
+            <img src="/images/navbar/nav_logo.png" alt="hack the space" />
+          </Link>
+        </div>
+        <div className="links">
+          <Link href="#home" onClick={handleScroll}>
+            Home
+          </Link>
+          <Link href="#about" onClick={handleScroll}>
+            About
+          </Link>
+          <Link href="#venue" onClick={handleScroll}>
+            Venue
+          </Link>
+          {/* <!-- <Link href="#">Prizes</Link > --> */}
+          <Link href="#schedule" onClick={handleScroll}>
+            Schedule
+          </Link>
+          <Link href="#tracks" onClick={handleScroll}>
+            Tracks
+          </Link>
+          <Link href="#sponsors" onClick={handleScroll}>
+            Sponsors
+          </Link>
+          {/* <Link href="#organiser" onClick={handleScroll}>
+            Team
+          </Link> */}
+          <Link href="#faqs" onClick={handleScroll}>
+            FAQs
+          </Link>
+          <Link href="#contact" onClick={handleScroll}>
+            Contact
+          </Link>
+        </div>
+        <div className="mlh-flag">
+          <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+            <img src="/images/navbar/hts_flag.png" alt="mlh hack the space" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
