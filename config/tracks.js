@@ -46,5 +46,15 @@ export const trackConfig = [
       "Swag Kit for best postman public workspace",
       "Swag kit will contain 5 items",
     ],
+    link: "https://hackthespace-1.devfolio.co/prizes?partner=Postman",
+  },
+  {
+    id: "6",
+    logo: "./images/sponsor/verbWire.svg",
+    data: [
+      "$5,000 in Premium API Credits, across up to 20 teams.",
+      "The prizes will be worth up to $5,000 in value.",
+    ],
+    link: "https://hackthespace-1.devfolio.co/prizes?partner=Verbwire",
   },
 ];
