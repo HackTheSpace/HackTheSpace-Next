@@ -9,6 +9,8 @@ const Navbar = () => {
     // first prevent the default behavior
     e.preventDefault();
     // get the href and remove everything before the hash (#)
+    setOpen(false);
+    //Y band krdega navbar navigation link click krne pr
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
     // get the element by id and use scrollIntoView
