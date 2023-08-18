@@ -42,8 +42,8 @@ const Navbar = () => {
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link>
-          <Link href="#tracks" onClick={handleScroll}>
-            Tracks
+          <Link href="#prize" onClick={handleScroll}>
+            Prizes
           </Link>
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
@@ -150,8 +150,8 @@ const Navbar = () => {
           <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link>
-          <Link href="#tracks" onClick={handleScroll}>
-            Tracks
+          <Link href="#prize" onClick={handleScroll}>
+            Prizes
           </Link>
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors

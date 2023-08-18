@@ -29,7 +29,7 @@ const TrackCard = ({ logo, data, link }) => {
 
 const Tracks = () => {
   return (
-    <SectionLayout id="tracks" Title={"TRACKS"} Classname={"track-section"}>
+    <SectionLayout id="tracks" Classname={"track-section"}>
       <div className="track-container">
         {trackConfig.map((track) => (
           <TrackCard {...track} key={track.id} />
