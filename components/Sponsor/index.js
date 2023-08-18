@@ -21,7 +21,7 @@ const SponsorWrapper = ({ Img, Name, Link }) => {
 };
 
 const Sponsor = () => {
-  const { gold, silver, bronze, inkind, hiringPartner, mediaPartner } =
+  const { diamond, gold, silver, bronze, inkind, hiringPartner, mediaPartner } =
     sponsorConfig;
 
   return (
@@ -31,6 +31,16 @@ const Sponsor = () => {
       id="sponsors"
     >
       <div className="sponsor-container">
+        <SponsorContainer Name={diamond.Name} Img={diamond.Img} Type={diamond.Type}>
+          {diamond.Sponsor.map((sponsor) => (
+            <SponsorWrapper
+              key={sponsor.id}
+              Name={sponsor.Name}
+              Img={sponsor.Img}
+              Link={sponsor.Link}
+            />
+          ))}
+        </SponsorContainer>
         <SponsorContainer Name={gold.Name} Img={gold.Img} Type={gold.Type}>
           {gold.Sponsor.map((sponsor) => (
             <SponsorWrapper
@@ -60,7 +70,7 @@ const Sponsor = () => {
           Name={bronze.Name}
           Img={bronze.Img}
           Type={bronze.Type}
-          // Link={sponsor.Link}
+        // Link={sponsor.Link}
         >
           {bronze.Sponsor.map((sponsor) => (
             <SponsorWrapper
@@ -75,7 +85,7 @@ const Sponsor = () => {
           Name={inkind.Name}
           Img={inkind.Img}
           Type={inkind.Type}
-          
+
         >
           {inkind.Sponsor.map((sponsor) => (
             <SponsorWrapper

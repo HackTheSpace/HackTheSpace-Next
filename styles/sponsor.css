@@ -90,12 +90,12 @@
 .sponsor-section .sponsor.diamond .wrapper .card::after {
   background: linear-gradient(
     60deg,
-    rgba(183, 241, 253, 0.7),
-    rgba(208, 248, 255, 0.7),
-    rgba(183, 241, 253, 0.7),
-    rgba(223, 252, 255, 0.7)
+    rgba(183, 241, 253, 0.6),
+    rgba(208, 248, 255, 0.6),
+    rgba(183, 241, 253, 0.6),
+    rgba(223, 252, 255, 0.6)
   );
-  box-shadow: 0 0 5px #b7f1fd;
+  box-shadow: 0 0 25px #b7f1fd !important;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;

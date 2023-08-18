@@ -1,4 +1,18 @@
 export const sponsorConfig = {
+  diamond: {
+    Name: "diamond",
+    Img: "/images/sponsor/Galaxy Tir logo.png",
+    Type: "galaxy",
+    Sponsor: [
+      {
+        id: "1",
+        Name: "SSTC",
+        Img: "/images/sponsor/SSTCLogo4.svg",
+        Link: "https://www.sstc.ac.in/",
+      },
+    ],
+  },
+
   gold: {
     Name: "gold",
     Img: "/images/sponsor/Star logo.png",
