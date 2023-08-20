@@ -217,6 +217,11 @@
   /* width: 140px; */
   width: fit-content;
 }
+.diamond .Sponsor-name-container img {
+  /* width: 140px; */
+  width:200px ;
+  height: 150px;
+}
 /* .name-inkind {
     right: 43.5%;
 }
