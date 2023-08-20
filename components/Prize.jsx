@@ -17,7 +17,7 @@ const Prize = () => {
     <SectionLayout id="prize" Title={"PRIZES"} Classname={"prize-section"}>
       <div className="prize-container">
         {prizeConfig.map((track) => (
-          <PrizeCard {...track} key={track.id} />
+          <PrizeCard {...track} key={track.pid} />
         ))}
       </div>
     </SectionLayout>
