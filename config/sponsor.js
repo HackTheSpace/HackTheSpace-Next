@@ -212,7 +212,7 @@ export const sponsorConfig = {
       },
 
       // {
-      //   id: "6",
+      //   id: "7",
       //   Name: "MuseCommunity",
       //   Img: "/images/communityPartner/Muse.png",
       // },
