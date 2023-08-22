@@ -3,11 +3,13 @@ import { sponsorConfig } from "../../config/sponsor";
 import SponsorContainer from "./SponsorContainer";
 import Image from "next/image";
 
-const SponsorWrapper = ({ Img, Name, Link }) => {
+const SponsorWrapper = ({ Img, Name, Link, Type }) => {
   return (
     <a href={Link || "#"} target="_blank">
-      <div className="card">
-        <div className="pic">
+      <div
+        className={Type == "communityPartner" ? "card_nonPadding card" : "card"}
+      >
+        <div className={Type == "communityPartner" ? Type : "pic"}>
           <Image
             src={Img}
             alt={`${Name.toUpperCase()} LOGO`}
@@ -21,8 +23,16 @@ const SponsorWrapper = ({ Img, Name, Link }) => {
 };
 
 const Sponsor = () => {
-  const { diamond, gold, silver, bronze, inkind, hiringPartner, mediaPartner } =
-    sponsorConfig;
+  const {
+    diamond,
+    gold,
+    silver,
+    bronze,
+    inkind,
+    hiringPartner,
+    mediaPartner,
+    communityPartner,
+  } = sponsorConfig;
 
   return (
     <SectionLayout
@@ -31,7 +41,11 @@ const Sponsor = () => {
       id="sponsors"
     >
       <div className="sponsor-container">
-        <SponsorContainer Name={diamond.Name} Img={diamond.Img} Type={diamond.Type}>
+        <SponsorContainer
+          Name={diamond.Name}
+          Img={diamond.Img}
+          Type={diamond.Type}
+        >
           {diamond.Sponsor.map((sponsor) => (
             <SponsorWrapper
               key={sponsor.id}
@@ -55,7 +69,6 @@ const Sponsor = () => {
           Name={silver.Name}
           Img={silver.Img}
           Type={silver.Type}
-          Link={Sponsor.Link}
         >
           {silver.Sponsor.map((sponsor) => (
             <SponsorWrapper
@@ -70,7 +83,6 @@ const Sponsor = () => {
           Name={bronze.Name}
           Img={bronze.Img}
           Type={bronze.Type}
-        // Link={sponsor.Link}
         >
           {bronze.Sponsor.map((sponsor) => (
             <SponsorWrapper
@@ -85,7 +97,6 @@ const Sponsor = () => {
           Name={inkind.Name}
           Img={inkind.Img}
           Type={inkind.Type}
-
         >
           {inkind.Sponsor.map((sponsor) => (
             <SponsorWrapper
@@ -127,6 +138,22 @@ const Sponsor = () => {
                 Name={partner.Name}
                 Img={partner.Img}
                 Link={partner.Link}
+              />
+            ))}
+          </SponsorContainer>
+          <SponsorContainer
+            Name={communityPartner.Name}
+            Img={communityPartner.Img}
+            Type={communityPartner.Type}
+            wid={communityPartner.wid}
+          >
+            {communityPartner.Partner.map((partner) => (
+              <SponsorWrapper
+                key={partner.id}
+                Name={partner.Name}
+                Img={partner.Img}
+                Link={partner.Link}
+                Type={communityPartner.Name}
               />
             ))}
           </SponsorContainer>

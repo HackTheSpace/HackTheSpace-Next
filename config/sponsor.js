@@ -167,4 +167,48 @@ export const sponsorConfig = {
       },
     ],
   },
+  communityPartner: {
+    id: "7",
+    Name: "communityPartner",
+    Img: "/images/sponsor/Comet logo.png",
+    Type: "COMMUNITY PARTNERS",
+    wid: "w-16",
+    Partner: [
+      {
+        id: "1",
+        Name: "Acetrix",
+        Img: "/images/communityPartner/ACETRIX.png",
+        Link: "https://www.instagram.com/___acetrix___/",
+      },
+      {
+        id: "2",
+        Name: "CodieGuy",
+        Img: "/images/communityPartner/Codie_Guy.png",
+        Link: "https://linktr.ee/codie_guy",
+      },
+      {
+        id: "3",
+        Name: "RCOEM",
+        Img: "/images/communityPartner/GFG_RCOEM.png",
+        Link: "https://linktr.ee/gfgrcoem",
+      },
+      {
+        id: "4",
+        Name: "CampusTechies",
+        Img: "/images/communityPartner/CT.png",
+        Link: "https://linktr.ee/campustechies",
+      },
+      {
+        id: "5",
+        Name: "PolygonGuildsDurg",
+        Img: "/images/communityPartner/polygon.png",
+        Link: "https://linktr.ee/polygondurg",
+      },
+      // {
+      //   id: "6",
+      //   Name: "MuseCommunity",
+      //   Img: "/images/communityPartner/Muse.png",
+      // },
+    ],
+  },
 };
