@@ -9,7 +9,10 @@ const SponsorContainer = ({ Name, Img, Type, children, wid }) => {
           src={Img}
           alt={Name}
           style={
-            Name === "inkind" || Name === "hiringPartner" || Name === "mediaPartner"
+            Name === "inkind" ||
+            Name === "hiringPartner" ||
+            Name === "mediaPartner" ||
+            Name === "communityPartner"
               ? { opacity: "0" }
               : {}
           }
@@ -17,8 +20,9 @@ const SponsorContainer = ({ Name, Img, Type, children, wid }) => {
           height={Name === "gold" ? 130 : 100}
         />
         <h2
-          className={`sponsor-name name-${Type} ${Name === "inkind" ? "name-inkind" : ""
-            }`}
+          className={`sponsor-name name-${Type} ${
+            Name === "inkind" ? "name-inkind" : ""
+          }`}
         >
           {Type}
         </h2>

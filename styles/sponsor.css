@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.card_nonPadding {
+  padding: 1rem !important;
+}
+
 .sponsor-section .sponsor .wrapper .card::before {
   content: "";
   position: absolute;
@@ -77,7 +81,8 @@
 .sponsor-section .sponsor.silver .wrapper .card::after,
 .sponsor-section .sponsor.bronze .wrapper .card::after,
 .sponsor-section .sponsor.hiringPartner .wrapper .card::after,
-.sponsor-section .sponsor.mediaPartner .wrapper .card::after {
+.sponsor-section .sponsor.mediaPartner .wrapper .card::after,
+.sponsor-section .sponsor.communityPartner .wrapper .card::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -86,7 +91,7 @@
   border-radius: 11px;
   z-index: -1;
 }
-.sponsor-section .sponsor.diamond .wrapper .card{
+.sponsor-section .sponsor.diamond .wrapper .card {
   box-shadow: 0 0 15px rgb(162, 162, 241);
   color: white;
 }
@@ -98,13 +103,11 @@
     rgba(208, 248, 255, 0.6),
     rgba(183, 241, 253, 0.6),
     rgba(223, 252, 255, 0.6) */
-    rgba(1, 15, 202, 0.4),
+      rgba(1, 15, 202, 0.4),
     rgba(101, 2, 206, 0.4),
-    rgba(159,69,176,0.4),
-    /* rgba(229,78,208,0.6), */
-    rgba(1, 15, 202, 0.4),
+    rgba(159, 69, 176, 0.4),
+    /* rgba(229,78,208,0.6), */ rgba(1, 15, 202, 0.4),
     rgba(101, 2, 206, 0.4)
-    
   );
   box-shadow: 0 0 25px #b7f1fd;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -156,7 +159,8 @@
 
 .sponsor-section .sponsor.inkind .wrapper .card::after,
 .sponsor-section .sponsor.hiringPartner .wrapper .card::after,
-.sponsor-section .sponsor.mediaPartner .wrapper .card::after {
+.sponsor-section .sponsor.mediaPartner .wrapper .card::after,
+.sponsor-section .sponsor.communityPartner .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(112, 112, 111, 0.1),
@@ -187,7 +191,20 @@
   overflow: hidden;
 }
 
+.sponsor-section .sponsor .communityPartner {
+  width: 180px;
+  height: 70px; /*237*/
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
 .sponsor-section .sponsor .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sponsor-section .sponsor .communityPartner img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -219,7 +236,7 @@
 }
 .diamond .Sponsor-name-container img {
   /* width: 140px; */
-  width:200px ;
+  width: 200px;
   height: 150px;
 }
 /* .name-inkind {

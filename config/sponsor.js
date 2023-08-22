@@ -167,4 +167,55 @@ export const sponsorConfig = {
       },
     ],
   },
+  communityPartner: {
+    id: "7",
+    Name: "communityPartner",
+    Img: "/images/sponsor/Comet logo.png",
+    Type: "COMMUNITY PARTNERS",
+    wid: "w-16",
+    Partner: [
+      {
+        id: "1",
+        Name: "GDSC SSTC",
+        Img: "/images/communityPartner/GDSC_SSTC.svg",
+        Link: "https://gdsc.community.dev/shri-shankaracharya-technical-campus/",
+      },
+      {
+        id: "2",
+        Name: "PolygonGuildsDurg",
+        Img: "/images/communityPartner/polygon.svg",
+        Link: "https://linktr.ee/polygondurg",
+      },
+      {
+        id: "3",
+        Name: "Acetrix",
+        Img: "/images/communityPartner/ACETRIX.svg",
+        Link: "https://www.instagram.com/___acetrix___/",
+      },
+      {
+        id: "4",
+        Name: "CodieGuy",
+        Img: "/images/communityPartner/Codie_Guy.svg",
+        Link: "https://linktr.ee/codie_guy",
+      },
+      {
+        id: "5",
+        Name: "RCOEM",
+        Img: "/images/communityPartner/GFG_RCOEM.svg",
+        Link: "https://linktr.ee/gfgrcoem",
+      },
+      {
+        id: "6",
+        Name: "CampusTechies",
+        Img: "/images/communityPartner/CT.svg",
+        Link: "https://linktr.ee/campustechies",
+      },
+
+      // {
+      //   id: "7",
+      //   Name: "MuseCommunity",
+      //   Img: "/images/communityPartner/Muse.png",
+      // },
+    ],
+  },
 };
