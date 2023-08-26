@@ -63,6 +63,36 @@
   transition: all 0.3s linear;
 }
 
+.tracks-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: rgba(217, 217, 217, 0.18); */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* padding: 2rem 2rem 3rem; */
+  margin: 2rem 0;
+  border-radius: 37px;
+  transition: all 0.3s linear;
+  flex-wrap: wrap;
+}
+
+.tracks-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.18);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2rem 2rem 3rem;
+  margin: 2rem ;
+  border-radius: 37px;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
 .why-sponsor-section .card:hover {
   box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 36px 0px,
     rgba(255, 255, 255, 0.07) 0px 0px 0px 1px;
@@ -78,8 +108,13 @@
   width: fit-content;
   margin: 0 auto;
 }
-
-.why-sponsor-section .card h2 {
+.tracks-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px 59px;
+}
+.why-sponsor-section .card h2,.tracks-card h2{
   font-size: 1.43rem;
   line-height: 2rem;
   font-weight: 600;
