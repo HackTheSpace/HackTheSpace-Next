@@ -178,7 +178,7 @@ export const sponsorConfig = {
         id: "1",
         Name: "GDSC SSTC",
         Img: "/images/communityPartner/GDSC_SSTC.svg",
-        Link: "https://gdsc.community.dev/shri-shankaracharya-technical-campus/",
+        Link: "https://gdsc.community.dev/shri-shankaracharya-technical-campus-bhilai/",
       },
       {
         id: "2",
