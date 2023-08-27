@@ -18,7 +18,7 @@
 @import "./animated.css";
 @import "animate.css";
 @import "./countdown.css";
-
+@import "./timer.css";
 @import "./prize.css";
 * {
   padding: 0;

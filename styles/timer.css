@@ -1,0 +1,98 @@
+.timer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.timerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.timer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.timer__item--number {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 10rem;
+  font-weight: 700;
+  font-family: cursive;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  background: -webkit-linear-gradient(180deg, #dd8241 40%, #f24d00 100%);
+  background: linear-gradient(180deg, #dd8241 47.2%, #f24d00 90.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+
+.timer__item--text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .timer__item--number {
+    font-size: 2rem;
+  }
+
+  .timer__item--text {
+    font-size: 1rem;
+  }
+
+  .timer__item {
+    padding: 10px 15px;
+    width: 40px;
+  }
+
+  .timerDiv {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timer__item--number {
+    font-size: 1.5rem;
+  }
+
+  .timer__item--text {
+    font-size: 0.8rem;
+  }
+
+  .timer__item {
+    padding: 10px 10px;
+    width: 30px;
+  }
+
+  .timerDiv {
+    margin-bottom: 20px;
+  }
+}
