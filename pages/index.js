@@ -32,8 +32,8 @@ const index = () => {
       <Journey />
       <Venue />
       <Schedule />
-      <Trakcs/>
       <Prize />
+      <Trakcs/>
       <Tracks />
       <Sponsor />
       <WhySponsor />

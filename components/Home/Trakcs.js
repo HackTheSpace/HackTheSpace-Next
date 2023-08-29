@@ -4,6 +4,7 @@ import { trackConfig } from "../../config/tracks";
 
 const cardStyle = {
   justifyContent: "center",
+  alignItems: "center",
   padding: "20px",
   width: "250px",
   height: "200px",
@@ -11,14 +12,12 @@ const cardStyle = {
 const headingStyle = {
   fontSize: "1.5rem",
   marginBottom: "10px",
-  position: "absolute",
-  bottom: "5px",
 };
 
 const TrackCard = ({ logo, title }) => {
   return (
     <div className="tracks-card" style={cardStyle}>
-      <div className="centered-icon" style={{ margin: "30px 0" }}>
+      <div className="centered-icon">
         <Image
           src={logo}
           alt="Hack the space Hackathon Constellation"
@@ -37,8 +36,9 @@ const Trakcs = () => {
   const { Track } = trackConfig;
 
   return (
-    <SectionLayout Title="TRACKS" Classname={"why-sponsor-section"}>
-      <div className=" tracks-container">
+    <SectionLayout Title="TRACKS" Classname={"why-sponsor-section tracks"}>
+    <h3>Though HackTheSpace is an open innovation event! Here are a few fields you can work on for your awesome hackathon projects!</h3>
+      <div className="tracks-container">
         {Track.map((track) => (
           <TrackCard {...track} key={track.id} />
         ))}
