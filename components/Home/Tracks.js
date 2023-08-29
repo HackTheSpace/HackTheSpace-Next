@@ -28,10 +28,11 @@ const TrackCard = ({ logo, data, link }) => {
 };
 
 const Tracks = () => {
+  const { SponsorTrack } = trackConfig;
   return (
     <SectionLayout id="tracks" Classname={"track-section"}>
       <div className="track-container">
-        {trackConfig.map((track) => (
+        {SponsorTrack.map((track) => (
           <TrackCard {...track} key={track.id} />
         ))}
       </div>

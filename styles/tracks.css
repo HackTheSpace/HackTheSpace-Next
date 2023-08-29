@@ -55,3 +55,27 @@
   border-bottom: 1px solid var(--primary-blue);
   color: var(--primary-blue);
 }
+
+.tracks h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  width: 75%;
+  text-align: justify;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .tracks h3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+  .tracks h3{
+      font-size: 1rem;
+  }
+}

@@ -12,6 +12,7 @@ import Sponsor from "../components/Sponsor";
 import WhySponsor from "../components/Home/WhySponsor";
 import Organiser from "../components/Home/Organiser";
 import "animate.css";
+import Trakcs from "../components/Home/Trakcs"
 import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
 
@@ -32,6 +33,7 @@ const index = () => {
       <Venue />
       <Schedule />
       <Prize />
+      <Trakcs/>
       <Tracks />
       <Sponsor />
       <WhySponsor />
