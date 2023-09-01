@@ -1,66 +1,73 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect } from "react";
+import Count from "./Count";
+import useTimer from "../../hooks/useTimer";
 
 const Countdown = () => {
-  const [hours, setHours] = useState("00");
-  const [mins, setMins] = useState("00");
-  const [seconds, setSeconds] = useState("00");
-
-  const launchDate = useMemo(
-    () => new Date("Sept 9, 2023 11:00:00").getTime(),
-    []
-  );
+  const { time, setTime, timerOn, setTimerOn } = useTimer();
 
   useEffect(() => {
-    const intvl = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = launchDate - now;
+    if (time === 0) {
+      setTimerOn(false);
+    }
+  }, [time]);
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours =
-        days * 24 +
-        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  const set = async (time) => {
+    try {
+      const res = await fetch("/api/timer/setTime", {
+        method: "POST",
+        body: JSON.stringify({ time }),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
-      if (distance < 0) {
-        clearInterval(intvl);
-      } else {
-        setHours(hours);
-        setMins(mins);
-        setSeconds(seconds);
+  useEffect(() => {
+    const getTime = async () => {
+      try {
+        const res = await fetch("/api/timer/getTime");
+        const time = await res.json();
+        setTime(time);
+      } catch (e) {
+        console.log(e);
       }
-    }, 1000);
-
-    return () => {
-      clearInterval(intvl);
     };
+    getTime();
   }, []);
 
   return (
-    <>
-      <div className="Timer">
-        <div className="timerDiv">
-          {hours > 0 ? (
-            <div className="timer__item">
-              <span className="timer__item--number hours">{hours}</span>
-              <span className="timer__item--text">Hours</span>
-            </div>
-          ) : null}
-
-          {mins > 0 || hours > 0 ? (
-            <div className="timer__item">
-              <span className="timer__item--number mins">{mins}</span>
-              <span className="timer__item--text">Mins</span>
-            </div>
-          ) : null}
-
-          <div className="timer__item">
-            <span className="timer__item--number seconds">{seconds}</span>
-            <span className="timer__item--text">Seconds</span>
-          </div>
-        </div>
+    <div>
+      <Count time={time} />
+      <div>
+        <button
+          onClick={() => {
+            setTimerOn(true);
+            set(time);
+          }}
+        >
+          Start
+        </button>
+        <button
+          onClick={() => {
+            setTimerOn(false);
+            set(time);
+          }}
+        >
+          Stop
+        </button>
+        <button
+          onClick={() => {
+            setTime(86400000);
+            set(86400000);
+          }}
+        >
+          Reset
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 
