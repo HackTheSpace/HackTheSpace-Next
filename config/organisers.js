@@ -138,7 +138,7 @@ export const organiserConfig = {
       href: "https://www.linkedin.com/in/darshita-ahuja-9a448b225",
       name: "Darshita Ahuja",
       title: "Content Team",
-      image: "/images/CoreTeam/darshita.jpg",
+      image: "/images/CoreTeam/darshita.JPG",
     },
     {
       href: "https://www.linkedin.com/in/gaurav-chandrakar-86431a226",
