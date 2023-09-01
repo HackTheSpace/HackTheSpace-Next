@@ -96,7 +96,7 @@ export const organiserConfig = {
       href: "https://www.linkedin.com/in/mohit-makda-608849221",
       name: "Mohit Makda",
       title: "Tech Team",
-      image: "/images/CoreTeam/Mohit Makda.jpeg",
+      image: "/images/CoreTeam/mohit.jpg",
     },
     {
       href: "https://www.linkedin.com/in/prashansa-purohit-a9a786239",
@@ -127,6 +127,36 @@ export const organiserConfig = {
       name: "Smit Javia",
       title: "Graphics Team",
       image: "/images/CoreTeam/Smit Javia.jpg",
+    },
+    {
+      href: "",
+      name: "Ansh Gupta",
+      title: "Logistics Team",
+      image: "/images/CoreTeam/ansh.jpg",
+    },
+    {
+      href: "https://www.linkedin.com/in/darshita-ahuja-9a448b225",
+      name: "Darshita Ahuja",
+      title: "Content Team",
+      image: "/images/CoreTeam/darshita.jpg",
+    },
+    {
+      href: "https://www.linkedin.com/in/gaurav-chandrakar-86431a226",
+      name: "Gaurav Chandrakar",
+      title: "Graphics Team",
+      image: "/images/CoreTeam/gaurav.jpg",
+    },
+    {
+      href: "https://www.linkedin.com/in/apeksha-vaishnaw-56533726a",
+      name: "Apeksha Vaishnav",
+      title: "Logistics Team",
+      image: "/images/CoreTeam/apeksha.jpg",
+    },
+    {
+      href: "https://www.linkedin.com/in/anaytripathy",
+      name: "Anay Tripathy",
+      title: "Logistics Team",
+      image: "/images/CoreTeam/anay.jpeg",
     },
   ],
 };
