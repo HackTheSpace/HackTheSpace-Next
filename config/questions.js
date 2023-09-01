@@ -26,7 +26,7 @@ export const questionConfig = {
         {
           id: "5",
           Q: "Can I participate alone or do I need a team?",
-          A: "You are free to participate as an individual or as a team. We have a separate Discord Channel, where you can find teammates with similar interests. The team size can vary from 2 to 4 members.",
+          A: "You are free to participate as an individual or as a team. We have a separate Discord Channel, where you can find teammates with similar interests. The team size can vary from 1 to 4 members.",
         },
       ],
     },
