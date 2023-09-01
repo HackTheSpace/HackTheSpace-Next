@@ -129,7 +129,7 @@ export const organiserConfig = {
       image: "/images/CoreTeam/Smit Javia.jpg",
     },
     {
-      href: "",
+      href: "#",
       name: "Ansh Gupta",
       title: "Logistics Team",
       image: "/images/CoreTeam/ansh.jpg",
@@ -138,7 +138,7 @@ export const organiserConfig = {
       href: "https://www.linkedin.com/in/darshita-ahuja-9a448b225",
       name: "Darshita Ahuja",
       title: "Content Team",
-      image: "/images/CoreTeam/darshita.JPG",
+      image: "/images/CoreTeam/darshita.png",
     },
     {
       href: "https://www.linkedin.com/in/gaurav-chandrakar-86431a226",
