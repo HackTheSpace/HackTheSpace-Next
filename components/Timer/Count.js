@@ -16,26 +16,24 @@ const Count = ({ time }) => {
   }, [time]);
 
   return (
-    <div className="Timer">
-      <div className="timerDiv">
-        {hours > 0 ? (
-          <div className="timer__item">
-            <span className="timer__item--number hours">{hours}</span>
-            <span className="timer__item--text">Hours</span>
-          </div>
-        ) : null}
-
-        {mins > 0 || hours > 0 ? (
-          <div className="timer__item">
-            <span className="timer__item--number mins">{mins}</span>
-            <span className="timer__item--text">Mins</span>
-          </div>
-        ) : null}
-
+    <div className="timerDiv">
+      {hours > 0 ? (
         <div className="timer__item">
-          <span className="timer__item--number seconds">{seconds}</span>
-          <span className="timer__item--text">Seconds</span>
+          <span className="timer__item--number hours">{hours}</span>
+          <span className="timer__item--text">Hours</span>
         </div>
+      ) : null}
+
+      {mins > 0 || hours > 0 ? (
+        <div className="timer__item">
+          <span className="timer__item--number mins">{mins}</span>
+          <span className="timer__item--text">Mins</span>
+        </div>
+      ) : null}
+
+      <div className="timer__item">
+        <span className="timer__item--number seconds">{seconds}</span>
+        <span className="timer__item--text">Seconds</span>
       </div>
     </div>
   );

@@ -18,8 +18,7 @@ const Countdown = () => {
         body: JSON.stringify({ time }),
         headers: { "Content-Type": "application/json" },
       });
-      const data = await res.json();
-      console.log(data);
+      console.log("db req");
     } catch (e) {
       console.log(e);
     }
@@ -30,6 +29,7 @@ const Countdown = () => {
       try {
         const res = await fetch("/api/timer/getTime");
         const time = await res.json();
+        console.log("db req");
         setTime(time);
       } catch (e) {
         console.log(e);
@@ -39,10 +39,15 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div>
+    <div className="Timer">
       <Count time={time} />
-      <div>
+      {/* <h2 className="quotes">
+        “No one in the brief history of computing has ever written a piece of
+        perfect software”
+      </h2> */}
+      <div className="controls-cont">
         <button
+          className="cont-btn"
           onClick={() => {
             setTimerOn(true);
             set(time);
@@ -51,6 +56,7 @@ const Countdown = () => {
           Start
         </button>
         <button
+          className="cont-btn"
           onClick={() => {
             setTimerOn(false);
             set(time);
@@ -59,6 +65,7 @@ const Countdown = () => {
           Stop
         </button>
         <button
+          className="cont-btn"
           onClick={() => {
             setTime(86400000);
             set(86400000);

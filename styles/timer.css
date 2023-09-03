@@ -2,9 +2,10 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100vh;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .Timer {
@@ -12,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }
 
 .timerDiv {
@@ -22,7 +23,6 @@
   justify-content: center;
   margin-bottom: 10px;
   width: 100%;
-  height: 100%;
 }
 
 .timer__item {
@@ -57,6 +57,32 @@
   color: #fff;
   text-transform: uppercase;
   opacity: 0.5;
+}
+.quotes {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  /* opacity: 0.8; */
+  font-size: 2.5rem;
+  text-align: center;
+  height: 100%;
+  margin: 50px;
+  line-height: 70px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.controls-cont {
+  opacity: 0;
+  display: flex;
+  gap: 2rem;
+}
+.controls-cont:hover {
+  opacity: 1;
+}
+
+.cont-btn {
+  outline: none;
+  padding: 0.6rem 2rem;
 }
 
 @media (max-width: 768px) {
