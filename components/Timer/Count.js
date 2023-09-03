@@ -1,19 +1,45 @@
 import { useState, useEffect } from "react";
 
-const Count = ({ time }) => {
-  const [hours, setHours] = useState("24");
+const Count = ({ endDate, setCurrentTime, toggle }) => {
+  const [hours, setHours] = useState("00");
   const [mins, setMins] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-    const mins = Math.floor((time / 1000 / 60) % 60);
-    const seconds = Math.floor((time / 1000) % 60);
+    if (!toggle) {
+      const intvl = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = endDate - now;
 
-    setHours(hours < 10 ? "0" + hours : hours);
-    setMins(mins < 10 ? "0" + mins : mins);
-    setSeconds(seconds < 10 ? "0" + seconds : seconds);
-  }, [time]);
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (distance < 0) {
+          clearInterval(intvl);
+        } else {
+          setHours(hours < 10 ? "0" + hours : hours);
+          setMins(mins < 10 ? "0" + mins : mins);
+          setSeconds(seconds < 10 ? "0" + seconds : seconds);
+        }
+      }, 1000);
+
+      return () => {
+        clearInterval(intvl);
+      };
+    } else {
+      setHours("00");
+      setMins("00");
+      setSeconds("00");
+    }
+  }, [, endDate, toggle]);
+
+  useEffect(() => {
+    const now = new Date().getTime();
+    setCurrentTime(now);
+  }, [toggle]);
 
   return (
     <div className="timerDiv">

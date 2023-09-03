@@ -1,56 +1,90 @@
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Count from "./Count";
-import useTimer from "../../hooks/useTimer";
 
 const Countdown = () => {
-  const { time, setTime, timerOn, setTimerOn } = useTimer();
+  const date = useMemo(() => new Date("Sept 9, 2023 11:00:00").getTime(), []);
+  const [endDate, setEndDate] = useState(date);
+  const [currentTime, setCurrentTime] = useState(86400000);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
-    if (time === 0) {
-      setTimerOn(false);
+    if (toggle) {
+      try {
+        fetch("/api/timer/setTime", {
+          method: "POST",
+          body: JSON.stringify({ type: "time", time: currentTime }),
+          headers: { "Content-Type": "application/json" },
+        });
+      } catch (e) {
+        console.log(e);
+      }
     }
-  }, [time]);
+  }, [toggle]);
 
-  const set = async (time) => {
+  const getTime = async () => {
+    try {
+      const now = new Date().getTime();
+      const res = await fetch("/api/timer/getTime");
+      const time = await res.json();
+      console.log(time);
+      const distance = now - time;
+      setEndDate(endDate + distance);
+
+      const res2 = await fetch("/api/timer/setTime", {
+        method: "POST",
+        body: JSON.stringify({ type: "endDate", time: endDate + distance }),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res2.json();
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const setDate = async () => {
     try {
       const res = await fetch("/api/timer/setTime", {
         method: "POST",
-        body: JSON.stringify({ time }),
+        body: JSON.stringify({ type: "endDate", time: date }),
         headers: { "Content-Type": "application/json" },
       });
-      console.log("db req");
+      const data = await res.json();
+      console.log(data);
     } catch (e) {
       console.log(e);
     }
   };
 
   useEffect(() => {
-    const getTime = async () => {
-      try {
-        const res = await fetch("/api/timer/getTime");
-        const time = await res.json();
-        console.log("db req");
-        setTime(time);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    getTime();
+    try {
+      fetch("/api/timer/getDate")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data === "nil") {
+            setEndDate(date);
+          } else {
+            setEndDate(data);
+          }
+        });
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
   return (
     <div className="Timer">
-      <Count time={time} />
-      {/* <h2 className="quotes">
-        “No one in the brief history of computing has ever written a piece of
-        perfect software”
-      </h2> */}
+      <Count
+        endDate={endDate}
+        setCurrentTime={setCurrentTime}
+        toggle={toggle}
+      />
       <div className="controls-cont">
         <button
           className="cont-btn"
           onClick={() => {
-            setTimerOn(true);
-            set(time);
+            getTime();
+            setToggle(false);
           }}
         >
           Start
@@ -58,8 +92,7 @@ const Countdown = () => {
         <button
           className="cont-btn"
           onClick={() => {
-            setTimerOn(false);
-            set(time);
+            setToggle(true);
           }}
         >
           Stop
@@ -67,8 +100,9 @@ const Countdown = () => {
         <button
           className="cont-btn"
           onClick={() => {
-            setTime(86400000);
-            set(86400000);
+            setEndDate(date);
+            setToggle(false);
+            setDate();
           }}
         >
           Reset

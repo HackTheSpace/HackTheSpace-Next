@@ -7,7 +7,7 @@ export default async function setHandler(request, response) {
       .json({ error: "Method not allowed, please use POST" });
   }
 
-  const { time } = request.body;
-  const user = await kv.set("time", time);
+  const { type, time } = request.body;
+  const user = await kv.set(type, time);
   return response.status(200).json(user);
 }
