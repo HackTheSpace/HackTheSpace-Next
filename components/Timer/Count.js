@@ -51,24 +51,6 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
     setCurrentTime(now);
   }, [toggle]);
 
-  // whenever 1 hour passes, show a quote for 2 minutes
-  // useEffect(() => {
-  //   const intvl = setInterval(() => {
-  //     const now = new Date().getTime();
-  //     const distance = now - endDate;
-
-  //     if (distance > 3600000 && distance < 3720000) {
-  //       setShowQuote(true);
-  //     } else if (distance > 3720000) {
-  //       setShowQuote(false);
-  //     }
-  //   }, 1000);
-
-  //   return () => {
-  //     clearInterval(intvl);
-  //   };
-  // }, [endDate]);
-
   return (
     <div className="timerDiv">
       {hours > 0 ? (
