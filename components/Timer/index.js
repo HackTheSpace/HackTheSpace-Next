@@ -2,7 +2,7 @@ import Countdown from "./Countdown";
 import Lottie from "react-lottie-player";
 import rocket from "../../utils/rocket.json";
 import Events from "./Events";
-import Media from "./media";
+import Media from "./Media";
 import { QuoteContext } from "../../hooks/useQuotes";
 import { useState } from "react";
 import Quotes from "./Quotes";
