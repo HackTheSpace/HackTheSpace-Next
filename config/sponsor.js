@@ -211,11 +211,12 @@ export const sponsorConfig = {
         Link: "https://linktr.ee/campustechies",
       },
 
-      // {
-      //   id: "7",
-      //   Name: "MuseCommunity",
-      //   Img: "/images/communityPartner/Muse.png",
-      // },
+      {
+        id: "7",
+        Name: "Devstrons",
+        Img: "/images/communityPartner/devstrons.png",
+        Link:"https://twitter.com/devstrons",
+      },
     ],
   },
 };
