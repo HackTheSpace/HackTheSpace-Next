@@ -11,7 +11,7 @@ const Media = () => {
     const interval = setInterval(() => {
       const a = randomNumberInRange(1, 790);
       setImgNum(a);
-    }, 15000);
+    }, 40000);
 
     return () => clearInterval(interval);
   }, []);
