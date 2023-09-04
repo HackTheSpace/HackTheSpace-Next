@@ -18,8 +18,10 @@
 @import "./animated.css";
 @import "animate.css";
 @import "./countdown.css";
-
+@import "./timer.css";
 @import "./prize.css";
+@import "./events.css";
+
 * {
   padding: 0;
   margin: 0;
