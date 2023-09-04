@@ -107,9 +107,9 @@ export const sponsorConfig = {
       },
       {
         id: "3",
-        Name: "Xyz",
-        Img: "/images/sponsor/XYZ.png",
-        Link: "https://gen.xyz/",
+        Name: "AWS",
+        Img: "/images/sponsor/aws.png",
+        Link: "https://aws.amazon.com/",
       },
       {
         id: "4",
@@ -134,6 +134,12 @@ export const sponsorConfig = {
         Name: "VerbWire",
         Img: "/images/sponsor/verbWire.svg",
         Link: "https://www.verbwire.com/",
+      },
+      {
+        id: "8",
+        Name: "Xyz",
+        Img: "/images/sponsor/XYZ.png",
+        Link: "https://gen.xyz/",
       },
     ],
   },
