@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useContext } from "react";
 import Count from "./Count";
 
 const Countdown = () => {
@@ -15,6 +15,7 @@ const Countdown = () => {
           body: JSON.stringify({ type: "time", time: currentTime }),
           headers: { "Content-Type": "application/json" },
         });
+        console.log("Api called");
       } catch (e) {
         console.log(e);
       }
@@ -26,7 +27,7 @@ const Countdown = () => {
       const now = new Date().getTime();
       const res = await fetch("/api/timer/getTime");
       const time = await res.json();
-      console.log(time);
+      console.log("Api called");
       const distance = now - time;
       setEndDate(endDate + distance);
 
@@ -35,8 +36,6 @@ const Countdown = () => {
         body: JSON.stringify({ type: "endDate", time: endDate + distance }),
         headers: { "Content-Type": "application/json" },
       });
-      const data = await res2.json();
-      console.log(data);
     } catch (e) {
       console.log(e);
     }
@@ -49,8 +48,7 @@ const Countdown = () => {
         body: JSON.stringify({ type: "endDate", time: date }),
         headers: { "Content-Type": "application/json" },
       });
-      const data = await res.json();
-      console.log(data);
+      console.log("Api called");
     } catch (e) {
       console.log(e);
     }
@@ -61,6 +59,7 @@ const Countdown = () => {
       fetch("/api/timer/getDate")
         .then((res) => res.json())
         .then((data) => {
+          console.log("Api called");
           if (data === "nil") {
             setEndDate(date);
           } else {

@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Events = () => {
-  const [current, setCurrent] = useState();
-  const [next, setNext] = useState();
+  const [current, setCurrent] = useState("");
+  const [next, setNext] = useState("");
 
   return (
     <div className="events">

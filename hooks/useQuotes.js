@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const QuoteContext = createContext("show");
+export const QuoteContext = createContext(null);

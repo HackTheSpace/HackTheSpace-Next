@@ -19,10 +19,10 @@ const Media = () => {
   return (
     <div className="media">
       <Image
-        src={`/images/meme/  (${imgNum}).png`}
+        src={`/images/meme/(${imgNum}).png`}
         alt="planet"
-        width={500}
-        height={400}
+        width={600}
+        height={500}
         quality={100}
       />
     </div>

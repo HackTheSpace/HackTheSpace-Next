@@ -15,16 +15,10 @@
 
 .media {
   width: 50%;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .media > img {
-  height: 400px;
-  width: 500px;
-} */
 
 .ongoing > h2 {
   text-align: center;
@@ -74,4 +68,33 @@
   background-clip: text;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .bottomSection {
+    flex-direction: column;
+  }
+
+  .events {
+    width: 100%;
+  }
+
+  .media {
+    width: 100%;
+  }
+
+  .media > img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ongoing > input {
+    font-size: 2rem;
+  }
+
+  .next > input {
+    font-size: 2rem;
+  }
 }

@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { QuoteContext } from "../../hooks/useQuotes";
 
 const Count = ({ endDate, setCurrentTime, toggle }) => {
   const [hours, setHours] = useState("00");
   const [mins, setMins] = useState("00");
   const [seconds, setSeconds] = useState("00");
+
+  const { setShowQuote } = useContext(QuoteContext);
 
   useEffect(() => {
     if (!toggle) {
@@ -16,6 +19,13 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
         );
         const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (mins === 0 && seconds === 0) {
+          setShowQuote(true);
+          setTimeout(() => {
+            setShowQuote(false);
+          }, 120000);
+        }
 
         if (distance < 0) {
           clearInterval(intvl);
@@ -40,6 +50,24 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
     const now = new Date().getTime();
     setCurrentTime(now);
   }, [toggle]);
+
+  // whenever 1 hour passes, show a quote for 2 minutes
+  // useEffect(() => {
+  //   const intvl = setInterval(() => {
+  //     const now = new Date().getTime();
+  //     const distance = now - endDate;
+
+  //     if (distance > 3600000 && distance < 3720000) {
+  //       setShowQuote(true);
+  //     } else if (distance > 3720000) {
+  //       setShowQuote(false);
+  //     }
+  //   }, 1000);
+
+  //   return () => {
+  //     clearInterval(intvl);
+  //   };
+  // }, [endDate]);
 
   return (
     <div className="timerDiv">

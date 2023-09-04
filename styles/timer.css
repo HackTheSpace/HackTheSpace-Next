@@ -35,9 +35,9 @@
 }
 
 .timer__item--number {
-  width: 300px;
+  width: 200px;
   padding: 10px 20px;
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: 700;
   font-family: cursive;
   text-transform: uppercase;
@@ -69,6 +69,20 @@
   margin: 50px;
   line-height: 70px;
   font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  /* transition from inside to out in first appearence */
+  animation: textReveal 1s ease-in-out forwards;
+  animation-duration: 5s;
+}
+
+@keyframes textReveal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .controls-cont {
@@ -83,6 +97,19 @@
 .cont-btn {
   outline: none;
   padding: 0.6rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: -webkit-linear-gradient(180deg, #dd8241 40%, #f24d00 100%);
+  background: linear-gradient(180deg, #dd8241 47.2%, #f24d00 90.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

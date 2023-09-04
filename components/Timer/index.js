@@ -4,31 +4,33 @@ import rocket from "../../utils/rocket.json";
 import Events from "./Events";
 import Media from "./media";
 import { QuoteContext } from "../../hooks/useQuotes";
-import { useContext } from "react";
+import { useState } from "react";
 import Quotes from "./Quotes";
 
 const Timer = () => {
-  const quote = useContext(QuoteContext);
+  const [showQuote, setShowQuote] = useState(false);
 
   return (
-    <div className="timer">
-      {/* <Lottie
+    <QuoteContext.Provider value={{ showQuote, setShowQuote }}>
+      <div className="timer">
+        {/* <Lottie
         loop
         animationData={rocket}
         play
         style={{ width: "100%", height: "100%", opacity: "0.5" }}
       /> */}
 
-      <Countdown />
-      {quote === "show" ? (
-        <div className="bottomSection">
-          <Events />
-          {/* <Media /> */}
-        </div>
-      ) : (
-        <Quotes />
-      )}
-    </div>
+        <Countdown />
+        {!showQuote ? (
+          <div className="bottomSection">
+            <Events />
+            <Media />
+          </div>
+        ) : (
+          <Quotes />
+        )}
+      </div>
+    </QuoteContext.Provider>
   );
 };
 
