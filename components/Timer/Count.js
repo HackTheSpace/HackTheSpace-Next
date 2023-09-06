@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { QuoteContext } from "../../hooks/useQuotes";
+import { QuoteContext, HourContext } from "../../hooks/useQuotes";
 
 const Count = ({ endDate, setCurrentTime, toggle }) => {
   const [hours, setHours] = useState("00");
@@ -7,12 +7,18 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
   const [seconds, setSeconds] = useState("00");
 
   const { setShowQuote } = useContext(QuoteContext);
+  const { setHour } = useContext(HourContext);
 
   useEffect(() => {
     if (!toggle) {
       const intvl = setInterval(() => {
         const now = new Date().getTime();
         const distance = endDate - now;
+
+        // const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        // const hours =
+        //   days * 24 +
+        //   Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
         const hours = Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -21,6 +27,7 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         if (mins === 0 && seconds === 0) {
+          setHour(hours);
           setShowQuote(true);
           setTimeout(() => {
             setShowQuote(false);
