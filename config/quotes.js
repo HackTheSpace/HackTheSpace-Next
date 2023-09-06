@@ -132,4 +132,9 @@ export const quoteConfig = [
     quote: "Talk is cheap. Show me the code.",
     author: "Linus Torvalds",
   },
+  {
+    id: "0",
+    quote: "The best way to get started is to quit talking and begin doing.",
+    author: "Walt Disney",
+  },
 ];

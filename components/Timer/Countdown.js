@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useContext } from "react";
 import Count from "./Count";
 
 const Countdown = () => {
-  const date = useMemo(() => new Date("Sept 9, 2023 11:00:00").getTime(), []);
+  const date = useMemo(() => new Date("Sept 9, 2023 13:36:00").getTime(), []);
   const [endDate, setEndDate] = useState(date);
   const [currentTime, setCurrentTime] = useState(86400000);
   const [toggle, setToggle] = useState(false);
@@ -10,7 +10,7 @@ const Countdown = () => {
   useEffect(() => {
     if (toggle) {
       try {
-        fetch("/api/timer/setTime", {
+        fetch("/api/timer/time", {
           method: "POST",
           body: JSON.stringify({ type: "time", time: currentTime }),
           headers: { "Content-Type": "application/json" },
@@ -25,13 +25,13 @@ const Countdown = () => {
   const getTime = async () => {
     try {
       const now = new Date().getTime();
-      const res = await fetch("/api/timer/getTime");
+      const res = await fetch("/api/timer/time");
       const time = await res.json();
       console.log("Api called");
       const distance = now - time;
       setEndDate(endDate + distance);
 
-      const res2 = await fetch("/api/timer/setTime", {
+      const res2 = await fetch("/api/timer/time", {
         method: "POST",
         body: JSON.stringify({ type: "endDate", time: endDate + distance }),
         headers: { "Content-Type": "application/json" },
@@ -43,7 +43,7 @@ const Countdown = () => {
 
   const setDate = async () => {
     try {
-      const res = await fetch("/api/timer/setTime", {
+      const res = await fetch("/api/timer/time", {
         method: "POST",
         body: JSON.stringify({ type: "endDate", time: date }),
         headers: { "Content-Type": "application/json" },

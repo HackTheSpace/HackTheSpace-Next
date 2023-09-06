@@ -74,6 +74,32 @@
   /* transition from inside to out in first appearence */
   animation: textReveal 1s ease-in-out forwards;
   animation-duration: 5s;
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 10px;
+  /* opacity: 0.8; */
+  font-size: 1.5rem;
+  text-align: center;
+  height: 100%;
+  margin: 50px;
+  line-height: 70px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  /* transition from inside to out in first appearence */
+  animation: textReveal 1s ease-in-out forwards;
+  animation-duration: 5s;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes textReveal {

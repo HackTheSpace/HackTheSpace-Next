@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Media = () => {
-  const [imgNum, setImgNum] = useState(40);
+  const [imgNum, setImgNum] = useState(randomNumberInRange(1, 790));
   function randomNumberInRange(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
@@ -11,7 +11,7 @@ const Media = () => {
     const interval = setInterval(() => {
       const a = randomNumberInRange(1, 790);
       setImgNum(a);
-    }, 40000);
+    }, 300000);
 
     return () => clearInterval(interval);
   }, []);
