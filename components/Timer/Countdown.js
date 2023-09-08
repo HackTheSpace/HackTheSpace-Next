@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useContext } from "react";
 import Count from "./Count";
 
 const Countdown = () => {
-  const date = useMemo(() => new Date("Sept 9, 2023 13:36:00").getTime(), []);
+  const date = useMemo(() => new Date("Sept 9, 2023 11:00:00").getTime(), []);
   const [endDate, setEndDate] = useState(date);
   const [currentTime, setCurrentTime] = useState(86400000);
   const [toggle, setToggle] = useState(false);

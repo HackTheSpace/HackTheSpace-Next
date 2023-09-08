@@ -36,7 +36,7 @@ const Events = () => {
   return (
     <div className="events">
       <div className="ongoing">
-        <h2>Current</h2>
+        <h2>Current Event</h2>
         <input
           placeholder=""
           value={current}
@@ -51,7 +51,7 @@ const Events = () => {
         />
       </div>
       <div className="next">
-        <h2>Next</h2>
+        <h2>Next Event</h2>
         <input
           placeholder=""
           value={next}
