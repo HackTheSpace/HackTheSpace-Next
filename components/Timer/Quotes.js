@@ -18,7 +18,7 @@ const Quotes = () => {
           return prev - 1;
         }
       });
-    }, 60000);
+    }, 120000);
 
     return () => clearInterval(interval);
   }, [showQuote, setShowQuote]);

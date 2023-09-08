@@ -60,6 +60,7 @@ const Count = ({ endDate, setCurrentTime, toggle }) => {
 
   return (
     <div className="timerDiv">
+      <h1 className="timerHeading">Ends In...</h1>
       {hours > 0 ? (
         <div className="timer__item">
           <span className="timer__item--number hours">{hours}</span>
