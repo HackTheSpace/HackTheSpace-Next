@@ -3,10 +3,10 @@ import rocket from "../../utils/Rocket/rocket.json";
 import Lottie from "react-lottie-player";
 
 const Countdown = () => {
-  const [days, setDays] = useState("00");
-  const [hours, setHours] = useState("00");
-  const [mins, setMins] = useState("00");
-  const [seconds, setSeconds] = useState("00");
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [mins, setMins] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   const launchDate = useMemo(
     () => new Date("Sept 8, 2023 11:00:00").getTime(),
@@ -50,48 +50,56 @@ const Countdown = () => {
   };
 
   useEffect(() => {
+    if (days === 0 && hours === 0 && mins === 0 && seconds === 0) return;
     animateFlip(".seconds");
   }, [seconds]);
 
   useEffect(() => {
+    if (days === 0 && hours === 0 && mins === 0 && seconds === 0) return;
     animateFlip(".mins");
   }, [mins]);
 
   useEffect(() => {
+    if (days === 0 && hours === 0 && mins === 0 && seconds === 0) return;
     animateFlip(".hours");
   }, [hours]);
 
   useEffect(() => {
+    if (days === 0 && hours === 0 && mins === 0 && seconds === 0) return;
     animateFlip(".days");
   }, [days]);
 
   return (
     <>
       <div className="countdown">
-        <h3 className="venue-heading">8-9 September | Bhilai, Chhattisgarh</h3>
+        <h3 className="venue-heading">
+          8-9 September 2023 | Bhilai, Chhattisgarh
+        </h3>
 
         <Lottie play loop animationData={rocket} className="rocket" speed={1} />
-        <div className="timerDiv">
-          <div className="countdown__item">
-            <span className="countdown__item--number days">{days}</span>
-            <span className="countdown__item--text">Days</span>
-          </div>
+        {days === 0 && hours === 0 && mins === 0 && seconds === 0 ? null : (
+          <div className="timerDiv">
+            <div className="countdown__item">
+              <span className="countdown__item--number days">{days}</span>
+              <span className="countdown__item--text">Days</span>
+            </div>
 
-          <div className="countdown__item">
-            <span className="countdown__item--number hours">{hours}</span>
-            <span className="countdown__item--text">Hours</span>
-          </div>
+            <div className="countdown__item">
+              <span className="countdown__item--number hours">{hours}</span>
+              <span className="countdown__item--text">Hours</span>
+            </div>
 
-          <div className="countdown__item">
-            <span className="countdown__item--number mins">{mins}</span>
-            <span className="countdown__item--text">Mins</span>
-          </div>
+            <div className="countdown__item">
+              <span className="countdown__item--number mins">{mins}</span>
+              <span className="countdown__item--text">Mins</span>
+            </div>
 
-          <div className="countdown__item">
-            <span className="countdown__item--number seconds">{seconds}</span>
-            <span className="countdown__item--text">Seconds</span>
+            <div className="countdown__item">
+              <span className="countdown__item--number seconds">{seconds}</span>
+              <span className="countdown__item--text">Seconds</span>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );
