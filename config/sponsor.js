@@ -13,6 +13,27 @@ export const sponsorConfig = {
     ],
   },
 
+  specialsponsor: {
+    Name: "specialsponsor",
+    Img: "/images/sponsor/specialsponsor2.png",
+    Type: (
+      <>
+        special
+        <br />
+        sponsors
+      </>
+    ),
+    Sponsor: [
+      {
+        id: "1",
+        Name: "AWS",
+        Img: "/images/sponsor/aws.png",
+        Link: "https://aws.amazon.com/free/?trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&ef_id=Cj0KCQjw9fqnBhDSARIsAHlcQYRFx7F_fi5QinYZgTtclPo16u8sVIgNLUv1e7R8cibQm9fBRsNDvmkaAqVdEALw_wcB:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws!10712784856!111477279771&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all",
+      },
+    ],
+  },
+
+
   gold: {
     Name: "gold",
     Img: "/images/sponsor/Star logo.png",
@@ -104,12 +125,6 @@ export const sponsorConfig = {
         Name: "Echo3D",
         Img: "/images/sponsor/Echo3D.png",
         Link: "https://www.echo3d.com/",
-      },
-      {
-        id: "3",
-        Name: "AWS",
-        Img: "/images/sponsor/aws.png",
-        Link: "https://aws.amazon.com/",
       },
       {
         id: "4",

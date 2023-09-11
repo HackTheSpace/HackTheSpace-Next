@@ -76,6 +76,7 @@
 }
 
 .sponsor-section .sponsor.diamond .wrapper .card::after,
+.sponsor-section .sponsor.specialsponsor .wrapper .card::after,
 .sponsor-section .sponsor.gold .wrapper .card::after,
 .sponsor-section .sponsor.inkind .wrapper .card::after,
 .sponsor-section .sponsor.silver .wrapper .card::after,
@@ -109,6 +110,16 @@
     /* rgba(229,78,208,0.6), */ rgba(1, 15, 202, 0.4),
     rgba(101, 2, 206, 0.4)
   );
+  box-shadow: 0 0 25px #b7f1fd;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 5s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+.sponsor-section .sponsor.specialsponsor .wrapper .card::after {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)), linear-gradient(60deg, rgba(147, 112, 219, 0.6), rgba(255, 215, 0, 0.6), rgba(147, 112, 219, 0.6));
+
   box-shadow: 0 0 25px #b7f1fd;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 5s ease alternate infinite;
@@ -198,6 +209,17 @@
   overflow: hidden;
 }
 
+.sponsor-section .sponsor .specialsponsor {
+  width: 180px;
+  height: 70px; /*237*/
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+.sponsor-section .sponsor .specialsponsor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .sponsor-section .sponsor .pic img {
   width: 100%;
   height: 100%;
