@@ -25,6 +25,7 @@ const SponsorWrapper = ({ Img, Name, Link, Type }) => {
 const Sponsor = () => {
   const {
     diamond,
+    specialsponsor,
     gold,
     silver,
     bronze,
@@ -55,6 +56,23 @@ const Sponsor = () => {
             />
           ))}
         </SponsorContainer>
+
+        <SponsorContainer
+          Name={specialsponsor.Name}
+          Img={specialsponsor.Img}
+          Type={specialsponsor.Type}
+        >
+          {specialsponsor.Sponsor.map((sponsor) => (
+            <SponsorWrapper
+              key={sponsor.id}
+              Name={sponsor.Name}
+              Img={sponsor.Img}
+              Link={sponsor.Link}
+            />
+          ))}
+        </SponsorContainer>
+
+
         <SponsorContainer Name={gold.Name} Img={gold.Img} Type={gold.Type}>
           {gold.Sponsor.map((sponsor) => (
             <SponsorWrapper
