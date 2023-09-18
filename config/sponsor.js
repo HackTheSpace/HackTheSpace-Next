@@ -33,7 +33,6 @@ export const sponsorConfig = {
     ],
   },
 
-
   gold: {
     Name: "gold",
     Img: "/images/sponsor/Star logo.png",
@@ -156,6 +155,12 @@ export const sponsorConfig = {
         Img: "/images/sponsor/XYZ.png",
         Link: "https://gen.xyz/",
       },
+      {
+        id: "9",
+        Name: "Give My Certificate",
+        Img: "/images/sponsor/gmcLogo.png",
+        Link: "https://givemycertificate.com/",
+      },
     ],
   },
   hiringPartner: {
@@ -236,7 +241,7 @@ export const sponsorConfig = {
         id: "7",
         Name: "Devstrons",
         Img: "/images/communityPartner/devstrons.png",
-        Link:"https://twitter.com/devstrons",
+        Link: "https://twitter.com/devstrons",
       },
     ],
   },
