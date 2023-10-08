@@ -3,22 +3,28 @@ import SectionLayout from "../SectionLayout";
 import { trackConfig } from "../../config/tracks";
 import Link from "next/link";
 
-const TrackCard = ({ logo, data, link }) => {
+const TrackCard = ({ id, logo, teamName, data, link }) => {
   return (
     <div className="Track-Card">
       <div>
         <div className="logo">
           <img src={logo} />
         </div>
-        <ul>
+
+        <div className="data" style={{ textAlign: "center" }}>
+          <h2>{teamName}</h2>
+          <p>{data}</p>
+        </div>
+        {/* <ul>
           {data.map((pt, ind) => (
             <li key={ind}>{pt}</li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       {link ? (
         <Link target="_blank" href={link}>
-          View more
+          {/* View more */}
+          View Project
         </Link>
       ) : (
         <></>
@@ -30,7 +36,7 @@ const TrackCard = ({ logo, data, link }) => {
 const Tracks = () => {
   const { SponsorTrack } = trackConfig;
   return (
-    <SectionLayout id="tracks" Classname={"track-section"}>
+    <SectionLayout id="tracks" Classname={"track-section"} Title={"Winners"}>
       <div className="track-container">
         {SponsorTrack.map((track) => (
           <TrackCard {...track} key={track.id} />
