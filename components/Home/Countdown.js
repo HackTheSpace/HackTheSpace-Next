@@ -72,7 +72,7 @@ const Countdown = () => {
   return (
     <>
       <div className="countdown">
-        <h3 className="venue-heading">Registrations Closed</h3>
+        <h3 className="venue-heading2">See You In Season 2</h3>
 
         <Lottie play loop animationData={rocket} className="rocket" speed={1} />
         {days === 0 && hours === 0 && mins === 0 && seconds === 0 ? null : (

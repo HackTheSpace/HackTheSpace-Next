@@ -12,7 +12,7 @@ export const infoConfig = {
   wihts: [
     {
       id: "1",
-      data: "HackTheSpace 2023 is an exciting 24-hour event that will take place across India. It is a time-limited event that encourages participants to brainstorm, develop, and present their ideas to a panel of judges. This event is designed to foster creativity, collaboration, and innovation among participants. It offers an excellent opportunity for participants to showcase their skills, network with peers, and potentially win prizes and recognition for their work.",
+      data: "HackTheSpace is an exciting 24-hour event that takes place in Bhilai,India. It is a time-limited event that encourages participants to brainstorm, develop, and present their ideas to a panel of judges. This event is designed to foster creativity, collaboration, and innovation among participants. It offers an excellent opportunity for participants to showcase their skills, network with peers, and potentially win prizes and recognition for their work.",
     },
     {
       id: "2",

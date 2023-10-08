@@ -1,5 +1,6 @@
 import SectionLayout from "../SectionLayout";
 import { sponsorConfig } from "../../config/sponsor";
+import { Allsponsor } from "../../config/Allsponsor";
 import SponsorContainer from "./SponsorContainer";
 import Image from "next/image";
 
@@ -38,11 +39,11 @@ const Sponsor = () => {
   return (
     <SectionLayout
       Classname={"sponsor-section"}
-      Title={"SPONSORS & PARTNERS"}
+      Title={"Organizations who helped us in our Lift Off"}
       id="sponsors"
     >
       <div className="sponsor-container">
-        <SponsorContainer
+        {/* <SponsorContainer
           Name={diamond.Name}
           Img={diamond.Img}
           Type={diamond.Type}
@@ -175,7 +176,37 @@ const Sponsor = () => {
               />
             ))}
           </SponsorContainer>
-        </div>
+        </div> */}
+        <SponsorContainer
+          Name={"inkind"}
+          Img={communityPartner.Img}
+          Type={"SPONSORS"}>
+          {Allsponsor.SPNSR.map((sponsor) => (
+            <SponsorWrapper
+              key={sponsor.id}
+              Name={sponsor.Name}
+              Img={sponsor.Img}
+              Link={sponsor.Link}
+            />
+          ))
+
+          }
+        </SponsorContainer>
+        <SponsorContainer
+          Name={"inkind"}
+          Img={communityPartner.Img}
+          Type={"PARTNERS"}>
+          {Allsponsor.PRTNR.map((sponsor) => (
+            <SponsorWrapper
+              key={sponsor.id}
+              Name={sponsor.Name}
+              Img={sponsor.Img}
+              Link={sponsor.Link}
+            />
+          ))
+
+          }
+        </SponsorContainer>
       </div>
     </SectionLayout>
   );

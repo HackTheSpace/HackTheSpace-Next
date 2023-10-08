@@ -1,3 +1,5 @@
+
+
 .countdown {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,17 @@
   z-index: 1;
   text-align: center;
   text-transform: uppercase;
+}
+.venue-heading2{
+  background-clip: text;
+  background-image: linear-gradient(to right, #d420ad,#9b5bf5, #a78bfab3);
+  color: #000119;
+  font-size: 2rem;
+  font-weight: 1rem;
+  letter-spacing: 0.5rem;
+  padding: 5px;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 2px;
 }
 
 .rocket {

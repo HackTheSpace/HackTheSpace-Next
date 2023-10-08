@@ -30,8 +30,8 @@ const index = () => {
       <About />
       <Wihts />
       <Journey />
-      <Venue />
-      <Schedule />
+      {/* <Venue /> */}
+      {/* <Schedule /> */}
       <Prize />
       <Trakcs />
       <Tracks />
