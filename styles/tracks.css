@@ -13,7 +13,7 @@
 
 .Track-Card {
   width: 240px;
-  height: 340px;
+  height: 300px;
   border-radius: 10px;
   background: linear-gradient(180deg, #9a0fc6 0%, rgba(138, 10, 179, 0) 100%),
     linear-gradient(
@@ -33,6 +33,49 @@
   padding: 1.5rem;
   margin-top: 2rem;
 }
+
+.Track-Card:nth-child(1) {
+  background: linear-gradient(
+    60deg,
+    rgba(112, 112, 111, 0.4),
+    rgba(125, 125, 122, 0.4),
+    rgba(142, 141, 141, 0.4),
+    rgba(161, 162, 163, 0.4),
+    rgba(179, 182, 181, 0.4),
+    rgba(190, 192, 194, 0.4)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.Track-Card:nth-child(2) {
+  background: linear-gradient(
+    60deg,
+    rgba(235, 209, 151, 0.4),
+    rgba(180, 136, 17, 0.4),
+    rgba(162, 121, 13, 0.4),
+    rgba(187, 155, 73, 0.4)
+  );
+  box-shadow: 0 0 10px #bb9b49;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.Track-Card:nth-child(3) {
+  background: linear-gradient(
+    60deg,
+    rgba(128, 74, 0, 0.3),
+    rgba(137, 94, 26, 0.3),
+    rgba(156, 122, 60, 0.3),
+    rgba(176, 141, 87, 0.3)
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
 .Track-Card ul {
   padding: 0 1.2rem;
 }
