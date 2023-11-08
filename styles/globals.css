@@ -21,6 +21,7 @@
 @import "./timer.css";
 @import "./prize.css";
 @import "./events.css";
+@import "./Team.css";
 
 * {
   padding: 0;
