@@ -15,6 +15,9 @@ import "animate.css";
 import Trakcs from "../components/Home/Trakcs";
 import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
+// import Team from "./Team";
+import 'font-awesome/css/font-awesome.min.css';
+
 
 const index = () => {
   useEffect(() => {
@@ -25,7 +28,7 @@ const index = () => {
 
   return (
     <Layout>
-      <Preloader />
+      {/* <Preloader /> */}
       <Landing />
       <About />
       <Wihts />
@@ -38,6 +41,7 @@ const index = () => {
       <Sponsor />
       <WhySponsor />
       <Organiser />
+      {/* <Team/> */}
       {/* <FAQS /> */}
     </Layout>
   );

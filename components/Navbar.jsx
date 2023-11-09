@@ -1,9 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/Team');
+  };
 
   const handleScroll = (e) => {
     // first prevent the default behavior
@@ -37,16 +42,19 @@ const Navbar = () => {
             About
           </Link>
           <Link href="#venue" onClick={handleScroll}>
-            Venue
+            Winners
           </Link>
-          <Link href="#schedule" onClick={handleScroll}>
+          {/* <Link href="#schedule" onClick={handleScroll}>
             Schedule
-          </Link>
-          <Link href="#prize" onClick={handleScroll}>
+          </Link> */}
+          {/* <Link href="#prize" onClick={handleScroll}>
             Prizes
-          </Link>
+          </Link> */}
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
+          </Link>
+          <Link href="/Team" onClick={handleClick}>
+            Team
           </Link>
           {/* <Link href="#organiser" onClick={handleScroll}>Team</Link > */}
           <Link href="#faqs" onClick={handleScroll}>
@@ -162,6 +170,15 @@ const Navbar = () => {
           {/* <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link> */}
+          {/* <Link href="#sponsors" onClick={handleScroll}>
+            Sponsors
+          </Link> */}
+          <Link href="/Team" onClick={handleClick}>
+            Team
+          </Link>
+          <Link href="#faqs" onClick={handleScroll}>
+            FAQs
+          </Link>
           <Link href="#contact" onClick={handleScroll}>
             Contact
           </Link>
