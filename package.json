@@ -6,9 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@vercel/kv": "^0.2.2",
     "animate.css": "^4.1.1",
+    "font-awesome": "^4.7.0",
     "gsap": "^3.12.2",
     "next": "^13.4.10",
     "p5": "^1.6.0",

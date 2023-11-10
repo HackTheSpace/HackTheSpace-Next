@@ -1,0 +1,147 @@
+
+
+
+
+
+.box {
+    background-color: rgba(20, 33, 61, 0.6);
+    /* background: transparent; */
+    margin: 10px auto;
+    width: 280px;
+    height: 235px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.imgBx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Team_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.names {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.names h1 {
+    font-size: 25px;
+}
+
+.names p {
+    font-size: 18px;
+    color: rgb(18, 255, 196);
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icons .icon {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid rgb(1, 16, 46);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+.icons .icon:hover {
+    color: var(--primary-blue);
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+    gap: 15px;
+}
+
+.skills .details {
+    width: 80%;
+}
+
+.skills .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line {
+    width: 0%;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#html {
+    animation: html 4s 0s forwards 1;
+}
+
+#css {
+    animation: css 5s 0s forwards 1;
+}
+
+#js {
+    animation: js 6s 0s forwards 1;
+}
+
+@keyframes html {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes js {
+    100% {
+        width: 50%;
+    }
+}
