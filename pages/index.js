@@ -15,9 +15,9 @@ import "animate.css";
 import Trakcs from "../components/Home/Trakcs";
 import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
+import PastSpeakersNJudges from "../components/Home/PastSpeakersNJudges";
 // import Team from "./Team";
-import 'font-awesome/css/font-awesome.min.css';
-
+import "font-awesome/css/font-awesome.min.css";
 
 const index = () => {
   useEffect(() => {
@@ -41,6 +41,7 @@ const index = () => {
       <Sponsor />
       <WhySponsor />
       <Organiser />
+      <PastSpeakersNJudges />
       {/* <Team/> */}
       {/* <FAQS /> */}
     </Layout>
