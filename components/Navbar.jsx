@@ -52,6 +52,9 @@ const Navbar = () => {
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link>
+          <Link href="#speakerNjudges" onClick={handleScroll}>
+            Speakers
+          </Link>
           <Link href="#contact" onClick={handleScroll}>
             Contact
           </Link>
@@ -162,6 +165,9 @@ const Navbar = () => {
           {/* <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link> */}
+          <Link href="#speakerNjudges" onClick={handleScroll}>
+            Speakers
+          </Link>
           <Link href="#contact" onClick={handleScroll}>
             Contact
           </Link>

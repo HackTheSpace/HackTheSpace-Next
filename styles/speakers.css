@@ -1,0 +1,68 @@
+.speakers-section .container {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Speaker-Card {
+  width: 240px;
+  height: 300px;
+  border-radius: 10px;
+  flex: 0 1 18%;
+  margin: 2rem;
+  position: relative;
+}
+
+.Speaker-Card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.Speaker-Card .details {
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* padding: 0.5rem; */
+  width: 100%;
+  background: var(--primary-black);
+  display: flex;
+  align-items: center;
+}
+
+.Speaker-Card .info {
+  padding: 1rem 0 1rem 0.7rem;
+  width: 70%;
+  line-height: 1.4rem;
+}
+
+.Speaker-Card .info h2 {
+  text-shadow: 2px 2px 5px var(--primary-black);
+  margin-bottom: 0.3rem;
+}
+.Speaker-Card .info p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-shadow: 2px 2px 2px var(--primary-black);
+}
+
+.Speaker-Card .links {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Speaker-Card .links .icon:hover {
+  color: var(--primary-pink);
+}
+
+.Speaker-Card .links .icon {
+  /* color: var(--primary-black); */
+  height: 1.5rem;
+  width: 1.5rem;
+}

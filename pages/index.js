@@ -15,6 +15,7 @@ import "animate.css";
 import Trakcs from "../components/Home/Trakcs";
 import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
+import PastSpeakersNJudges from "../components/Home/PastSpeakersNJudges";
 
 const index = () => {
   useEffect(() => {
@@ -25,7 +26,7 @@ const index = () => {
 
   return (
     <Layout>
-      <Preloader />
+      {/* <Preloader /> */}
       <Landing />
       <About />
       <Wihts />
@@ -38,6 +39,7 @@ const index = () => {
       <Sponsor />
       <WhySponsor />
       <Organiser />
+      <PastSpeakersNJudges />
       {/* <FAQS /> */}
     </Layout>
   );
