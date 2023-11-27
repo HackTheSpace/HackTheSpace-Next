@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
   const handleClick = () => {
-    router.push('/Team');
+    router.push("/Team");
   };
 
   const handleScroll = (e) => {
@@ -59,6 +59,9 @@ const Navbar = () => {
           {/* <Link href="#organiser" onClick={handleScroll}>Team</Link > */}
           <Link href="#faqs" onClick={handleScroll}>
             FAQs
+          </Link>
+          <Link href="#speakerNjudges" onClick={handleScroll}>
+            Speakers
           </Link>
           <Link href="#contact" onClick={handleScroll}>
             Contact
@@ -170,15 +173,18 @@ const Navbar = () => {
           {/* <Link href="#faqs" onClick={handleScroll}>
             FAQs
           </Link> */}
+          <Link href="#speakerNjudges" onClick={handleScroll}>
+            Speakers
+          </Link>
           {/* <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link> */}
           <Link href="/Team" onClick={handleClick}>
             Team
           </Link>
-          <Link href="#faqs" onClick={handleScroll}>
+          {/* <Link href="#faqs" onClick={handleScroll}>
             FAQs
-          </Link>
+          </Link> */}
           <Link href="#contact" onClick={handleScroll}>
             Contact
           </Link>
