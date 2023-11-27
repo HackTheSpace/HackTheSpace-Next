@@ -43,11 +43,13 @@
 .Speaker-Card .info h2 {
   text-shadow: 2px 2px 5px var(--primary-black);
   margin-bottom: 0.3rem;
+  font-size: 1.3rem;
 }
 .Speaker-Card .info p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   text-shadow: 2px 2px 2px var(--primary-black);
+  letter-spacing: 0.025em;
 }
 
 .Speaker-Card .links {
