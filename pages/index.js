@@ -15,6 +15,7 @@ import "animate.css";
 import Trakcs from "../components/Home/Trakcs";
 import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
+import Glimpse from "../components/Glimpse";
 import PastSpeakersNJudges from "../components/Home/PastSpeakersNJudges";
 // import Team from "./Team";
 import "font-awesome/css/font-awesome.min.css";
@@ -33,6 +34,7 @@ const index = () => {
       <About />
       <Wihts />
       <Journey />
+      <Glimpse />
       {/* <Venue /> */}
       {/* <Schedule /> */}
       {/* <Prize /> */}

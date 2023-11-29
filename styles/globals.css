@@ -23,6 +23,7 @@
 @import "./events.css";
 @import "./speakers.css";
 @import "./Team.css";
+@import "./glimpse.css";
 
 * {
   padding: 0;

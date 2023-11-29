@@ -36,7 +36,11 @@ const TrackCard = ({ id, logo, teamName, data, link }) => {
 const Tracks = () => {
   const { SponsorTrack } = trackConfig;
   return (
-    <SectionLayout id="winners" Classname={"track-section"} Title={"PREVIOUS WINNERS"}>
+    <SectionLayout
+      id="winners"
+      Classname={"track-section"}
+      Title={"PREVIOUS WINNERS"}
+    >
       <div className="track-container">
         {SponsorTrack.map((track) => (
           <TrackCard {...track} key={track.id} />
