@@ -16,21 +16,21 @@
 
 .image-card {
   width: fit-content;
-  padding: 1rem;
+  padding: 1rem 0.3rem;
   display: flex;
   flex-direction: column;
 }
 
 .image-card > img {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.image-card > img:hover {
+/* .image-card > img:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
-}
+} */
 
 .image-container {
   width: 100%;
@@ -45,12 +45,12 @@
 }
 
 .image-container > img {
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
   object-fit: cover;
 }
 
-.image-container > img:hover {
+/* .image-container > img:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
-}
+} */
