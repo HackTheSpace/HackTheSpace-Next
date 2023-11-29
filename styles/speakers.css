@@ -6,7 +6,7 @@
 }
 
 .Speaker-Card {
-  width: 240px;
+  min-width: 240px;
   height: 300px;
   border-radius: 10px;
   flex: 0 1 18%;
@@ -43,11 +43,13 @@
 .Speaker-Card .info h2 {
   text-shadow: 2px 2px 5px var(--primary-black);
   margin-bottom: 0.3rem;
+  font-size: 1.3rem;
 }
 .Speaker-Card .info p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   text-shadow: 2px 2px 2px var(--primary-black);
+  letter-spacing: 0.025em;
 }
 
 .Speaker-Card .links {
