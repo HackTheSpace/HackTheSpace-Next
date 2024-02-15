@@ -189,7 +189,7 @@ const WhySponsor = () => {
           </a>
         </button>
         <button type="button" className="Btn zinc-bg">
-          <a href="https://bit.ly/Brochure-HTS">
+          <a href="#">
             <div className="gradient-mask blue-bg"></div>
             <svg
               name="arrow-down-circle-outline"
