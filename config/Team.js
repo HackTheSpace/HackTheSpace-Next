@@ -89,7 +89,7 @@ export const teamConfig = {
         },
       },
       {
-        teamName: "Content team",
+        teamName: "Socials team",
         memberName: "Lomesh Patil",
         logo: "/images/CoreTeam/Lomesh Patil.jpg",
         link: {
