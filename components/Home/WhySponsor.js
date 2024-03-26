@@ -160,7 +160,7 @@ const WhySponsor = () => {
 
       <div className="btn-container">
         <button type="button" className="Btn zinc-bg">
-          <a href="mailto:sponsor@hackthespace.co">
+          <a href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
             <div className="gradient-mask black-bg"></div>
             <svg
               name="planet-outline"
@@ -188,7 +188,7 @@ const WhySponsor = () => {
             <span className="text"> Sponsor Us </span>
           </a>
         </button>
-        <button type="button" className="Btn zinc-bg">
+        {/* <button type="button" className="Btn zinc-bg">
           <a href="#">
             <div className="gradient-mask blue-bg"></div>
             <svg
@@ -216,7 +216,7 @@ const WhySponsor = () => {
 
             <span className="text">Brochure</span>
           </a>
-        </button>
+        </button> */}
       </div>
 
       <div className="aconst3">

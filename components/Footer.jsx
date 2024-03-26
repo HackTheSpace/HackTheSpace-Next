@@ -12,17 +12,23 @@ const Footer = () => {
           />
         </div>
         <div className="docs">
-          <h3 className="footer-title">Documents</h3>
+          <h3 className="footer-title">Explore</h3>
 
           <ul>
             <li>
-              <Link href="./images/footer/Code of Conduct - HTS.pdf">
-                HTS - Rule Book / Code of Conduct
+              <Link
+                href="https://s1.hackthespace.co/"
+                target="https://s1.hackthespace.co/"
+              >
+                Season 1.0
               </Link>
             </li>
             <li>
-              <Link href="https://devfolio.co/code-of-conduct">
-                Devfolio Code of Conduct
+              <Link
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                target="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              >
+                MLH Code of Conduct
               </Link>
             </li>
           </ul>

@@ -24,7 +24,7 @@ const Wihts = () => {
           <p>
             {Hackathon.data}
             <Link target="_blank" href={Hackathon.link}>
-              here..
+              here...
             </Link>
           </p>
 

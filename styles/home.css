@@ -130,7 +130,7 @@ iframe button {
 
 .Btn .text {
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 50%;
   transform: translate(-25%, -50%);
   z-index: 1;

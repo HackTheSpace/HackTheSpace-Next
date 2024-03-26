@@ -41,9 +41,6 @@ const Navbar = () => {
           <Link href="#about" onClick={handleScroll}>
             About
           </Link>
-          <Link href="#venue" onClick={handleScroll}>
-            Winners
-          </Link>
           {/* <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link> */}
@@ -87,7 +84,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="burgMlh">
-            <div
+            {/* <div
               className="mlh-flag2 show"
               // style={{ display: "none" }}
               name="menu-outline"
@@ -100,7 +97,7 @@ const Navbar = () => {
                   height={100}
                 />
               </a>
-            </div>
+            </div> */}
 
             <svg
               name="menu-outline"
@@ -161,9 +158,6 @@ const Navbar = () => {
           {/* <Link href="#schedule" onClick={handleScroll}>
             Schedule
           </Link> */}
-          <Link href="#winners" onClick={handleScroll}>
-            Winners
-          </Link>
           <Link href="#sponsors" onClick={handleScroll}>
             Sponsors
           </Link>
@@ -190,12 +184,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="mlh-flag">
-          <a href="https://hackthespace-1.devfolio.co/" target="_blank">
+          {/* <a href="https://hackthespace-1.devfolio.co/" target="_blank">
             <img
               src="/images/navbar/hts_flag_2024.png"
               alt="mlh hack the space"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>

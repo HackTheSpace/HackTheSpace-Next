@@ -3,7 +3,7 @@ import Image from "next/image";
 import Script from "next/script";
 import Countdown from "./Countdown";
 import Typewriter from "./Typewriter";
-import DevfolioBtn from "./DevfolioBtn";
+import LinksBtn from "./LinksBtn";
 
 const Landing = () => {
   return (
@@ -32,7 +32,7 @@ const Landing = () => {
         <Typewriter />
         <Countdown />
 
-        <DevfolioBtn />
+        <LinksBtn />
       </div>
       <div className="cost2">
         <img
@@ -40,12 +40,6 @@ const Landing = () => {
           alt="Hack the space Hackathon Constellation"
         />
       </div>
-      {/* <Script
-        type="module"
-        src="https://apply.devfolio.co/v2/sdk.js"
-        async
-        defer
-      /> */}
     </section>
   );
 };

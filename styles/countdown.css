@@ -48,7 +48,7 @@
 }
 .rocket {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 20%;
   z-index: -1;
   opacity: 0.5;
