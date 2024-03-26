@@ -39,12 +39,12 @@ const index = () => {
       {/* <Schedule /> */}
       {/* <Prize /> */}
       {/* <Trakcs /> */}
-      <Tracks />
+      {/* <Tracks /> */}
       <Sponsor />
       <WhySponsor />
-      <Organiser />
+      {/* <Organiser /> */}
       <PastSpeakersNJudges />
-      {/* <Team/> */}
+      {/* <Team /> */}
       {/* <FAQS /> */}
     </Layout>
   );
