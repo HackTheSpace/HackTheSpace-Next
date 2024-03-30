@@ -1,14 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
 nav .desktop-nav {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
   position: fixed;
-  top: 0%;
+  top: 5%;
   left: 0%;
   width: 100%;
   height: 50px;
-  background-color: var(--primary-black);
   z-index: 9999;
 }
 
@@ -18,6 +19,55 @@ nav .logo {
   height: 50px;
   overflow: hidden;
   margin-left: 0.5rem;
+}
+
+.nav-sponsor {
+  /* text color white */
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0.2rem 1rem;
+  float: right;
+  background: var(--primary-black);
+  border: 1px solid #222;
+  box-shadow: 3px 3px 0 #222;
+}
+
+.nav-sponsor:hover {
+  background: var(--primary-black);
+  color: var(--primary-blue);
+  box-shadow: 3px 3px 0 var(--primary-blue);
+}
+
+.nav-sponsor a {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+.nav-sponsor .shootingStars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-sponsor .telescope {
+  position: absolute;
+  top: 20px;
+  left: -59%;
+  width: 100%;
+  height: 70%;
 }
 
 nav .logo img {
@@ -106,6 +156,19 @@ nav .mlh-flag img {
 
 nav .mobile-nav {
   display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .nav-sponsor {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    margin-right: 3rem;
+  }
+
+  .nav-sponsor .telescope {
+    top: 20px;
+    left: -59%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -200,12 +263,6 @@ nav .mobile-nav {
     font-size: 2.5rem;
     cursor: pointer;
     z-index: 1000;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .desktop-nav {
-    display: flex !important;
   }
 }
 
