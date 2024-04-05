@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         <meta
           property="og:url"
           name="og:url"
-          content="https://www.hackthespace.co/"
+          content="https://hackthespace.co/"
         />
 
         <meta name="twitter:title" content="Hack The Space" />
