@@ -24,6 +24,11 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link href="/Team" target="/Team">
+                Team
+              </Link>
+            </li>
+            <li>
               <Link
                 href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                 target="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"

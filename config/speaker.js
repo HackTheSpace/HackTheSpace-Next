@@ -1,14 +1,6 @@
 export const SpeakerConfig = [
   {
     id: 1,
-    linkedin: "https://www.linkedin.com/in/the-khushi-trivedi/",
-    twitter: "https://twitter.com/KhushiT113",
-    name: "Khushi Trivedi",
-    title: "Gold MLSA",
-    image: "/images/Speakers/Khushi Trivedi.jpeg",
-  },
-  {
-    id: 2,
     linkedin: "https://www.linkedin.com/in/jaysaadana/",
     twitter: "https://twitter.com/jaysaadana",
     name: "Jay Saadana",
@@ -18,18 +10,26 @@ export const SpeakerConfig = [
   {
     linkedin: "#",
     twitter: "https://twitter.com/Frenzyritz13",
-    id: 3,
+    id: 2,
     name: "Ritvi Mishra",
     title: "Developer Advocate | Dyte",
     image: "/images/Speakers/Ritvi Mishra.jpeg",
   },
   {
-    id: 4,
+    id: 3,
     linkedin: "https://www.linkedin.com/in/abhishekdoshi26/",
     twitter: "https://twitter.com/AbhishekDoshi26",
     name: "Abhishek Doshi",
     title: "Google Developer Expert",
     image: "/images/Speakers/Abhishek Doshi.jpeg",
+  },
+  {
+    id: 4,
+    linkedin: "https://www.linkedin.com/in/the-khushi-trivedi/",
+    twitter: "https://twitter.com/KhushiT113",
+    name: "Khushi Trivedi",
+    title: "Gold MLSA",
+    image: "/images/Speakers/Khushi Trivedi.jpeg",
   },
   {
     id: 5,

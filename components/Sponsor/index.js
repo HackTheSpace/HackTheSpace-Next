@@ -37,11 +37,7 @@ const Sponsor = () => {
   } = sponsorConfig;
 
   return (
-    <SectionLayout
-      Classname={"sponsor-section"}
-      Title={"Organizations who helped us in our Lift Off"}
-      id="sponsors"
-    >
+    <SectionLayout Classname={"sponsor-section"} Title={""} id="sponsors">
       <div className="sponsor-container">
         {/* <SponsorContainer
           Name={diamond.Name}
@@ -180,7 +176,8 @@ const Sponsor = () => {
         <SponsorContainer
           Name={"inkind"}
           Img={communityPartner.Img}
-          Type={"SPONSORS"}>
+          Type={"PAST SPONSORS"}
+        >
           {Allsponsor.SPNSR.map((sponsor) => (
             <SponsorWrapper
               key={sponsor.id}
@@ -188,14 +185,13 @@ const Sponsor = () => {
               Img={sponsor.Img}
               Link={sponsor.Link}
             />
-          ))
-
-          }
+          ))}
         </SponsorContainer>
         <SponsorContainer
           Name={"inkind"}
           Img={communityPartner.Img}
-          Type={"PARTNERS"}>
+          Type={"PARTNERS"}
+        >
           {Allsponsor.PRTNR.map((sponsor) => (
             <SponsorWrapper
               key={sponsor.id}
@@ -203,9 +199,7 @@ const Sponsor = () => {
               Img={sponsor.Img}
               Link={sponsor.Link}
             />
-          ))
-
-          }
+          ))}
         </SponsorContainer>
       </div>
     </SectionLayout>
