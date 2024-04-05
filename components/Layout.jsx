@@ -18,11 +18,7 @@ const Layout = ({ children }) => {
         <meta name="robots" content="all" />
         <meta name="googlebot" content="all" />
 
-        <link
-          rel="canonical"
-          href="https://www.hackthespace.co/"
-          key="canonical"
-        />
+        <link rel="canonical" href="https://hackthespace.co/" key="canonical" />
 
         <title>Hack The Space</title>
         <meta
