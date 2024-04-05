@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Bangers);
-
 nav .desktop-nav {
   display: flex;
   align-items: center;
@@ -32,42 +30,59 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  padding: 0.2rem 1rem;
-  float: right;
   background: var(--primary-black);
-  border: 1px solid #222;
-  box-shadow: 3px 3px 0 #222;
+  border: 2px solid var(--primary-blue);
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.nav-sponsor:not(:last-child) {
+  margin-right: 2px;
+}
+
+.nav-sponsor::before,
+.nav-sponsor::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-black);
+  z-index: 0;
+  transition: 200ms ease-in;
+  transform-origin: center center;
+}
+
+.nav-sponsor::before {
+  width: calc(100% + 2px * 2 - 25px);
+  height: calc(100% + 2px * 2);
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-sponsor::after {
+  height: calc(100% + 2px * 2 - 25px);
+  width: calc(100% + 2px * 2);
+  top: 50%;
+  left: -2px;
+  transform: translateY(-50%);
+}
+
+.nav-sponsor:hover::before {
+  width: 0;
+}
+
+.nav-sponsor:hover::after {
+  height: 0;
 }
 
 .nav-sponsor:hover {
-  background: var(--primary-black);
   color: var(--primary-blue);
-  box-shadow: 3px 3px 0 var(--primary-blue);
 }
 
 .nav-sponsor a {
-  font-family: "Bangers", cursive;
   letter-spacing: 0.1em;
-  font-size: 1.5rem;
+  text-decoration: none;
   text-align: center;
   z-index: 1000;
-}
-
-.nav-sponsor .shootingStars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.nav-sponsor .telescope {
-  position: absolute;
-  top: 20px;
-  left: -59%;
-  width: 100%;
-  height: 70%;
 }
 
 nav .logo img {

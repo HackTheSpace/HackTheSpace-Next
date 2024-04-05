@@ -38,20 +38,6 @@ const Navbar = () => {
         </div>
 
         <div className="nav-sponsor">
-          {/* <Lottie
-            play
-            loop
-            animationData={ShootingStars}
-            className="shootingStars"
-            speed={1}
-          /> */}
-          <Lottie
-            play
-            loop
-            animationData={Telescope}
-            className="telescope"
-            speed={1}
-          />
           <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
             Sponsor Us
           </Link>
