@@ -3,29 +3,25 @@ import Image from "next/image";
 import cloudinaryLoader from "../../utils/cloudinaryLoader";
 import { glimpseConfig } from "../../config/glimpse";
 
-const ImageCard = ({ src1, src2, className }) => {
+const ImageCard = ({ src1, src2, className, content }) => {
+  const numbers = content.match(/\d+/g);
+  const text = content.replace(numbers, "");
+  content = (
+    <div className="content">
+      <h2>{numbers[0]}+</h2>
+      <p>{text}</p>
+    </div>
+  );
+
   return (
     <div className="image-card" style={{ flexFlow: `${className}` }}>
       <div className="image-container" style={{ flexFlow: `${className}` }}>
-        <Image
-          loader={cloudinaryLoader}
-          src={src1}
-          height={150}
-          width={260}
-          quality={100}
-          alt="HTS"
-        />
-        {/* <h2>content</h2> */}
+        <Image src={src1} height={150} width={228} quality={100} alt="HTS" />
+        {content}
+
         <hr />
       </div>
-      <Image
-        loader={cloudinaryLoader}
-        src={src2}
-        height={250}
-        width={260}
-        quality={100}
-        alt="HTS"
-      />
+      <Image src={src2} height={250} width={228} quality={100} alt="HTS" />
     </div>
   );
 };
