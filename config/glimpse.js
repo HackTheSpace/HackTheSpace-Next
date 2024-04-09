@@ -10,7 +10,8 @@ export const glimpseConfig = [
     content: "60 Countries",
     src1: "/images/glimpse/glimpse_3.jpg",
     src2: "/images/glimpse/glimpse_4.jpg",
-    className: "column-reverse",
+    className: "row-reverse",
+    className1:"row",
   },
   {
     id: "3",
@@ -23,7 +24,8 @@ export const glimpseConfig = [
     content: "450 Projects",
     src1: "/images/glimpse/glimpse_7.jpg",
     src2: "/images/glimpse/glimpse_8.jpg",
-    className: "column-reverse",
+    className: "row",
+    className1:"row-reverse",
   },
   {
     id: "5",

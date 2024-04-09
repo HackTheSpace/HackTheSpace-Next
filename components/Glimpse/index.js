@@ -3,7 +3,7 @@ import Image from "next/image";
 import cloudinaryLoader from "../../utils/cloudinaryLoader";
 import { glimpseConfig } from "../../config/glimpse";
 
-const ImageCard = ({ src1, src2, className, content }) => {
+const ImageCard = ({ src1, src2, className, content ,className1}) => {
   const numbers = content.match(/\d+/g);
   const text = content.replace(numbers, "");
   content = (
@@ -14,12 +14,12 @@ const ImageCard = ({ src1, src2, className, content }) => {
   );
 
   return (
-    <div className="image-card" style={{ flexFlow: `${className}` }}>
+    <div className="image-card" style={{ flexFlow: `${className1}` }}>
       <div className="image-container" style={{ flexFlow: `${className}` }}>
         <Image src={src1} height={150} width={228} quality={100} alt="HTS" />
         {content}
 
-        <hr />
+        {/* <hr /> */}
       </div>
       <Image src={src2} height={250} width={228} quality={100} alt="HTS" />
     </div>
