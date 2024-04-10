@@ -26,6 +26,7 @@
   width: 80%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 1.5rem;
 }
 
@@ -38,6 +39,7 @@
 .image-container > img {
   border-radius: 15px;
   object-fit: cover;
+  width: 70%;
 }
 
 .content {
@@ -48,6 +50,8 @@
   justify-content: center;
   align-items: center;
   width: 40%;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
 }
 
 .glimpse-container .image-card:first-child .content:last-child {
@@ -67,15 +71,18 @@
 }
 
 .content h2 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+  font: bold;
   width: auto;
-  font-weight: 700;
+  font-weight: 900;
   z-index: 1;
+  font-family: inherit;
 }
 
 .content p {
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: inherit;
 }
 
 .right-container {
@@ -99,10 +106,227 @@
 
 .bottom-container .content {
   color: #7d00f2;
-  text-align: center;
 }
 
 .bottom-container > img {
   border-radius: 15px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1500px) {
+  .content h2 {
+    font-size: 4.5rem;
+  }
+
+  .content p {
+    font-size: 2rem;
+  }
+
+  .image-container > img {
+    height: 235px;
+  }
+
+  .right-container > img {
+    height: 500px;
+  }
+
+  .bottom-container > img {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content h2 {
+    font-size: 3.5rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+  }
+
+  .image-container > img {
+    height: 185px;
+  }
+
+  .right-container > img {
+    height: 400px;
+  }
+
+  .bottom-container > img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .glimpse-container {
+    gap: 0.9rem;
+  }
+
+  .image-card {
+    gap: 0.9rem;
+  }
+
+  .left-container {
+    gap: 0.9rem;
+  }
+
+  .content h2 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .image-container > img {
+    height: 167px;
+    border-radius: 10px;
+  }
+
+  .right-container > img {
+    height: 350px;
+    border-radius: 10px;
+  }
+
+  .bottom-container > img {
+    height: 150px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content h2 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1.3rem;
+  }
+
+  .image-container > img {
+    height: 142px;
+  }
+
+  .right-container > img {
+    height: 300px;
+  }
+
+  .bottom-container > img {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .glimpse-container {
+    gap: 0.5rem;
+  }
+
+  .image-card {
+    gap: 0.5rem;
+  }
+
+  .left-container {
+    gap: 0.5rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .image-container > img {
+    height: 126px;
+  }
+
+  .right-container > img {
+    height: 260px;
+  }
+
+  .bottom-container > img {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .image-container > img {
+    height: 106px;
+  }
+
+  .right-container > img {
+    height: 220px;
+  }
+
+  .bottom-container > img {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+
+  .image-container > img {
+    height: 86px;
+    border-radius: 8px;
+  }
+
+  .right-container > img {
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  .bottom-container > img {
+    height: 70px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .glimpse-container {
+    gap: 0rem;
+  }
+
+  .left-container {
+    gap: 0rem;
+  }
+
+  .content h2 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.7rem;
+  }
+
+  .image-container > img {
+    height: 70px;
+  }
+
+  .right-container > img {
+    height: 150px;
+  }
+
+  .bottom-container {
+    margin-top: 10px;
+  }
+
+  .bottom-container > img {
+    height: 60px;
+  }
 }
