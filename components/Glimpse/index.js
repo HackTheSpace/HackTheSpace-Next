@@ -46,7 +46,7 @@ const ImageCard = ({ src1, src2, src3, className, content, content2 }) => {
 
 const Glimpse = () => {
   return (
-    <SectionLayout Title={"GLIMPSE OF PREVIOUS SEASON"} id="Glimpse">
+    <SectionLayout Title={"PREVIOUS EVENTS"} id="Glimpse">
       <div className="glimpse-container">
         {glimpseConfig.map((item) => (
           <ImageCard
