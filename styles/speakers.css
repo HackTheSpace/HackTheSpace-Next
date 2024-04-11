@@ -5,6 +5,24 @@
   grid-template-columns: auto auto auto auto;
 }
 
+@media (max-width: 1250px) {
+  .speakers-section .container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .speakers-section .container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .speakers-section .container {
+    grid-template-columns: auto;
+  }
+}
+
 .Speaker-Card {
   height: 170px;
   width: 170px;
@@ -102,46 +120,4 @@
   /* color: var(--primary-black); */
   height: 1.5rem;
   width: 1.5rem;
-}
-
-@media (max-width: 1250px) {
-  .speakers-section .container {
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media (max-width: 950px) {
-  .speakers-section .container {
-    grid-template-columns: auto auto;
-  }
-
-  .Speaker-Card {
-    height: 150px;
-    width: 150px;
-    margin: 2rem 2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .Speaker-Card {
-    height: 130px;
-    width: 130px;
-    margin: 2rem 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .Speaker-Card {
-    height: 120px;
-    width: 120px;
-    margin: 2rem 0.5rem;
-  }
-
-  .Speaker-Card .info h2 {
-    font-size: 1rem;
-  }
-
-  .Speaker-Card .info p {
-    font-size: 0.6rem;
-  }
 }
