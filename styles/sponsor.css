@@ -1,3 +1,8 @@
+#sponsors {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .sponsor-section {
   display: flex;
   flex-direction: column;
@@ -338,6 +343,15 @@
   .hiring-and-media .right-hr {
     right: 13%;
   }
+
+  .sponsor-section .sponsor .wrapper .card {
+    padding: 1.7rem;
+  }
+
+  .sponsor-section .sponsor .pic {
+    width: 120px;
+    height: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* .sponsor-name {
@@ -349,10 +363,39 @@
   .name-star {
     right: 36.5%;
   } */
+
+  .sponsor-section .sponsor h2 {
+    font-size: 1.8rem;
+  }
+
   .left-hr {
     left: 3%;
   }
   .right-hr {
     right: 3%;
+  }
+
+  .sponsor-section .sponsor .wrapper .card {
+    padding: 1.5rem;
+  }
+
+  .sponsor-section .sponsor .pic {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .sponsor-section .sponsor h2 {
+    font-size: 1.4rem;
+  }
+
+  .sponsor-section .sponsor .wrapper .card {
+    padding: 1.3rem;
+  }
+
+  .sponsor-section .sponsor .pic {
+    width: 80px;
+    height: 20px;
   }
 }

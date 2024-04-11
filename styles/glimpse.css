@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 #Glimpse {
   width: 80%;
   margin: auto;
@@ -13,6 +15,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px 0;
+  width: 100%;
 }
 
 .image-card {
@@ -40,6 +43,7 @@
   border-radius: 15px;
   object-fit: cover;
   width: 70%;
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
 }
 
 .content {
@@ -72,16 +76,15 @@
 
 .content h2 {
   font-size: 5.5rem;
-  font: bold;
   width: auto;
-  font-weight: 900;
+  font-weight: 800;
   z-index: 1;
   font-family: inherit;
 }
 
 .content p {
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: inherit;
 }
 
@@ -94,6 +97,7 @@
   height: 100%;
   border-radius: 15px;
   object-fit: cover;
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
 }
 
 .bottom-container {
@@ -111,6 +115,7 @@
 .bottom-container > img {
   border-radius: 15px;
   object-fit: cover;
+  filter: saturate(1.5) brightness(1.1) contrast(1.1) hue-rotate(10deg);
 }
 
 @media screen and (max-width: 1500px) {

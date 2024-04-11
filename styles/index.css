@@ -12,6 +12,10 @@
   margin: 9rem 0;
   color: var(--white);
   scroll-margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading-container {
@@ -20,7 +24,7 @@
   justify-items: center;
   position: relative;
   margin-bottom: 2rem;
-  width: 100%;
+  width: 90%;
 }
 
 .section-title {
@@ -103,7 +107,7 @@
   }
 
   .title-shadow {
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 0.06em;
   }
 }
@@ -115,7 +119,7 @@
   }
 
   .title-shadow {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     letter-spacing: 0.04em;
   }
 }
@@ -150,8 +154,7 @@
   }
 
   .title-shadow {
-    font-size: 2.5rem !important;
-    letter-spacing: 0.02em;
+    display: none;
   }
 }
 
@@ -171,12 +174,6 @@
   .section-title {
     font-size: 1.4rem !important;
     line-height: 2rem !important;
-  }
-
-  .title-shadow {
-    top: -60%;
-    font-size: 1.6rem !important;
-    letter-spacing: 0.01em;
   }
 }
 
