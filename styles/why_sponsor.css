@@ -63,7 +63,7 @@
   transition: all 0.3s linear;
 }
 
-.tracks-container {
+.tracks-container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,7 +78,7 @@
   flex-wrap: wrap;
 }
 
-.tracks-card {
+.tracks-card{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +87,7 @@
   background: rgba(217, 217, 217, 0.18);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 2rem 2rem 3rem;
-  margin: 2rem;
+  margin: 2rem ;
   border-radius: 37px;
   transition: all 0.3s linear;
   position: relative;
@@ -108,14 +108,13 @@
   width: fit-content;
   margin: 0 auto;
 }
-.tracks-container {
+.tracks-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0px 59px;
 }
-.why-sponsor-section .card h2,
-.tracks-card h2 {
+.why-sponsor-section .card h2,.tracks-card h2{
   font-size: 1.43rem;
   line-height: 2rem;
   font-weight: 600;
@@ -166,7 +165,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .why-sponsor-section .card {
@@ -174,16 +173,11 @@
     height: 320px;
     justify-content: flex-start;
     margin: 1rem 0;
-    padding: 1rem 1rem 2rem;
   }
 
   .why-sponsor-section .btn-container {
     width: 40%;
     gap: 1rem;
-  }
-
-  .why-sponsor-section .card p {
-    font-size: 1rem;
   }
 }
 
@@ -253,26 +247,5 @@
   }
   .aconst3 {
     bottom: 10%;
-  }
-
-  .why-sponsor-section .card {
-    padding: 1rem 1rem 2rem;
-  }
-
-  .why-sponsor-section .card h2 {
-    font-size: 1.2rem;
-  }
-
-  .why-sponsor-section .card p {
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-  }
-
-  .why-sponsor-section .btn-container {
-    width: 80%;
-  }
-
-  .why-sponsor-section .container {
-    padding: 0 1rem;
   }
 }
