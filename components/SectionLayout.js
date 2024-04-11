@@ -5,7 +5,10 @@ const SectionLayout = ({ Classname, id, Title, children }) => {
       id={id}
       data-wow-duration="1s"
     >
-      <h2 className="section-title">{Title}</h2>
+      <div className="heading-container">
+        <h1 className="title-shadow">{Title}</h1>
+        <h2 className="section-title">{Title}</h2>
+      </div>
       {children}
     </section>
   );

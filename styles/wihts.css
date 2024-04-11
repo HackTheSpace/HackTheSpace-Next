@@ -1,4 +1,10 @@
 /* Whatishackthespace */
+
+#wihts {
+  max-width: 1920px;
+  margin: 10rem auto;
+}
+
 .wihts {
   background-color: var(--transparent-gray);
   border-radius: 50px;

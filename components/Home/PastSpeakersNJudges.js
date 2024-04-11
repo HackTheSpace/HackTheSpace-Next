@@ -45,7 +45,7 @@ const PastSpeakersNJudges = () => {
   return (
     <SectionLayout
       id="speakerNjudges"
-      Title={"PAST JUDGES AND SPEAKERS"}
+      Title={"PAST JUDGES & SPEAKERS"}
       Classname={"speakers-section"}
     >
       <div className="container wow animate__animated animate__fadeInUp">
