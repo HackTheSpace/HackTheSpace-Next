@@ -6,21 +6,7 @@ import Footer from "./Footer";
 import ThreeScene from "./ThreeScene";
 import BackToTop from "./Home/BackToTop";
 
-import Lenis from "@studio-freight/lenis";
-
 const Layout = ({ children }) => {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 2,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
   return (
     <div>
       <Head>
