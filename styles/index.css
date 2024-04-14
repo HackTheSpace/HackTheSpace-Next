@@ -12,6 +12,19 @@
   margin: 9rem 0;
   color: var(--white);
   scroll-margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 90%;
 }
 
 .section-title {
@@ -28,8 +41,26 @@
 
   width: fit-content;
   margin: 0 auto;
-  margin-bottom: 2rem;
-  /* text-transform: uppercase; */
+}
+
+.title-shadow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: -100%;
+  z-index: 3;
+  text-wrap: wrap;
+  font-size: 4.5rem;
+  background: -webkit-linear-gradient(to bottom, #b741dd 10%, #00000000 100%);
+  background: linear-gradient(to bottom, #b741dd 10%, #00000000 90.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0.6;
+  letter-spacing: 0.08em;
+  /* make bottom transparent */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .go-to-top-btn {
@@ -69,6 +100,30 @@
   rotate: 46deg;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .title-shadow {
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .section-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  .title-shadow {
+    font-size: 3.3rem;
+    letter-spacing: 0.04em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .go-to-top-btn {
     right: -8%;
@@ -84,6 +139,41 @@
     line-height: 2.5rem !important;
     width: 90%;
     text-align: center;
+  }
+
+  .title-shadow {
+    font-size: 3rem !important;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-title {
+    font-size: 1.6rem !important;
+    line-height: 2.2rem !important;
+  }
+
+  .title-shadow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-title {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  .title-shadow {
+    font-size: 2rem !important;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-title {
+    font-size: 1.4rem !important;
+    line-height: 2rem !important;
   }
 }
 

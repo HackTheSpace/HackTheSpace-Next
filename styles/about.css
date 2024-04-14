@@ -1,4 +1,9 @@
 /********************* About **********************/
+
+#about {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .about-section {
   display: flex;
   justify-content: center;
@@ -202,10 +207,10 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* .paraDiv p {
+  .paraDiv p {
     font-size: 0.9rem;
-    line-height: 2rem;
-  } */
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 2000px) {
