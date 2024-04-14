@@ -11,7 +11,6 @@ const Wihts = () => {
     <section
       className="section about-section wow animate__animated animate__fadeInUp"
       data-wow-duration="1s"
-      id="wihts"
     >
       <div className="abbox">
         <h2 className="section-title">WHAT IS HACKTHESPACE?</h2>
