@@ -5,6 +5,10 @@
   user-select: none;
 }
 
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
 .home {
   display: flex;
   align-items: center;

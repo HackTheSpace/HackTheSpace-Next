@@ -31,7 +31,6 @@
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
   /* overflow-x:clip; */
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -47,7 +46,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
