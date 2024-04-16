@@ -1,0 +1,58 @@
+#Testomonies {
+  margin: auto;
+  margin-top: 80px;
+  max-width: 1200px;
+  color: white;
+
+}
+
+.Testomonies-main-div {
+  display: flex;
+  /* flex-direction: row; */
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+  gap: 2rem;
+}
+
+.Testomonies-section {
+  /* display: flex; */
+  width: 400px;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 100, 0.5);
+}
+
+.Testomonies-Info {
+  margin-top: 8px;
+  display: flex;
+  gap: 1rem;
+}
+
+.Testomonies-Info > div > h4 {
+  color: #b741dd;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .section-title {
+    /* margin-left: 0px; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title{
+    margin-left: -10px;
+  }
+  .Testomonies-section{
+    /* margin: 0px; */
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+}
