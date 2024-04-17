@@ -6,14 +6,11 @@ import Marquee from 'react-fast-marquee';
 
 const Testomonies = () => {
   return (
-    <div id="Testomonie"> 
-      <div className="heading-container" style={{ marginTop: '50px',marginLeft:"60px" }}>
-        <h1 className="title-shadow">Testomonies</h1>
-        <h2 className="section-title section-title1">Testomonies</h2>
-      </div>
+    <SectionLayout Title={'TESTOMONIE'}  id={'Testomonie'}>
 
-        <Marquee speed={70} direction='right' pauseOnHover style={{marginTop:'50px'}}>
-        <div className='Testomonies-main-div' style={{gap:'4rem',marginRight:'12rem',}}>
+
+        <Marquee speed={70} direction='right' pauseOnHover className='Marquee'>
+        <div className='Testomonies-main-div' style={{}}>
           {/* Map over testimonies */}
           {TestomoniesConfig.Details.map((item) => (
             <div key={item.id} className='Testomonies-section'>
@@ -30,7 +27,7 @@ const Testomonies = () => {
         </div>
         </Marquee>
         <Marquee speed={70} style={{display:'flex'}} pauseOnHover>
-        <div className='Testomonies-main-div' style={{gap:'4rem',marginRight:'12rem'}}>
+        <div className='Testomonies-main-div' style={{}}>
           
           {TestomoniesConfig1.Details.map((item) => (
             // 
@@ -48,7 +45,8 @@ const Testomonies = () => {
           ))}
         </div>
         </Marquee>
-    </div>
+    {/* </div> */}
+    </SectionLayout>
     
   );
 };
