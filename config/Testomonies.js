@@ -4,50 +4,85 @@ import { icon } from "@fortawesome/fontawesome-svg-core"
 export const TestomoniesConfig ={
     Details:[
         {
-            name: "Mohit Makda",
-            about:"CEO & Founder",
+            name: "khushi trivedi",
+            about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Ellipse 95.png",
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
         {
-            name: "Mohit Makda",
-            about:"CEO & Founder",
-            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one! `,
-            icon:"images/Ellipse 95.png",
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
-            ]
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+
+        ]
 }
 
 export const TestomoniesConfig1 ={
     Details:[
         {
-            name: "Mohit Makda",
-            about:"CEO & Founder",
+            name: "khushi trivedi",
+            about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Ellipse 95.png",
-
-            
-        },
-        {
-            name: "Mohit Makda",
-            about:"CEO & Founder",
-            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one! `,
-            icon:"images/Ellipse 95.png",
-
-            
-        },
-        {
-            name: "Mohit Makda",
-            about:"CEO & Founder",
-            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Ellipse 95.png",
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
 
             
         },  
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+        {
+            name: "khushi trivedi",
+            about:"Speaker",
+            description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
+            icon:"images/Speakers/Khushi Trivedi.jpeg",
+
+            
+        },
+
+
                // {
         //     name: "Mohit Makda",
         //     about:"CEO & Founder",

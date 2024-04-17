@@ -44,6 +44,7 @@
   --white: #fff;
   --animate-duration: 1000ms !important;
   --animate-delay: 0.9s !important;
+  --testomonials: linear-gradient(to right, #B741DD, #7D00F2);
 }
 
 html {

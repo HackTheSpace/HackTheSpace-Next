@@ -9,11 +9,11 @@ const Testomonies = () => {
     <div id="Testomonie"> 
       <div className="heading-container" style={{ marginTop: '50px',marginLeft:"60px" }}>
         <h1 className="title-shadow">Testomonies</h1>
-        <h2 className="section-title">Testomonies</h2>
+        <h2 className="section-title section-title1">Testomonies</h2>
       </div>
 
-        <Marquee speed={70} direction='right' pauseOnHover>
-        <div className='Testomonies-main-div' style={{gap:'14rem',marginRight:'6rem'}}>
+        <Marquee speed={70} direction='right' pauseOnHover style={{marginTop:'50px'}}>
+        <div className='Testomonies-main-div' style={{gap:'4rem',marginRight:'12rem',}}>
           {/* Map over testimonies */}
           {TestomoniesConfig.Details.map((item) => (
             <div key={item.id} className='Testomonies-section'>
