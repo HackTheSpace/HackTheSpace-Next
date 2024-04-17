@@ -3,6 +3,7 @@ import SectionLayout from '../SectionLayout';
 import { TestomoniesConfig } from '../../config/Testomonies';
 import { TestomoniesConfig1 } from '../../config/Testomonies';
 import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
 
 const Testomonies = () => {
   return (
@@ -16,7 +17,7 @@ const Testomonies = () => {
             <div key={item.id} className='Testomonies-section'>
               <p>{item.description}</p>
               <div className='Testomonies-Info'>
-                <img src={item.icon} alt='testimony-image' style={{ width: '50px'}} />
+                <Image src={item.icon} alt='testimony-image' height={50} width={50} />
                 <div>
                   <h4>{item.name}</h4>
                   <span>{item.about}</span>
@@ -34,7 +35,7 @@ const Testomonies = () => {
             <div key={item.id} className='Testomonies-section'>
               <p>{item.description}</p>
               <div className='Testomonies-Info'>
-                <img src={item.icon} alt='testimony-image' style={{ width: '50px' }} />
+              <Image src={item.icon} alt='testimony-image' height={50} width={50} />
                 <div>
                   <h4>{item.name}</h4>
                   <span>{item.about}</span>

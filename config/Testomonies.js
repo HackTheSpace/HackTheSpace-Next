@@ -7,7 +7,7 @@ export const TestomoniesConfig ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -15,7 +15,7 @@ export const TestomoniesConfig ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -23,7 +23,7 @@ export const TestomoniesConfig ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -31,7 +31,7 @@ export const TestomoniesConfig ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -39,7 +39,7 @@ export const TestomoniesConfig ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -53,7 +53,7 @@ export const TestomoniesConfig1 ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },  
@@ -61,7 +61,7 @@ export const TestomoniesConfig1 ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -69,7 +69,7 @@ export const TestomoniesConfig1 ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
@@ -77,20 +77,10 @@ export const TestomoniesConfig1 ={
             name: "khushi trivedi",
             about:"Speaker",
             description:`Participating in this hackathon was an incredible experience! The organizers did a fantastic job of creating a collaborative environment where innovation thrived. I was amazed by the diversity of ideas and the level of talent displayed by the participants. Can't wait for the next one!`,
-            icon:"images/Speakers/Khushi Trivedi.jpeg",
+            icon:"/images/Speakers/Khushi Trivedi.jpeg",
 
             
         },
-
-
-               // {
-        //     name: "Mohit Makda",
-        //     about:"CEO & Founder",
-        //     description:`I have been working with this platform lorem ispem I have been working with this platform lorem ispem I have been working with this platform lorem ispem I have been working with this platform lorem ispem I have been working with this platform lorem ispem I have been working with this I have been working with this platform lorem ispem I have been working with this platform lorem ispem `,
-        //     icon:"images/Ellipse 95.png",
-
-            
-        // },
         
     ]
 }
