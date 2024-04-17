@@ -17,10 +17,9 @@ import Tracks from "../components/Home/Tracks";
 import Prize from "../components/Prize";
 import Glimpse from "../components/Glimpse";
 import PastSpeakersNJudges from "../components/Home/PastSpeakersNJudges";
-import Testomonies from "../components/Testomonies/Testomonies";
+import Testimonies from "../components/Testimonies/Testimonies";
 // import Team from "./Team";
 import "font-awesome/css/font-awesome.min.css";
-
 
 const index = () => {
   useEffect(() => {
@@ -42,13 +41,13 @@ const index = () => {
       {/* <Prize /> */}
       {/* <Trakcs /> */}
       {/* <Tracks /> */}
-      <Testomonies />
       <Sponsor />
-      <WhySponsor />
+      {/* <WhySponsor /> */}
+      <Testimonies />
       {/* <Organiser /> */}
       <PastSpeakersNJudges />
       {/* <Team /> */}
-      {/* <FAQS /> */}
+      <FAQS />
     </Layout>
   );
 };

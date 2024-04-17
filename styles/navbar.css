@@ -176,7 +176,8 @@ nav .mobile-nav {
   .nav-sponsor {
     font-size: 1rem;
     padding: 0.2rem 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    height: 30px;
   }
 
   .nav-sponsor .telescope {
