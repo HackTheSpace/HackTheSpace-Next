@@ -37,6 +37,11 @@ const Typewriter = () => {
         {title}
       </p>
       <p style={{ marginTop: "0" }}>27 - 28th SEPTEMBER, 2024</p>
+      <p className="venue-text">
+          Shri Shankaracharya Technical Campus
+          <br />
+          Bhilai, Chhattisgarh
+      </p>
     </>
   );
 };
