@@ -40,7 +40,7 @@ const Typewriter = () => {
       <p className="venue-text">
           Shri Shankaracharya Technical Campus
           <br />
-          Bhilai, Chhattisgarh
+          Bhilai, India
       </p>
     </>
   );
