@@ -19,6 +19,20 @@ nav .logo {
   margin-left: 0.5rem;
 }
 
+.left-heading {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  line-height: 1.1;
+  padding: 0.5rem 1rem !important;
+}
+
+.left-heading p {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
 .nav-sponsor {
   /* text color white */
   color: white;
@@ -30,52 +44,30 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--primary-black);
-  border: 2px solid var(--primary-blue);
-  border-radius: 10px;
-  transition: all 0.3s ease-in;
+  background: linear-gradient(#343434, #343434) padding-box, border-box;
+  border: 4px solid transparent;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+  background: linear-gradient(#343434, #343434) padding-box,
+    linear-gradient(to right, #bd5adc, #4f23ee) border-box;
+  box-shadow: 0px 0px 5px #bd5adc;
 }
 
-.nav-sponsor:not(:last-child) {
-  margin-right: 2px;
+.letter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.nav-sponsor::before,
-.nav-sponsor::after {
-  content: "";
-  position: absolute;
-  background-color: var(--primary-black);
-  z-index: 0;
-  transition: 200ms ease-in;
-  transform-origin: center center;
+.left-heading .letter-container:first-child > p:first-child {
+  color: #b741dd;
 }
 
-.nav-sponsor::before {
-  width: calc(100% + 2px * 2 - 25px);
-  height: calc(100% + 2px * 2);
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.nav-sponsor::after {
-  height: calc(100% + 2px * 2 - 25px);
-  width: calc(100% + 2px * 2);
-  top: 50%;
-  left: -2px;
-  transform: translateY(-50%);
-}
-
-.nav-sponsor:hover::before {
-  width: 0;
-}
-
-.nav-sponsor:hover::after {
-  height: 0;
-}
-
-.nav-sponsor:hover {
-  color: var(--primary-blue);
+.left-heading .letter-container:last-child > p:last-child {
+  color: #7d00f2;
 }
 
 .nav-sponsor a {
@@ -174,15 +166,28 @@ nav .mobile-nav {
 }
 
 @media screen and (max-width: 750px) {
+  nav .desktop-nav {
+    padding: 0.5rem 0.5rem;
+  }
+
   .nav-sponsor {
     font-size: 1rem;
     padding: 0.2rem 1rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    height: 30px;
   }
 
   .nav-sponsor .telescope {
     top: 20px;
     left: -59%;
+  }
+
+  .left-heading {
+    padding: 0.5rem 0.5rem !important;
+  }
+
+  .left-heading p {
+    font-size: 0.8rem;
   }
 }
 

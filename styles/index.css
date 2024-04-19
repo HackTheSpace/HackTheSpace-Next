@@ -9,7 +9,7 @@
 
 .section {
   height: 100%;
-  margin: 9rem 0;
+  margin: 9rem auto;
   color: var(--white);
   scroll-margin-top: 5rem;
   display: flex;
@@ -28,6 +28,7 @@
 }
 
 .section-title {
+  
   font-size: 2.6rem;
   line-height: 3.2rem;
   letter-spacing: 0.08em;
@@ -171,6 +172,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .heading-container {
+    margin-bottom: 0rem;
+  }
+
   .section-title {
     font-size: 1.4rem !important;
     line-height: 2rem !important;

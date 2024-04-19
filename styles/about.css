@@ -2,7 +2,7 @@
 
 #about {
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .about-section {
   display: flex;
@@ -58,6 +58,7 @@
   align-items: center;
   position: relative;
   height: fit-content;
+  gap: 1rem;
 }
 
 /* .paraDiv {

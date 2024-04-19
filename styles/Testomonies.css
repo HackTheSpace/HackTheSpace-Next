@@ -1,0 +1,175 @@
+#Testomonies {
+  margin: auto;
+  margin-top: 80px;
+  max-width: 1200px;
+  color: white;
+}
+.Marquee {
+  margin-top: 30px;
+}
+
+.Testomonies-main-div {
+  display: flex;
+  /* flex-direction: row; */
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+  gap: 4rem;
+  margin-right: 12rem;
+  margin-bottom: 20px;
+}
+
+.Testomonies-section {
+  width: 440px;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 100, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.Testomonies-section p {
+  height: 144px;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+.Testomonies-section p::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Testomonies-Info {
+  margin-top: 8px;
+  display: flex;
+  gap: 1rem;
+}
+
+.Testomonies-Info > img {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #b741dd;
+  border-radius: 50%;
+}
+
+.Testomonies-Info > p {
+  font-size: 1rem;
+}
+
+.Testomonies-Info > div > h4 {
+  color: #b741dd;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.Testomonies-Info > div > span {
+  color: rgb(189, 183, 183);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Testomonies-section {
+    width: 300px;
+    margin-bottom: 20px;
+    gap: 0.6rem;
+    margin-right: 2rem;
+    border-radius: 18px;
+  }
+
+  .Testomonies-section > p {
+    font-size: 13px;
+    /* height: 100px; */
+  }
+
+  .Testomonies-Info > div > h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .Testomonies-Info {
+    line-height: 1.1rem;
+  }
+
+  .Testomonies-Info > div > span {
+    font-size: 12.5px;
+  }
+
+  .Testomonies-Info > img {
+    /* height: 30px; */
+    /* width: 10px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Testomonies-section {
+    width: 360px;
+    margin-bottom: 20px;
+    gap: 0.8rem;
+    margin-right: 2rem;
+    border-radius: 18px;
+  }
+
+  .Testomonies-section > p {
+    font-size: 13.5px;
+  }
+
+  .Testomonies-Info > div > h4 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .Testomonies-Info {
+    line-height: 1.1rem;
+  }
+
+  .Testomonies-Info > div > span {
+    font-size: 13.5px;
+  }
+
+  .Testomonies-Info > img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Marquee {
+    margin-top: 20px;
+  }
+
+  .Testomonies-section {
+    width: 80vw;
+    margin-bottom: 10px;
+    gap: 0.4rem;
+  }
+
+  .Testomonies-section > p {
+    font-size: 12px;
+    height: 120px;
+  }
+
+  .Testomonies-Info > div > h4 {
+    font-size: 13px;
+  }
+
+  .Testomonies-Info > div > span {
+    font-size: 12px;
+  }
+
+  .Testomonies-Info > img {
+    height: 38px;
+    width: 38px;
+  }
+
+  .Testomonies-main-div {
+    gap: 1rem;
+    margin-right: 8rem;
+  }
+}

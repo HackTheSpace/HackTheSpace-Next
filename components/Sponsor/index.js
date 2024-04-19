@@ -37,9 +37,14 @@ const Sponsor = () => {
   } = sponsorConfig;
 
   return (
-    <SectionLayout Classname={"sponsor-section"} Title={""} id="sponsors">
-      <div className="sponsor-container">
-        {/* <SponsorContainer
+    <>
+      <SectionLayout
+        Classname={"sponsor-section"}
+        Title={"PAST SPONSORS"}
+        id="sponsors"
+      >
+        <div className="sponsor-container">
+          {/* <SponsorContainer
           Name={diamond.Name}
           Img={diamond.Img}
           Type={diamond.Type}
@@ -173,20 +178,23 @@ const Sponsor = () => {
             ))}
           </SponsorContainer>
         </div> */}
-        <SponsorContainer
-          Name={"inkind"}
-          Img={communityPartner.Img}
-          Type={"PAST SPONSORS"}
-        >
-          {Allsponsor.SPNSR.map((sponsor) => (
-            <SponsorWrapper
-              key={sponsor.id}
-              Name={sponsor.Name}
-              Img={sponsor.Img}
-              Link={sponsor.Link}
-            />
-          ))}
-        </SponsorContainer>
+          <SponsorContainer
+            Name={"inkind"}
+            Img={communityPartner.Img}
+            Type={"PAST SPONSORS"}
+          >
+            {Allsponsor.SPNSR.map((sponsor) => (
+              <SponsorWrapper
+                key={sponsor.id}
+                Name={sponsor.Name}
+                Img={sponsor.Img}
+                Link={sponsor.Link}
+              />
+            ))}
+          </SponsorContainer>
+        </div>
+      </SectionLayout>
+      <SectionLayout Classname={"sponsor-section"} Title={"COMMUNITY PARTNERS"}>
         <SponsorContainer
           Name={"inkind"}
           Img={communityPartner.Img}
@@ -201,8 +209,8 @@ const Sponsor = () => {
             />
           ))}
         </SponsorContainer>
-      </div>
-    </SectionLayout>
+      </SectionLayout>
+    </>
   );
 };
 
