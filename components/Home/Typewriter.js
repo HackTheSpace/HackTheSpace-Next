@@ -32,9 +32,12 @@ const Typewriter = () => {
   useEffect(() => writeText(), []);
 
   return (
-    <p className="title" id="title">
-      {title}
-    </p>
+    <>
+      <p className="title" id="title">
+        {title}
+      </p>
+      <p style={{ marginTop: "0" }}>27 - 28th SEPTEMBER, 2024</p>
+    </>
   );
 };
 

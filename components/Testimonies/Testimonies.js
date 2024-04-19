@@ -1,7 +1,7 @@
 import React from "react";
 import SectionLayout from "../SectionLayout";
-import { TestomoniesConfig } from "../../config/Testomonies";
-import { TestomoniesConfig1 } from "../../config/Testomonies";
+import { TestimoniesConfig } from "../../config/Testimonies";
+import { TestimoniesConfig1 } from "../../config/Testimonies";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ const Testimonies = () => {
       <Marquee speed={70} direction="right" pauseOnHover className="Marquee">
         <div className="Testomonies-main-div" style={{}}>
           {/* Map over testimonies */}
-          {TestomoniesConfig.Details.map((item) => (
+          {TestimoniesConfig.Details.map((item) => (
             <div key={item.id} className="Testomonies-section">
               <p>{item.description}</p>
               <div className="Testomonies-Info">
@@ -32,7 +32,7 @@ const Testimonies = () => {
       </Marquee>
       <Marquee speed={70} style={{ display: "flex" }} pauseOnHover>
         <div className="Testomonies-main-div" style={{}}>
-          {TestomoniesConfig1.Details.map((item) => (
+          {TestimoniesConfig1.Details.map((item) => (
             //
             <div key={item.id} className="Testomonies-section">
               <p>{item.description}</p>
