@@ -26,14 +26,14 @@ export const TestimoniesConfig = {
     },
     {
       id: 4,
-      name: "Dr Siddhartha Choubey",
+      name: "Dr. Siddhartha Choubey",
       about: "HOD, CSE Department",
       description: `I'm utterly awestruck by the overwhelming response to "HackTheSpace." With hackers converging from all corners of India, the event was a testament to boundless talent and collaborative spirit. The projects unveiled were nothing short of remarkable, showcasing the transformative potential of technology to tackle complex problems. My deepest admiration to everyone involved for organizing such a phenomenal success!`,
       icon: "/images/Testimonials/HOD.jpeg",
     },
     {
       id: 5,
-      name: "Er. I.P. Mishra",
+      name: "Dr. I.P. Mishra",
       about: "Chairman, SGES",
       description: `I assertively commend "HackTheSpace" as one of the most remarkable hackathons to date. Drawing participants nationwide, it epitomized innovation and collaboration. The event showcased the transformative potential of technology, solidifying our commitment to fostering excellence. My resounding congratulations to all involved in orchestrating this exceptional hackathon! As the event unfolded, it became evident that HackTheSpace was more than just a hackathon; it was a community of like-minded individuals pushing the boundaries of innovation. The atmosphere was electric, filled with enthusiasm and a shared sense of purpose. It was an honor to witness the potential of these young technologists and their dedication to shaping a better future.`,
       icon: "/images/Testimonials/chairman.jpg",
